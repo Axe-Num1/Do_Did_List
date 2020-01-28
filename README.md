@@ -1,2 +1,10 @@
 # Do_Did_List
-할 일만 계회하지 않고, 자신이 한 것을 기록하여 되돌아 볼 수 있는 앱 입니다.
+
+![issue badge](https://img.shields.io/badge/ver.-Swift5-orange?logo=swift)
+![issue badge](https://img.shields.io/badge/ver.-Xcode11-blue?logo=xcode)
+![GitHub stars](https://img.shields.io/github/stars/Axe-Num1/Swift_Book?style=social)
+
+Do: 하루 동안 할 일을 계획하세요!
+Did: 하루 동안 한 일을 되돌아보세요!
+
+[Trello](https://trello.com/b/xgG8SFO9/ios-app-project-dodid-list)
