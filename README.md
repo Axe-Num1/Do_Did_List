@@ -8,3 +8,4 @@ Do: 하루 동안 할 일을 계획하세요!
 Did: 하루 동안 한 일을 되돌아보세요!
 
 [Trello](https://trello.com/b/xgG8SFO9/ios-app-project-dodid-list)
+[Figma](https://www.figma.com/file/q1andzg9ytreAQzVPxDStf/Do-Did-List?node-id=0%3A1)
