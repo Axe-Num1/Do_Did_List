@@ -1,0 +1,6 @@
+framework module Pods_Do_Did_List {
+  umbrella header "Pods-Do_Did_List-umbrella.h"
+
+  export *
+  module * { export * }
+}
