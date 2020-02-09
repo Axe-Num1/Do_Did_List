@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48B71BE3F3AA5C1A95B30FB8 /* Pods_Do_Did_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F537CFBF1802084E4F37B6 /* Pods_Do_Did_List.framework */; };
 		F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */; };
 		F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */; };
 		F24AB1C523EFC3AE00ECBE1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C423EFC3AE00ECBE1E /* ViewController.swift */; };
@@ -15,7 +14,25 @@
 		F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */; };
 		F24AB1CD23EFC3B100ECBE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1CC23EFC3B100ECBE1E /* Assets.xcassets */; };
 		F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */; };
+		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
+		F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73323EFF39500282434 /* FivoSans-Black.otf */; };
+		F25FB73923EFF9FE00282434 /* Pods_Do_Did_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F537CFBF1802084E4F37B6 /* Pods_Do_Did_List.framework */; };
+		F25FB73A23EFF9FE00282434 /* Pods_Do_Did_List.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16F537CFBF1802084E4F37B6 /* Pods_Do_Did_List.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F25FB73823EFF86200282434 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F25FB73A23EFF9FE00282434 /* Pods_Do_Did_List.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		16F537CFBF1802084E4F37B6 /* Pods_Do_Did_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Do_Did_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +47,10 @@
 		F24AB1CC23EFC3B100ECBE1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F24AB1CF23EFC3B100ECBE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F24AB1D123EFC3B100ECBE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FivoSans-Black-Oblique.otf"; sourceTree = "<group>"; };
+		F25FB73323EFF39500282434 /* FivoSans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FivoSans-Black.otf"; sourceTree = "<group>"; };
+		F25FB73523EFF86200282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25FB73B23EFFA0500282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B71BE3F3AA5C1A95B30FB8 /* Pods_Do_Did_List.framework in Frameworks */,
+				F25FB73923EFF9FE00282434 /* Pods_Do_Did_List.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +68,8 @@
 		310F13406E004F2291072F41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F25FB73B23EFFA0500282434 /* Lottie.framework */,
+				F25FB73523EFF86200282434 /* Lottie.framework */,
 				16F537CFBF1802084E4F37B6 /* Pods_Do_Did_List.framework */,
 			);
 			name = Frameworks;
@@ -58,7 +81,6 @@
 				2E6A4C6452B4AA37FA9D37E0 /* Pods-Do_Did_List.debug.xcconfig */,
 				341C208A4A67D749A0AB5457 /* Pods-Do_Did_List.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +105,7 @@
 		F24AB1BF23EFC3AE00ECBE1E /* Do_Did_List */ = {
 			isa = PBXGroup;
 			children = (
+				F25FB73023EFF36000282434 /* Fonts */,
 				F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */,
 				F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */,
 				F24AB1C423EFC3AE00ECBE1E /* ViewController.swift */,
@@ -93,6 +116,15 @@
 				F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */,
 			);
 			path = Do_Did_List;
+			sourceTree = "<group>";
+		};
+		F25FB73023EFF36000282434 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F25FB73323EFF39500282434 /* FivoSans-Black.otf */,
+				F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,7 +138,7 @@
 				F24AB1B923EFC3AE00ECBE1E /* Sources */,
 				F24AB1BA23EFC3AE00ECBE1E /* Frameworks */,
 				F24AB1BB23EFC3AE00ECBE1E /* Resources */,
-				2D5F6D45AB807E37C8A18EE3 /* [CP] Embed Pods Frameworks */,
+				F25FB73823EFF86200282434 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +189,8 @@
 			files = (
 				F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */,
 				F24AB1CD23EFC3B100ECBE1E /* Assets.xcassets in Resources */,
+				F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */,
+				F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */,
 				F24AB1C823EFC3AE00ECBE1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,23 +218,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D5F6D45AB807E37C8A18EE3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Do_Did_List/Pods-Do_Did_List-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Do_Did_List/Pods-Do_Did_List-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Do_Did_List/Pods-Do_Did_List-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
