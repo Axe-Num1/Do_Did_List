@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,31 +20,34 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjq-TX-3LV">
-                                <rect key="frame" x="52.666666666666657" y="271" width="270" height="270"/>
+                                <rect key="frame" x="72" y="313" width="270" height="270"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="cdg-8M-gnR"/>
                                     <constraint firstAttribute="height" constant="270" id="sK9-Ny-50o"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="150"/>
-                                <state key="normal" title="27" backgroundImage="Rectangle1">
+                                <state key="normal" title="27" backgroundImage="DateRectangle">
                                     <color key="titleColor" red="0.21219122409999999" green="0.38659185169999999" blue="0.95691376920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Y2h-Qf-rTZ" kind="presentation" modalTransitionStyle="crossDissolve" id="9Tb-al-Jqq"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gi6-Ld-rNF">
-                                <rect key="frame" x="60" y="149.66666666666666" width="255" height="71.333333333333343"/>
+                                <rect key="frame" x="60" y="191.5" width="294" height="71.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do Did List" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="0Eb-K5-iG1">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="45.666666666666664"/>
+                                        <rect key="frame" x="13.5" y="0.0" width="267.5" height="46"/>
                                         <fontDescription key="fontDescription" name="FivoSans-BlackOblique" family="Fivo Sans" pointSize="48"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-u6-68h">
-                                        <rect key="frame" x="95.333333333333343" y="48.333333333333343" width="64.333333333333343" height="23"/>
+                                        <rect key="frame" x="115" y="48.5" width="64.5" height="23"/>
                                         <fontDescription key="fontDescription" name="FivoSans-BlackOblique" family="Fivo Sans" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -73,8 +76,218 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xNx-Tg-rrB">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Y2h-Qf-rTZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q7a-6S-IhR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nye-Mi-qXA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="330"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0g-Ig-wIe">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Wm1-i3-g0F"/>
+                                            <constraint firstAttribute="width" constant="60" id="xPF-kI-pP6"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Slide Menu BT"/>
+                                        <connections>
+                                            <segue destination="mLg-5G-ey3" kind="presentation" id="vPg-9n-grU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yg2-nt-0wk">
+                                        <rect key="frame" x="57" y="108" width="205.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Current Box" translatesAutoresizingMaskIntoConstraints="NO" id="975-X9-Ivu">
+                                        <rect key="frame" x="47" y="134" width="340" height="181"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="181" id="jcW-zq-D9P"/>
+                                            <constraint firstAttribute="width" constant="340" id="uoi-fh-Bdq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="CXq-O6-MkC">
+                                        <rect key="frame" x="62" y="179" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="0i3-NO-9Lr"/>
+                                            <constraint firstAttribute="width" constant="24" id="b01-Hc-ZGb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Category" translatesAutoresizingMaskIntoConstraints="NO" id="p79-WN-vqu">
+                                        <rect key="frame" x="340" y="155" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="Gl6-p1-Qvy"/>
+                                            <constraint firstAttribute="height" constant="35" id="ujm-W3-loy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6jH-xz-6OK">
+                                        <rect key="frame" x="92" y="182.5" width="230" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAf-hU-C9a">
+                                                <rect key="frame" x="49" y="0.0" width="132" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="18"/>
+                                                <color key="textColor" red="0.2001197934" green="0.73293036219999996" blue="0.48623937369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jdn-0L-SdY">
+                                                <rect key="frame" x="0.0" y="25.5" width="230" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <color key="textColor" red="0.23137254900000001" green="0.42352941179999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00 ~ 0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMb-0a-9IE">
+                                                <rect key="frame" x="61.5" y="93.5" width="107.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="17"/>
+                                                <color key="textColor" red="0.23137254900000001" green="0.42352941179999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CXq-O6-MkC" firstAttribute="leading" secondItem="975-X9-Ivu" secondAttribute="leading" constant="15" id="1T2-Oa-wwA"/>
+                                    <constraint firstItem="975-X9-Ivu" firstAttribute="centerX" secondItem="Nye-Mi-qXA" secondAttribute="centerX" constant="10" id="3kf-us-Weh"/>
+                                    <constraint firstItem="g0g-Ig-wIe" firstAttribute="top" secondItem="Nye-Mi-qXA" secondAttribute="top" constant="0.01" id="64a-2T-aYT"/>
+                                    <constraint firstItem="975-X9-Ivu" firstAttribute="top" secondItem="Yg2-nt-0wk" secondAttribute="bottom" constant="-12" id="6rx-3R-8Pz"/>
+                                    <constraint firstItem="6jH-xz-6OK" firstAttribute="centerX" secondItem="Nye-Mi-qXA" secondAttribute="centerX" id="JWE-VV-3ip"/>
+                                    <constraint firstItem="p79-WN-vqu" firstAttribute="top" secondItem="975-X9-Ivu" secondAttribute="top" constant="21" id="KZE-Ob-91Y"/>
+                                    <constraint firstItem="975-X9-Ivu" firstAttribute="trailing" secondItem="p79-WN-vqu" secondAttribute="trailing" constant="12" id="MeH-bX-Vwk"/>
+                                    <constraint firstAttribute="bottom" secondItem="975-X9-Ivu" secondAttribute="bottom" constant="15" id="Ovb-Kz-IQT"/>
+                                    <constraint firstItem="Yg2-nt-0wk" firstAttribute="leading" secondItem="975-X9-Ivu" secondAttribute="leading" constant="10" id="Rlu-31-2lg"/>
+                                    <constraint firstItem="g0g-Ig-wIe" firstAttribute="leading" secondItem="Nye-Mi-qXA" secondAttribute="leading" constant="0.01" id="lPQ-wq-g9u"/>
+                                    <constraint firstAttribute="height" constant="330" id="oq8-Gf-gUa"/>
+                                    <constraint firstItem="CXq-O6-MkC" firstAttribute="top" secondItem="975-X9-Ivu" secondAttribute="top" constant="45" id="tbL-Pp-VZN"/>
+                                    <constraint firstItem="6jH-xz-6OK" firstAttribute="centerY" secondItem="975-X9-Ivu" secondAttribute="centerY" constant="13" id="zCX-Ne-oPW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXz-B4-QYx">
+                                <rect key="frame" x="0.0" y="374" width="414" height="488"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January 27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cT-DW-1Lv">
+                                        <rect key="frame" x="25" y="21" width="163" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="List Line" translatesAutoresizingMaskIntoConstraints="NO" id="iOE-Wx-VJ1">
+                                        <rect key="frame" x="17" y="92" width="380" height="24"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="DMT-64-Y3G">
+                                        <rect key="frame" x="48" y="74" width="260.5" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To Do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1Z-kI-cag">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Importance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHW-FF-jNv">
+                                                <rect key="frame" x="90" y="0.0" width="86.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2U-uU-b00">
+                                                <rect key="frame" x="223.5" y="0.0" width="37" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iOE-Wx-VJ1" firstAttribute="leading" secondItem="oXz-B4-QYx" secondAttribute="leading" constant="17" id="1eN-iY-w6I"/>
+                                    <constraint firstItem="iOE-Wx-VJ1" firstAttribute="top" secondItem="DMT-64-Y3G" secondAttribute="bottom" constant="3.5" id="3NR-ch-JCQ"/>
+                                    <constraint firstItem="DMT-64-Y3G" firstAttribute="leading" secondItem="oXz-B4-QYx" secondAttribute="leading" constant="48" id="QLB-gf-Iyw"/>
+                                    <constraint firstItem="DMT-64-Y3G" firstAttribute="top" secondItem="2cT-DW-1Lv" secondAttribute="bottom" constant="24.5" id="T9u-DI-0Vc"/>
+                                    <constraint firstItem="2cT-DW-1Lv" firstAttribute="top" secondItem="oXz-B4-QYx" secondAttribute="top" constant="21" id="UkU-JS-d7u"/>
+                                    <constraint firstItem="2cT-DW-1Lv" firstAttribute="leading" secondItem="oXz-B4-QYx" secondAttribute="leading" constant="25" id="d5o-12-TD4"/>
+                                    <constraint firstAttribute="trailing" secondItem="iOE-Wx-VJ1" secondAttribute="trailing" constant="17" id="eyE-h5-RTx"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2cT-DW-1Lv" secondAttribute="trailing" constant="25" id="p1r-dK-iLD"/>
+                                    <constraint firstAttribute="trailing" secondItem="DMT-64-Y3G" secondAttribute="trailing" constant="105.5" id="qwU-iL-Liu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137254901960785" green="0.42352941176470588" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Nye-Mi-qXA" firstAttribute="trailing" secondItem="nil-sM-DZO" secondAttribute="trailing" id="D8f-Ni-DPc"/>
+                            <constraint firstItem="oXz-B4-QYx" firstAttribute="leading" secondItem="nil-sM-DZO" secondAttribute="leading" id="DLB-aG-cnW"/>
+                            <constraint firstItem="Nye-Mi-qXA" firstAttribute="leading" secondItem="nil-sM-DZO" secondAttribute="leading" id="Laj-6I-UUC"/>
+                            <constraint firstItem="oXz-B4-QYx" firstAttribute="bottom" secondItem="nil-sM-DZO" secondAttribute="bottom" id="OfM-2k-zcp"/>
+                            <constraint firstItem="Nye-Mi-qXA" firstAttribute="top" secondItem="nil-sM-DZO" secondAttribute="top" id="Qk9-vi-xTQ"/>
+                            <constraint firstItem="oXz-B4-QYx" firstAttribute="top" secondItem="Nye-Mi-qXA" secondAttribute="bottom" id="pDa-sM-y35"/>
+                            <constraint firstItem="oXz-B4-QYx" firstAttribute="trailing" secondItem="nil-sM-DZO" secondAttribute="trailing" id="wjC-v3-Wh1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nil-sM-DZO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HD9-2P-9ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956.52173913043487" y="137.94642857142856"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="aI1-AC-Q8A">
+            <objects>
+                <tableViewController id="4Ri-DD-ubr" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="j7W-84-zUT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VfW-ze-eHo">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VfW-ze-eHo" id="69b-gD-nhd">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4Ri-DD-ubr" id="s6O-yT-vi0"/>
+                            <outlet property="delegate" destination="4Ri-DD-ubr" id="1eN-1P-JV2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="a7j-GZ-6EC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5UA-Lr-mPG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2793" y="138"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="kyh-Ok-4De">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="mLg-5G-ey3" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QdB-f6-bIa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="4Ri-DD-ubr" kind="relationship" relationship="rootViewController" id="CXa-qP-jLB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzh-GR-FzT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1874" y="138"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Rectangle1" width="272" height="272"/>
+        <image name="Category" width="62" height="62"/>
+        <image name="Checkmark" width="256" height="256"/>
+        <image name="Current Box" width="630" height="304"/>
+        <image name="DateRectangle" width="544" height="544"/>
+        <image name="List Line" width="710" height="24"/>
+        <image name="Slide Menu BT" width="112" height="112"/>
     </resources>
 </document>

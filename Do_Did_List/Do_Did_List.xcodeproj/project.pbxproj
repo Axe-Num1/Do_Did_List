@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,12 @@
 		F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */; };
 		F24AB1C823EFC3AE00ECBE1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */; };
 		F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */; };
-		F24AB1CD23EFC3B100ECBE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1CC23EFC3B100ECBE1E /* Assets.xcassets */; };
 		F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */; };
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
 		F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73323EFF39500282434 /* FivoSans-Black.otf */; };
 		F25FB73923EFF9FE00282434 /* Pods_Do_Did_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F537CFBF1802084E4F37B6 /* Pods_Do_Did_List.framework */; };
 		F25FB73A23EFF9FE00282434 /* Pods_Do_Did_List.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16F537CFBF1802084E4F37B6 /* Pods_Do_Did_List.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F283C1E323FFBA0A00392DC5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,13 +44,13 @@
 		F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		F24AB1C723EFC3AE00ECBE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F24AB1CA23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Do_Did_List.xcdatamodel; sourceTree = "<group>"; };
-		F24AB1CC23EFC3B100ECBE1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F24AB1CF23EFC3B100ECBE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F24AB1D123EFC3B100ECBE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FivoSans-Black-Oblique.otf"; sourceTree = "<group>"; };
 		F25FB73323EFF39500282434 /* FivoSans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FivoSans-Black.otf"; sourceTree = "<group>"; };
 		F25FB73523EFF86200282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25FB73B23EFFA0500282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F283C1E323FFBA0A00392DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 				F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */,
 				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
 				F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */,
-				F24AB1CC23EFC3B100ECBE1E /* Assets.xcassets */,
+				F283C1E323FFBA0A00392DC5 /* Assets.xcassets */,
 				F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */,
 				F24AB1D123EFC3B100ECBE1E /* Info.plist */,
 				F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */,
@@ -189,10 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */,
-				F24AB1CD23EFC3B100ECBE1E /* Assets.xcassets in Resources */,
 				F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */,
 				F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */,
 				F24AB1C823EFC3AE00ECBE1E /* Main.storyboard in Resources */,
+				F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

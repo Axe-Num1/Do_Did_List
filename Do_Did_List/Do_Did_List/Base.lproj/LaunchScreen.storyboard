@@ -24,7 +24,7 @@
                                             <constraint firstAttribute="height" constant="65" id="ejA-Y8-aBR"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="Rectangle1" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-f5-RY1">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="DateRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-f5-RY1">
                                         <rect key="frame" x="52.666666666666657" y="271" width="270" height="270"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="270" id="Asf-Is-4mG"/>
@@ -58,7 +58,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Rectangle1" width="272" height="272"/>
-        <image name="Title" width="274" height="69"/>
+        <image name="DateRectangle" width="544" height="544"/>
+        <image name="Title" width="548" height="138"/>
     </resources>
 </document>
