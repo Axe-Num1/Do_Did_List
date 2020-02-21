@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */; };
 		F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */; };
-		F24AB1C523EFC3AE00ECBE1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C423EFC3AE00ECBE1E /* ViewController.swift */; };
+		F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */; };
 		F24AB1C823EFC3AE00ECBE1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */; };
 		F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */; };
 		F24AB1CD23EFC3B100ECBE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1CC23EFC3B100ECBE1E /* Assets.xcassets */; };
@@ -41,7 +41,7 @@
 		F24AB1BD23EFC3AE00ECBE1E /* Do_Did_List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Do_Did_List.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F24AB1C423EFC3AE00ECBE1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		F24AB1C723EFC3AE00ECBE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F24AB1CA23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Do_Did_List.xcdatamodel; sourceTree = "<group>"; };
 		F24AB1CC23EFC3B100ECBE1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				F25FB73023EFF36000282434 /* Fonts */,
 				F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */,
 				F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */,
-				F24AB1C423EFC3AE00ECBE1E /* ViewController.swift */,
+				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
 				F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */,
 				F24AB1CC23EFC3B100ECBE1E /* Assets.xcassets */,
 				F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */,
@@ -139,6 +139,7 @@
 				F24AB1BA23EFC3AE00ECBE1E /* Frameworks */,
 				F24AB1BB23EFC3AE00ECBE1E /* Resources */,
 				F25FB73823EFF86200282434 /* Embed Frameworks */,
+				E93B886D55F9A24DF173A641 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +221,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E93B886D55F9A24DF173A641 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Do_Did_List/Pods-Do_Did_List-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Do_Did_List/Pods-Do_Did_List-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Do_Did_List/Pods-Do_Did_List-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -227,7 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F24AB1C523EFC3AE00ECBE1E /* ViewController.swift in Sources */,
+				F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */,
 				F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */,
 				F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */,
 				F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */,

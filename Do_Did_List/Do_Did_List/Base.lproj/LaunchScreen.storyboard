@@ -6,11 +6,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="FivoSans-Black-Oblique.otf">
-            <string>FivoSans-BlackOblique</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -23,37 +18,27 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evN-iy-xu3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="Rectangle1" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-f5-RY1">
-                                        <rect key="frame" x="51.666666666666657" y="270" width="272" height="272"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="bbr-QW-HMQ">
+                                        <rect key="frame" x="67" y="156" width="240" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="ejA-Y8-aBR"/>
+                                        </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Y6-CG-2ti">
-                                        <rect key="frame" x="53.666666666666657" y="155" width="267.66666666666674" height="69.666666666666686"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do Did List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehY-iT-0mK">
-                                                <rect key="frame" x="0.0" y="0.0" width="267.66666666666669" height="45.666666666666664"/>
-                                                <fontDescription key="fontDescription" name="FivoSans-BlackOblique" family="Fivo Sans" pointSize="48"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYb-jt-qge">
-                                                <rect key="frame" x="101.66666666666669" y="46.666666666666657" width="64.333333333333314" height="23"/>
-                                                <fontDescription key="fontDescription" name="FivoSans-BlackOblique" family="Fivo Sans" pointSize="24"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="Rectangle1" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-f5-RY1">
+                                        <rect key="frame" x="52.666666666666657" y="271" width="270" height="270"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="270" id="Asf-Is-4mG"/>
+                                            <constraint firstAttribute="width" constant="270" id="eui-fZ-Je2"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.24634501340000001" green="0.40560790899999999" blue="0.92161631580000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.42352941176470588" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="eXZ-f5-RY1" firstAttribute="leading" secondItem="evN-iy-xu3" secondAttribute="leading" constant="51.670000000000002" id="4ps-yl-GZ7"/>
-                                    <constraint firstAttribute="bottom" secondItem="eXZ-f5-RY1" secondAttribute="bottom" constant="270" id="Etf-8g-1pV"/>
-                                    <constraint firstItem="0Y6-CG-2ti" firstAttribute="top" secondItem="evN-iy-xu3" secondAttribute="top" constant="155" id="LCi-eY-uE4"/>
-                                    <constraint firstItem="eXZ-f5-RY1" firstAttribute="top" secondItem="0Y6-CG-2ti" secondAttribute="bottom" constant="45.329999999999998" id="Xfg-iM-1fc"/>
-                                    <constraint firstAttribute="trailing" secondItem="eXZ-f5-RY1" secondAttribute="trailing" constant="51.329999999999998" id="Y9J-p6-4Mo"/>
-                                    <constraint firstAttribute="trailing" secondItem="0Y6-CG-2ti" secondAttribute="trailing" constant="53.670000000000002" id="fWc-SH-mPu"/>
-                                    <constraint firstItem="0Y6-CG-2ti" firstAttribute="centerX" secondItem="evN-iy-xu3" secondAttribute="centerX" id="ijK-dC-CQl"/>
-                                    <constraint firstItem="0Y6-CG-2ti" firstAttribute="leading" secondItem="evN-iy-xu3" secondAttribute="leading" constant="53.670000000000002" id="yst-wA-BMM"/>
+                                    <constraint firstItem="eXZ-f5-RY1" firstAttribute="centerX" secondItem="evN-iy-xu3" secondAttribute="centerX" id="IEM-Zc-NUG"/>
+                                    <constraint firstItem="eXZ-f5-RY1" firstAttribute="top" secondItem="bbr-QW-HMQ" secondAttribute="bottom" constant="50" id="cmf-lW-dLG"/>
+                                    <constraint firstAttribute="trailing" secondItem="bbr-QW-HMQ" secondAttribute="trailing" constant="68" id="etM-nw-uHH"/>
+                                    <constraint firstItem="bbr-QW-HMQ" firstAttribute="leading" secondItem="evN-iy-xu3" secondAttribute="leading" constant="67" id="jEf-OY-Iyp"/>
+                                    <constraint firstItem="eXZ-f5-RY1" firstAttribute="centerY" secondItem="evN-iy-xu3" secondAttribute="centerY" id="oDd-Lg-MIz"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -69,10 +54,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
     <resources>
         <image name="Rectangle1" width="272" height="272"/>
+        <image name="Title" width="274" height="69"/>
     </resources>
 </document>
