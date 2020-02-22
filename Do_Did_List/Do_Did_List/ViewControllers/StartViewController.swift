@@ -15,6 +15,8 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        self.setNeedsStatusBarAppearanceUpdate()
+        
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd" // "yyyy-MM-dd"
@@ -22,5 +24,10 @@ class StartViewController: UIViewController {
         
         dateButton.setTitle(stringDate, for: .normal)
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 }
 

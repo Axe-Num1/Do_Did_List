@@ -17,6 +17,9 @@
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
 		F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73323EFF39500282434 /* FivoSans-Black.otf */; };
 		F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F283C1E323FFBA0A00392DC5 /* Assets.xcassets */; };
+		F2E702CD2400E68200A0289E /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CB2400E68200A0289E /* SideMenuViewController.swift */; };
+		F2E702CE2400E68200A0289E /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E702CC2400E68200A0289E /* SideMenuViewController.xib */; };
+		F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CF2400E6C300A0289E /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		F25FB73B23EFFA0500282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F283C1E323FFBA0A00392DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B8019123FFE4AF0014D4B6 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E702CB2400E68200A0289E /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		F2E702CC2400E68200A0289E /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
+		F2E702CF2400E6C300A0289E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,14 +101,16 @@
 			isa = PBXGroup;
 			children = (
 				F25FB73023EFF36000282434 /* Fonts */,
+				F2E702C62400DE1400A0289E /* ViewControllers */,
 				F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */,
 				F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */,
-				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
 				F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */,
 				F283C1E323FFBA0A00392DC5 /* Assets.xcassets */,
 				F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */,
 				F24AB1D123EFC3B100ECBE1E /* Info.plist */,
 				F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */,
+				F2E702CB2400E68200A0289E /* SideMenuViewController.swift */,
+				F2E702CC2400E68200A0289E /* SideMenuViewController.xib */,
 			);
 			path = Do_Did_List;
 			sourceTree = "<group>";
@@ -122,6 +130,15 @@
 				16F537CFBF1802084E4F37B6 /* Pods_Do_Did_List.framework */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		F2E702C62400DE1400A0289E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
+				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +202,7 @@
 			files = (
 				F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */,
 				F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */,
+				F2E702CE2400E68200A0289E /* SideMenuViewController.xib in Resources */,
 				F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */,
 				F24AB1C823EFC3AE00ECBE1E /* Main.storyboard in Resources */,
 				F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */,
@@ -226,6 +244,8 @@
 				F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */,
 				F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */,
 				F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */,
+				F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */,
+				F2E702CD2400E68200A0289E /* SideMenuViewController.swift in Sources */,
 				F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
