@@ -93,7 +93,7 @@
                                             <constraint firstAttribute="height" constant="60" id="Wm1-i3-g0F"/>
                                             <constraint firstAttribute="width" constant="60" id="xPF-kI-pP6"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="Slide Menu BT"/>
+                                        <state key="normal" backgroundImage="BT_Slide Menu"/>
                                         <connections>
                                             <action selector="sideMenuButton:" destination="Y2h-Qf-rTZ" eventType="touchUpInside" id="RQz-tT-grs"/>
                                         </connections>
@@ -137,6 +137,10 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jdn-0L-SdY">
                                                 <rect key="frame" x="0.0" y="25.5" width="230" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Mog-Gn-DUD"/>
+                                                    <constraint firstAttribute="width" constant="230" id="ipe-5D-v3J"/>
+                                                </constraints>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" red="0.23137254900000001" green="0.42352941179999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="16"/>
@@ -235,11 +239,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BT_Slide Menu" width="112" height="112"/>
         <image name="Category" width="62" height="62"/>
         <image name="Checkmark" width="256" height="256"/>
         <image name="Current Box" width="630" height="304"/>
         <image name="DateRectangle" width="544" height="544"/>
         <image name="List Line" width="710" height="24"/>
-        <image name="Slide Menu BT" width="112" height="112"/>
     </resources>
 </document>
