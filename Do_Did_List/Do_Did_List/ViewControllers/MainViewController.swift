@@ -10,7 +10,19 @@ import UIKit
 import SideMenu
 
 class MainViewController: UIViewController {
-
+    
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    @IBOutlet weak var category: UIImageView!
+    @IBOutlet weak var checkmark: UIImageView!
+    
+    @IBOutlet weak var categoryTitle: UILabel!
+    @IBOutlet weak var content: UITextView!
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +40,14 @@ class MainViewController: UIViewController {
 }
 
 
-// MARK: SideMenu Implementation
+
+
+
+
+
+
+
+// MARK: - SideMenu Implementation
 extension MainViewController {
     
     func setUpSideMenu() {
