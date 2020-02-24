@@ -17,6 +17,8 @@
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
 		F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73323EFF39500282434 /* FivoSans-Black.otf */; };
 		F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F283C1E323FFBA0A00392DC5 /* Assets.xcassets */; };
+		F2DB0F1D2403733A00DED943 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB0F1B2403733A00DED943 /* ToDoTableViewCell.swift */; };
+		F2DB0F1E2403733A00DED943 /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DB0F1C2403733A00DED943 /* ToDoTableViewCell.xib */; };
 		F2E702CD2400E68200A0289E /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CB2400E68200A0289E /* SideMenuViewController.swift */; };
 		F2E702CE2400E68200A0289E /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E702CC2400E68200A0289E /* SideMenuViewController.xib */; };
 		F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CF2400E6C300A0289E /* MainViewController.swift */; };
@@ -42,6 +44,8 @@
 		F25FB73B23EFFA0500282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F283C1E323FFBA0A00392DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B8019123FFE4AF0014D4B6 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DB0F1B2403733A00DED943 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		F2DB0F1C2403733A00DED943 /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
 		F2E702CB2400E68200A0289E /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		F2E702CC2400E68200A0289E /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		F2E702CF2400E6C300A0289E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
 				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
 				F2E702CB2400E68200A0289E /* SideMenuViewController.swift */,
+				F2DB0F1B2403733A00DED943 /* ToDoTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			children = (
 				F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */,
 				F2E702CC2400E68200A0289E /* SideMenuViewController.xib */,
+				F2DB0F1C2403733A00DED943 /* ToDoTableViewCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */,
+				F2DB0F1E2403733A00DED943 /* ToDoTableViewCell.xib in Resources */,
 				F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */,
 				F2E702CE2400E68200A0289E /* SideMenuViewController.xib in Resources */,
 				F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */,
@@ -263,6 +270,7 @@
 				F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */,
 				F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */,
 				F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */,
+				F2DB0F1D2403733A00DED943 /* ToDoTableViewCell.swift in Sources */,
 				F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */,
 				F2E702D424013C0300A0289E /* UIViewRounding.swift in Sources */,
 				F2E702CD2400E68200A0289E /* SideMenuViewController.swift in Sources */,

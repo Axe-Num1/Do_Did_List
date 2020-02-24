@@ -7,28 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		014477497A2E966C770B5CE0573CD2D8 /* Pods-Do_Did_List-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E9AEC39ABAC0EFAEC5A5820B524D1 /* Pods-Do_Did_List-dummy.m */; };
-		0F520125C5DE65EC7B6CE66591F0A191 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AABDEFA7F6C4A4714689EAD11FC508 /* Print.swift */; };
-		0F98BBEB73E25051429164EED78D6C0A /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0D4A731B20F5F86547EB209A45185 /* SideMenuTransitionController.swift */; };
-		17922A962617DE4C62B15E738DAD5E45 /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6279E2EC4FA94D1BBAA7C75F7EC28 /* SideMenuAnimationController.swift */; };
-		1BAFB6FAA7E9A112303DDA725158E4D6 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E075E3B45D866BB95622B2ED658B09 /* Protected.swift */; };
-		26C8AF1C6F9798781EC7E7A12E33381D /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1B6285F8D66A9FA4423A8E4A6C86F /* SideMenuManager.swift */; };
-		2D9035C3AB8308BA7A1DBE533DC58442 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12B7DB6532D4D9CD8BCD421E8A810F /* Initializable.swift */; };
-		437D92B72A432EBFEAF159FA12810732 /* Pods-Do_Did_List-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95D0E88C625B95D16E5DE96DC723FC81 /* Pods-Do_Did_List-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5AA278D42829757CA386E99487C68DFD /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32C156CAF27C6412794512832EB85C /* SideMenuPresentationStyle.swift */; };
-		6D7CAC243134CEC744996C0E5C87B50E /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84AD1212DD99AF652384328E45FC4BDD /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8A779FC81674F37DBAA0E1D26A017ED7 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD07ED292B1CEE030D51D33C9F762B35 /* Deprecations.swift */; };
-		8B1CF6F1605E1B425EFC4654D5153FD0 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F7735A57E03A479A59DA16B47BE2F /* SideMenu-dummy.m */; };
-		97FFB19403693DD4C520B65C8E20A055 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36627F4B24F05182D9C88BDB21F11CCD /* Extensions.swift */; };
-		ABEAD53F21C89C83EFE6F2E90C0B37C2 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65C07FCC1C4072A477D5037C30D7AB6 /* UITableViewVibrantCell.swift */; };
-		B2590B86D98BAC2B9A925F67E4458414 /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA746267BFE0FF7A776D1AA704EB70 /* SideMenuNavigationController.swift */; };
-		B615002B7D08B597399B2E50D019858A /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20687B3B70FA3177AB196C2531B307AC /* SideMenuPushCoordinator.swift */; };
-		C062D310B24DAF18CD6BFE1601C04376 /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072E81CE0E24BE9CB475E961B56648B7 /* SideMenuPresentationController.swift */; };
-		E4605E4DDB3ECA637CE25B7ACA5DFB07 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A42497B29363501C1F0795761ED36E /* SideMenuInteractionController.swift */; };
+		041D84D3DF567223EA2977DE987B8C14 /* M13CheckboxFillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4004E0F6C9D904ECE154FFF12EDF8D7 /* M13CheckboxFillController.swift */; };
+		076D2EDAEB52654D20B6649CFFAFCC30 /* M13Checkbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD483317F426E58E9CE466864731D3D2 /* M13Checkbox-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0A06AB0972D3540487C0F8EF31034D6B /* M13Checkbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 457E74D37A755F06348ADB40F10D0C64 /* M13Checkbox-dummy.m */; };
+		0C1F540CA3C133040FD9B0357A288932 /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF7BFEEC0FA57BA5C9901EDBE0DBF6 /* CosmosText.swift */; };
+		0F520125C5DE65EC7B6CE66591F0A191 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB6511E8FEDEDD45D1DE754682ED9A /* Print.swift */; };
+		0F98BBEB73E25051429164EED78D6C0A /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04347F4A859C2067D63CAA797D80986 /* SideMenuTransitionController.swift */; };
+		113E9A5727E3172AF80EBF7E28E3E7A5 /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7544EEECE36B5EE4BD89EF95FD66DDFE /* CosmosAccessibility.swift */; };
+		1703CAF29408A45FC1AA227AD3FC0691 /* M13CheckboxStrokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077EE146364E9D691CD5D7D9D9B5431 /* M13CheckboxStrokeController.swift */; };
+		17922A962617DE4C62B15E738DAD5E45 /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4190A7BE20D3C4FCE874D88252A51E /* SideMenuAnimationController.swift */; };
+		1BAFB6FAA7E9A112303DDA725158E4D6 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2E6D426066773A1D50B5789EF6550 /* Protected.swift */; };
+		1E12A461814D852325C714EBB1A144B0 /* M13CheckboxPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF8AA9FE65C39BB415E75208225D2F5 /* M13CheckboxPathGenerator.swift */; };
+		22570DB0F7285EADF6DA2F1E0F1FDFB4 /* M13CheckboxDotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E4A2367C8877537CD1C6B8BEC467B /* M13CheckboxDotController.swift */; };
+		2337D72E5E76F7419A9183D35436AA8E /* M13CheckboxAddRemovePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62518564AEBA3EA449C88A44CE9C611 /* M13CheckboxAddRemovePathGenerator.swift */; };
+		26C8AF1C6F9798781EC7E7A12E33381D /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F2115FD56ED11119AAA21111AF138 /* SideMenuManager.swift */; };
+		28A0243B4DDD8C8DD9042DC4C5CA5E1F /* Pods-Do_Did_List-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E9AEC39ABAC0EFAEC5A5820B524D1 /* Pods-Do_Did_List-dummy.m */; };
+		2D9035C3AB8308BA7A1DBE533DC58442 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E87606987A0ABC273F7CBB2BABF780 /* Initializable.swift */; };
+		377C3C58F5AFEE3AEBDC2E4B5922CB28 /* M13CheckboxAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073DEC5A1CAD0F87EB3E136560E0B548 /* M13CheckboxAnimationGenerator.swift */; };
+		405D318EACD5EF4A658841382806B435 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23F1F4454DB47996A9CFC763D1AA216 /* StarLayer.swift */; };
+		41EF4C3EE850532FDF272571B9C12619 /* M13CheckboxBounceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B2D3B21EA280394B8E7B9BBDAD0DF /* M13CheckboxBounceController.swift */; };
+		41F12CD9821DDC53E1A7829177553D26 /* M13CheckboxRadioPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19657ABEC5930AD8BA20BDC5AACAC5E8 /* M13CheckboxRadioPathGenerator.swift */; };
+		4643F8E9D8871D2767114E6E7D778403 /* M13CheckboxDisclosurePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB15777A4D2F674513EE619109D2E2 /* M13CheckboxDisclosurePathGenerator.swift */; };
+		4A7B8D784516DBE292509DEE957E325C /* M13CheckboxCheckPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3A7C3A4353614E1632277AEBF01EEE /* M13CheckboxCheckPathGenerator.swift */; };
+		4CF9A5A59FCD6B7706B239A332CCBD5C /* M13CheckboxFlatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF5DA22C0CC13AD129AB59BF295DF2 /* M13CheckboxFlatController.swift */; };
+		4E97A0A1A0510A6D83EEB967C0DB54D5 /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 358A01013E09414A56694AF39C5FC05C /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5373EC8FBDF5C1D714C2A5234CEA24B8 /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E663934DDF5BBCCF6482BE166422D /* CosmosDefaultSettings.swift */; };
+		5AA278D42829757CA386E99487C68DFD /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F89393B4D83D8C2D85315720F617F29 /* SideMenuPresentationStyle.swift */; };
+		5B45916426FD2AD80BF4E801F8753898 /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030FB2F6735A02E59DD03474AF2ED82 /* CosmosLocalizedRating.swift */; };
+		6D1E76B60BE51B7DF3CDFCE8E61C9830 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6ADC1B8B33355853249F1ADE123BBB /* RightToLeft.swift */; };
+		6D6D4DB754CD514BED3C108E7C4E5EB7 /* M13Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616CAE6C23ECDD9972ED9F793E74222 /* M13Checkbox.swift */; };
+		6D7CAC243134CEC744996C0E5C87B50E /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2359810A2AB1AB2D8ADA29FF071631 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		754936814720CEE456EDD7F30212826E /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC073006B602BF66F29834AEED27226C /* CosmosRating.swift */; };
+		82180CDFC0546A73F5564DF10E13855C /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAC9ED1616A1087A3F58E0D7FDDC465 /* CosmosLayers.swift */; };
+		8A779FC81674F37DBAA0E1D26A017ED7 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0A4F5AE04421587F8D956AB772B3F /* Deprecations.swift */; };
+		8B1CF6F1605E1B425EFC4654D5153FD0 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FCC170DF3E2E52A13B4DAA9F9DDCC8 /* SideMenu-dummy.m */; };
+		97FFB19403693DD4C520B65C8E20A055 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126231D44C7FB55723944E7295018836 /* Extensions.swift */; };
+		9EA9829B87FF20BBCB6E7D248F60AC25 /* M13CheckboxFadeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32ADDD78887592A08DC4B808143D29D /* M13CheckboxFadeController.swift */; };
+		9FE2D00290DDA80B32DAD05E367605FA /* M13CheckboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BEF0463564496186C587217AB01CA2 /* M13CheckboxController.swift */; };
+		9FFDE47E64593F6AD6ED19C4074B2139 /* M13CheckboxGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA28D9A8D6912BAC2658E8762F617CBA /* M13CheckboxGestureRecognizer.swift */; };
+		A18B6CC828BE50C012A3DA7320AA6149 /* M13CheckboxExpandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955AE0012C0FC1BB2DB2BD38B29017F9 /* M13CheckboxExpandController.swift */; };
+		A2195C35CF28FD50BCC85AEF21D09669 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DDCA051B338D202241C2BF0404D6E /* CosmosSettings.swift */; };
+		A2E781901A99066A34E382CADD034AC7 /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE727A41E1007593B6000039FA9C36B /* CosmosTouch.swift */; };
+		ABEAD53F21C89C83EFE6F2E90C0B37C2 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779CA0EFFBAD8AF1B84D1A360EE9590 /* UITableViewVibrantCell.swift */; };
+		AFC2631D8CCAF2282DA843268B313FD2 /* M13Checkbox+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F757A201CF5A8D5A1170F135FF2638E /* M13Checkbox+IB.swift */; };
+		B2590B86D98BAC2B9A925F67E4458414 /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D817FB17BB170EF70DD0D5CB59A19C /* SideMenuNavigationController.swift */; };
+		B615002B7D08B597399B2E50D019858A /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA855ACF9E0546A1227AD84452C6668 /* SideMenuPushCoordinator.swift */; };
+		C062D310B24DAF18CD6BFE1601C04376 /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F17E59C76BE6A54D6078B573CD654 /* SideMenuPresentationController.swift */; };
+		CA5C5372C42B7DA97809F247421CC4BD /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF70FC9CB7803BC444F7F8437D0BDB50 /* CosmosView.swift */; };
+		CC5FC626921624E8B1BB012F0A18C556 /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E8B821D75AE8EDF32FC2E62699D40 /* CosmosLayerHelper.swift */; };
+		CFA7580B367F2CB0A7CD2F88396AD411 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC125C0D16671ECA35E0664D9987ED65 /* CosmosTouchTarget.swift */; };
+		DB11F3426D29511BB0D88D9EE602BBE9 /* Pods-Do_Did_List-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95D0E88C625B95D16E5DE96DC723FC81 /* Pods-Do_Did_List-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DEA18563ED0226273C01A9684ACAE628 /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C38A38B58520D8E068FE4C51F7B91BA /* Cosmos-dummy.m */; };
+		E3FDF75C6668FC3CFE0EDA827A8C63EF /* M13CheckboxSpiralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414BF5B3C84147D6BCE050DB7B30E8DA /* M13CheckboxSpiralController.swift */; };
+		E4605E4DDB3ECA637CE25B7ACA5DFB07 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C9151823C4C472327B3730B9C3F68 /* SideMenuInteractionController.swift */; };
+		E95FB0A79E8EB3A7EBB7B088C3B2B302 /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78630A38F8B5EF3E21D18E6C3993FE7 /* CosmosSize.swift */; };
+		F2B89DDF4503B4AAECEAC79328A98FB2 /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454508A6D4C6AFE546640ECEF0398D13 /* DefaultValues.swift */; };
+		F7C65DBF2D02714566D33F69D1113889 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D338F77254E60A227F0E28A4443296 /* StarFillMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C168BA44110069D7CC92135177D574BA /* PBXContainerItemProxy */ = {
+		3A2384618A5C8E3CA16A03C6897C9220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00F31BD5217A20974B5E9AAC6256D98E;
+			remoteInfo = Cosmos;
+		};
+		C2A54DBBD43B98B272BFA2B239B373A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7111E54EAE43E89F451A75076C3525ED;
+			remoteInfo = M13Checkbox;
+		};
+		FBB473A39543E15E2C87FED09D1E7821 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -38,35 +90,81 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		072E81CE0E24BE9CB475E961B56648B7 /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationController.swift; path = Pod/Classes/SideMenuPresentationController.swift; sourceTree = "<group>"; };
-		0BAA746267BFE0FF7A776D1AA704EB70 /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
-		10E075E3B45D866BB95622B2ED658B09 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Pod/Classes/Protected.swift; sourceTree = "<group>"; };
+		05C4280976BF93DA8B36818DE2E2A5E0 /* libCosmos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCosmos.a; path = libCosmos.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		073DEC5A1CAD0F87EB3E136560E0B548 /* M13CheckboxAnimationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxAnimationGenerator.swift; path = Sources/M13CheckboxAnimationGenerator.swift; sourceTree = "<group>"; };
+		0B8E4A2367C8877537CD1C6B8BEC467B /* M13CheckboxDotController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxDotController.swift; path = Sources/Managers/M13CheckboxDotController.swift; sourceTree = "<group>"; };
+		0CD0A4F5AE04421587F8D956AB772B3F /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Pod/Classes/Deprecations.swift; sourceTree = "<group>"; };
+		0DC4372719C4363DDDE1EAD4D07FFA63 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
+		0E3A7C3A4353614E1632277AEBF01EEE /* M13CheckboxCheckPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxCheckPathGenerator.swift; path = Sources/Paths/M13CheckboxCheckPathGenerator.swift; sourceTree = "<group>"; };
+		126231D44C7FB55723944E7295018836 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
 		1340EC4F20A2847CDC445F6D1BECEC87 /* Pods-Do_Did_List.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Do_Did_List.modulemap"; sourceTree = "<group>"; };
-		1D4F7735A57E03A479A59DA16B47BE2F /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
-		1E32C156CAF27C6412794512832EB85C /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
-		20687B3B70FA3177AB196C2531B307AC /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPushCoordinator.swift; path = Pod/Classes/SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
+		19657ABEC5930AD8BA20BDC5AACAC5E8 /* M13CheckboxRadioPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxRadioPathGenerator.swift; path = Sources/Paths/M13CheckboxRadioPathGenerator.swift; sourceTree = "<group>"; };
+		19E87606987A0ABC273F7CBB2BABF780 /* Initializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = Pod/Classes/Initializable.swift; sourceTree = "<group>"; };
+		1C38A38B58520D8E068FE4C51F7B91BA /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
+		1C44423E3AA08B221B38A137203340F4 /* M13Checkbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-prefix.pch"; sourceTree = "<group>"; };
+		1FF8AA9FE65C39BB415E75208225D2F5 /* M13CheckboxPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxPathGenerator.swift; path = Sources/Paths/M13CheckboxPathGenerator.swift; sourceTree = "<group>"; };
 		2275D6555A10B18904FFD40C483B5CB5 /* Pods-Do_Did_List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Do_Did_List.release.xcconfig"; sourceTree = "<group>"; };
-		28AABDEFA7F6C4A4714689EAD11FC508 /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Pod/Classes/Print.swift; sourceTree = "<group>"; };
+		23B33983DB8AFE21AA5F5C4F4AD9B346 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		2B0E8B821D75AE8EDF32FC2E62699D40 /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
+		2D6F17E59C76BE6A54D6078B573CD654 /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationController.swift; path = Pod/Classes/SideMenuPresentationController.swift; sourceTree = "<group>"; };
+		2DE727A41E1007593B6000039FA9C36B /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
 		2E6E9AEC39ABAC0EFAEC5A5820B524D1 /* Pods-Do_Did_List-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Do_Did_List-dummy.m"; sourceTree = "<group>"; };
-		2F12B7DB6532D4D9CD8BCD421E8A810F /* Initializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = Pod/Classes/Initializable.swift; sourceTree = "<group>"; };
+		2F2359810A2AB1AB2D8ADA29FF071631 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
 		319D06AA0D1D0BA345459C039040A1ED /* libSideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSideMenu.a; path = libSideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		36627F4B24F05182D9C88BDB21F11CCD /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
-		42A42497B29363501C1F0795761ED36E /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuInteractionController.swift; path = Pod/Classes/SideMenuInteractionController.swift; sourceTree = "<group>"; };
+		358A01013E09414A56694AF39C5FC05C /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
+		387DDCA051B338D202241C2BF0404D6E /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
+		3EAC9ED1616A1087A3F58E0D7FDDC465 /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
+		414BF5B3C84147D6BCE050DB7B30E8DA /* M13CheckboxSpiralController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxSpiralController.swift; path = Sources/Managers/M13CheckboxSpiralController.swift; sourceTree = "<group>"; };
+		43DCFDA051F68760BFCF441E8416CDDC /* M13Checkbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = M13Checkbox.modulemap; sourceTree = "<group>"; };
+		454508A6D4C6AFE546640ECEF0398D13 /* DefaultValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValues.swift; path = Sources/DefaultValues.swift; sourceTree = "<group>"; };
+		457E74D37A755F06348ADB40F10D0C64 /* M13Checkbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13Checkbox-dummy.m"; sourceTree = "<group>"; };
 		49B0996A8F6255072430413A522229B1 /* libPods-Do_Did_List.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Do_Did_List.a"; path = "libPods-Do_Did_List.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72AE1D82268D76E34A7E14A4D1A02EEF /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
-		7BB0D4A731B20F5F86547EB209A45185 /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
-		830A6B053EBDA3DC0E705A3899984D72 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
-		84AD1212DD99AF652384328E45FC4BDD /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
-		88F6279E2EC4FA94D1BBAA7C75F7EC28 /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
+		49BEF0463564496186C587217AB01CA2 /* M13CheckboxController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxController.swift; path = Sources/M13CheckboxController.swift; sourceTree = "<group>"; };
+		4D3E663934DDF5BBCCF6482BE166422D /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
+		4F73781B445627665E97B0A3AA3FDB7B /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
+		4F757A201CF5A8D5A1170F135FF2638E /* M13Checkbox+IB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "M13Checkbox+IB.swift"; path = "Sources/M13Checkbox+IB.swift"; sourceTree = "<group>"; };
+		4F89393B4D83D8C2D85315720F617F29 /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
+		52DF5DA22C0CC13AD129AB59BF295DF2 /* M13CheckboxFlatController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFlatController.swift; path = Sources/Managers/M13CheckboxFlatController.swift; sourceTree = "<group>"; };
+		56D817FB17BB170EF70DD0D5CB59A19C /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
+		5CE79C5BF20743404E59BEFD080A364D /* libM13Checkbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libM13Checkbox.a; path = libM13Checkbox.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		60FCC170DF3E2E52A13B4DAA9F9DDCC8 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		6616CAE6C23ECDD9972ED9F793E74222 /* M13Checkbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13Checkbox.swift; path = Sources/M13Checkbox.swift; sourceTree = "<group>"; };
+		66FB15777A4D2F674513EE619109D2E2 /* M13CheckboxDisclosurePathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxDisclosurePathGenerator.swift; path = Sources/Paths/M13CheckboxDisclosurePathGenerator.swift; sourceTree = "<group>"; };
+		6D1F2115FD56ED11119AAA21111AF138 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		70CF7BFEEC0FA57BA5C9901EDBE0DBF6 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
+		7544EEECE36B5EE4BD89EF95FD66DDFE /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
+		8030FB2F6735A02E59DD03474AF2ED82 /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
+		8779CA0EFFBAD8AF1B84D1A360EE9590 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		8EA855ACF9E0546A1227AD84452C6668 /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPushCoordinator.swift; path = Pod/Classes/SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
+		955AE0012C0FC1BB2DB2BD38B29017F9 /* M13CheckboxExpandController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxExpandController.swift; path = Sources/Managers/M13CheckboxExpandController.swift; sourceTree = "<group>"; };
 		95D0E88C625B95D16E5DE96DC723FC81 /* Pods-Do_Did_List-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Do_Did_List-umbrella.h"; sourceTree = "<group>"; };
+		9685D4EB32255534227A8E6879726F8B /* Cosmos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A65C07FCC1C4072A477D5037C30D7AB6 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		A0D338F77254E60A227F0E28A4443296 /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
+		A23F1F4454DB47996A9CFC763D1AA216 /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
+		A3D74E07C84E1E5AB3F3A1C162F174BA /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cosmos.modulemap; sourceTree = "<group>"; };
+		A4004E0F6C9D904ECE154FFF12EDF8D7 /* M13CheckboxFillController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFillController.swift; path = Sources/Managers/M13CheckboxFillController.swift; sourceTree = "<group>"; };
 		ACFB53A652972081A548E0FDD7AB3FF8 /* Pods-Do_Did_List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Do_Did_List.debug.xcconfig"; sourceTree = "<group>"; };
+		B04347F4A859C2067D63CAA797D80986 /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
+		B15F84C77A90AB4DBB4622C4127C23BF /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		BD0C9151823C4C472327B3730B9C3F68 /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuInteractionController.swift; path = Pod/Classes/SideMenuInteractionController.swift; sourceTree = "<group>"; };
+		C077EE146364E9D691CD5D7D9D9B5431 /* M13CheckboxStrokeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxStrokeController.swift; path = Sources/Managers/M13CheckboxStrokeController.swift; sourceTree = "<group>"; };
+		C78630A38F8B5EF3E21D18E6C3993FE7 /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
 		C8CDB0DC3756CC5449790BFE4EE130FD /* Pods-Do_Did_List-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Do_Did_List-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CD07ED292B1CEE030D51D33C9F762B35 /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Pod/Classes/Deprecations.swift; sourceTree = "<group>"; };
-		E63444253082D228A23928887FAB2665 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
-		F8C1B6285F8D66A9FA4423A8E4A6C86F /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		C9EB6511E8FEDEDD45D1DE754682ED9A /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Pod/Classes/Print.swift; sourceTree = "<group>"; };
+		CE4190A7BE20D3C4FCE874D88252A51E /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
+		DA28D9A8D6912BAC2658E8762F617CBA /* M13CheckboxGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxGestureRecognizer.swift; path = Sources/M13CheckboxGestureRecognizer.swift; sourceTree = "<group>"; };
+		DB4B2D3B21EA280394B8E7B9BBDAD0DF /* M13CheckboxBounceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxBounceController.swift; path = Sources/Managers/M13CheckboxBounceController.swift; sourceTree = "<group>"; };
+		DD6ADC1B8B33355853249F1ADE123BBB /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
+		DF70FC9CB7803BC444F7F8437D0BDB50 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
+		E12BC913F30A5C465F192FDA08551E32 /* M13Checkbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13Checkbox.xcconfig; sourceTree = "<group>"; };
+		E32ADDD78887592A08DC4B808143D29D /* M13CheckboxFadeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFadeController.swift; path = Sources/Managers/M13CheckboxFadeController.swift; sourceTree = "<group>"; };
+		E62518564AEBA3EA449C88A44CE9C611 /* M13CheckboxAddRemovePathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxAddRemovePathGenerator.swift; path = Sources/Paths/M13CheckboxAddRemovePathGenerator.swift; sourceTree = "<group>"; };
+		EC125C0D16671ECA35E0664D9987ED65 /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
+		F0A2E6D426066773A1D50B5789EF6550 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Pod/Classes/Protected.swift; sourceTree = "<group>"; };
 		FA6BA0B4E6BFE26CABFD7BEB25E6F162 /* Pods-Do_Did_List-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Do_Did_List-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC073006B602BF66F29834AEED27226C /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		FD483317F426E58E9CE466864731D3D2 /* M13Checkbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +175,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44C32356875A84D6D3D184AC359C0429 /* Frameworks */ = {
+		9F60315ABEB3F2E4300000E62A05FDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7594B095CABE8E0BADE2B766B796D46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45AB1EDCD1896CF9E72C013ACC40B58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,27 +199,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49A47E8F9D39D6D9D6C026424072C264 /* SideMenu */ = {
+		18BEC50F617A28621E6B4FE9B7A6EA57 /* M13Checkbox */ = {
 			isa = PBXGroup;
 			children = (
-				CD07ED292B1CEE030D51D33C9F762B35 /* Deprecations.swift */,
-				36627F4B24F05182D9C88BDB21F11CCD /* Extensions.swift */,
-				2F12B7DB6532D4D9CD8BCD421E8A810F /* Initializable.swift */,
-				28AABDEFA7F6C4A4714689EAD11FC508 /* Print.swift */,
-				10E075E3B45D866BB95622B2ED658B09 /* Protected.swift */,
-				88F6279E2EC4FA94D1BBAA7C75F7EC28 /* SideMenuAnimationController.swift */,
-				42A42497B29363501C1F0795761ED36E /* SideMenuInteractionController.swift */,
-				F8C1B6285F8D66A9FA4423A8E4A6C86F /* SideMenuManager.swift */,
-				0BAA746267BFE0FF7A776D1AA704EB70 /* SideMenuNavigationController.swift */,
-				072E81CE0E24BE9CB475E961B56648B7 /* SideMenuPresentationController.swift */,
-				1E32C156CAF27C6412794512832EB85C /* SideMenuPresentationStyle.swift */,
-				20687B3B70FA3177AB196C2531B307AC /* SideMenuPushCoordinator.swift */,
-				7BB0D4A731B20F5F86547EB209A45185 /* SideMenuTransitionController.swift */,
-				A65C07FCC1C4072A477D5037C30D7AB6 /* UITableViewVibrantCell.swift */,
-				CCCA25DA79F3EE34ED94FD90318E722F /* Support Files */,
+				454508A6D4C6AFE546640ECEF0398D13 /* DefaultValues.swift */,
+				6616CAE6C23ECDD9972ED9F793E74222 /* M13Checkbox.swift */,
+				4F757A201CF5A8D5A1170F135FF2638E /* M13Checkbox+IB.swift */,
+				E62518564AEBA3EA449C88A44CE9C611 /* M13CheckboxAddRemovePathGenerator.swift */,
+				073DEC5A1CAD0F87EB3E136560E0B548 /* M13CheckboxAnimationGenerator.swift */,
+				DB4B2D3B21EA280394B8E7B9BBDAD0DF /* M13CheckboxBounceController.swift */,
+				0E3A7C3A4353614E1632277AEBF01EEE /* M13CheckboxCheckPathGenerator.swift */,
+				49BEF0463564496186C587217AB01CA2 /* M13CheckboxController.swift */,
+				66FB15777A4D2F674513EE619109D2E2 /* M13CheckboxDisclosurePathGenerator.swift */,
+				0B8E4A2367C8877537CD1C6B8BEC467B /* M13CheckboxDotController.swift */,
+				955AE0012C0FC1BB2DB2BD38B29017F9 /* M13CheckboxExpandController.swift */,
+				E32ADDD78887592A08DC4B808143D29D /* M13CheckboxFadeController.swift */,
+				A4004E0F6C9D904ECE154FFF12EDF8D7 /* M13CheckboxFillController.swift */,
+				52DF5DA22C0CC13AD129AB59BF295DF2 /* M13CheckboxFlatController.swift */,
+				DA28D9A8D6912BAC2658E8762F617CBA /* M13CheckboxGestureRecognizer.swift */,
+				1FF8AA9FE65C39BB415E75208225D2F5 /* M13CheckboxPathGenerator.swift */,
+				19657ABEC5930AD8BA20BDC5AACAC5E8 /* M13CheckboxRadioPathGenerator.swift */,
+				414BF5B3C84147D6BCE050DB7B30E8DA /* M13CheckboxSpiralController.swift */,
+				C077EE146364E9D691CD5D7D9D9B5431 /* M13CheckboxStrokeController.swift */,
+				552035E1A4C5FB59A6754B57594D986C /* Support Files */,
 			);
-			name = SideMenu;
-			path = SideMenu;
+			name = M13Checkbox;
+			path = M13Checkbox;
+			sourceTree = "<group>";
+		};
+		4310962FAC33A614D7581A959BB62173 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5325EEED9C980274DF44FC462C027F29 /* Cosmos */,
+				18BEC50F617A28621E6B4FE9B7A6EA57 /* M13Checkbox */,
+				6D440E5781B2896A5598B55C059F21D6 /* SideMenu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5325EEED9C980274DF44FC462C027F29 /* Cosmos */ = {
+			isa = PBXGroup;
+			children = (
+				7544EEECE36B5EE4BD89EF95FD66DDFE /* CosmosAccessibility.swift */,
+				4D3E663934DDF5BBCCF6482BE166422D /* CosmosDefaultSettings.swift */,
+				2B0E8B821D75AE8EDF32FC2E62699D40 /* CosmosLayerHelper.swift */,
+				3EAC9ED1616A1087A3F58E0D7FDDC465 /* CosmosLayers.swift */,
+				8030FB2F6735A02E59DD03474AF2ED82 /* CosmosLocalizedRating.swift */,
+				FC073006B602BF66F29834AEED27226C /* CosmosRating.swift */,
+				387DDCA051B338D202241C2BF0404D6E /* CosmosSettings.swift */,
+				C78630A38F8B5EF3E21D18E6C3993FE7 /* CosmosSize.swift */,
+				70CF7BFEEC0FA57BA5C9901EDBE0DBF6 /* CosmosText.swift */,
+				2DE727A41E1007593B6000039FA9C36B /* CosmosTouch.swift */,
+				EC125C0D16671ECA35E0664D9987ED65 /* CosmosTouchTarget.swift */,
+				DF70FC9CB7803BC444F7F8437D0BDB50 /* CosmosView.swift */,
+				DD6ADC1B8B33355853249F1ADE123BBB /* RightToLeft.swift */,
+				A0D338F77254E60A227F0E28A4443296 /* StarFillMode.swift */,
+				A23F1F4454DB47996A9CFC763D1AA216 /* StarLayer.swift */,
+				995B56DAFAB6863BBC85F7219B732075 /* Support Files */,
+			);
+			name = Cosmos;
+			path = Cosmos;
+			sourceTree = "<group>";
+		};
+		552035E1A4C5FB59A6754B57594D986C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43DCFDA051F68760BFCF441E8416CDDC /* M13Checkbox.modulemap */,
+				E12BC913F30A5C465F192FDA08551E32 /* M13Checkbox.xcconfig */,
+				457E74D37A755F06348ADB40F10D0C64 /* M13Checkbox-dummy.m */,
+				1C44423E3AA08B221B38A137203340F4 /* M13Checkbox-prefix.pch */,
+				FD483317F426E58E9CE466864731D3D2 /* M13Checkbox-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/M13Checkbox";
 			sourceTree = "<group>";
 		};
 		57509DF03BDB6CC7717CCC1D5EA291B4 /* Targets Support Files */ = {
@@ -118,34 +282,53 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7D34FA07FC7B9431D63786FEAE0BA6F5 /* Pods */ = {
+		6D440E5781B2896A5598B55C059F21D6 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				49A47E8F9D39D6D9D6C026424072C264 /* SideMenu */,
+				0CD0A4F5AE04421587F8D956AB772B3F /* Deprecations.swift */,
+				126231D44C7FB55723944E7295018836 /* Extensions.swift */,
+				19E87606987A0ABC273F7CBB2BABF780 /* Initializable.swift */,
+				C9EB6511E8FEDEDD45D1DE754682ED9A /* Print.swift */,
+				F0A2E6D426066773A1D50B5789EF6550 /* Protected.swift */,
+				CE4190A7BE20D3C4FCE874D88252A51E /* SideMenuAnimationController.swift */,
+				BD0C9151823C4C472327B3730B9C3F68 /* SideMenuInteractionController.swift */,
+				6D1F2115FD56ED11119AAA21111AF138 /* SideMenuManager.swift */,
+				56D817FB17BB170EF70DD0D5CB59A19C /* SideMenuNavigationController.swift */,
+				2D6F17E59C76BE6A54D6078B573CD654 /* SideMenuPresentationController.swift */,
+				4F89393B4D83D8C2D85315720F617F29 /* SideMenuPresentationStyle.swift */,
+				8EA855ACF9E0546A1227AD84452C6668 /* SideMenuPushCoordinator.swift */,
+				B04347F4A859C2067D63CAA797D80986 /* SideMenuTransitionController.swift */,
+				8779CA0EFFBAD8AF1B84D1A360EE9590 /* UITableViewVibrantCell.swift */,
+				96C71DB1A7AB5CB62D4731A00C4E130D /* Support Files */,
 			);
-			name = Pods;
+			name = SideMenu;
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
-		83ECCC6713105FC8960FD92806048F55 /* Products */ = {
+		96C71DB1A7AB5CB62D4731A00C4E130D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				49B0996A8F6255072430413A522229B1 /* libPods-Do_Did_List.a */,
-				319D06AA0D1D0BA345459C039040A1ED /* libSideMenu.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CCCA25DA79F3EE34ED94FD90318E722F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				830A6B053EBDA3DC0E705A3899984D72 /* SideMenu.modulemap */,
-				E63444253082D228A23928887FAB2665 /* SideMenu.xcconfig */,
-				1D4F7735A57E03A479A59DA16B47BE2F /* SideMenu-dummy.m */,
-				72AE1D82268D76E34A7E14A4D1A02EEF /* SideMenu-prefix.pch */,
-				84AD1212DD99AF652384328E45FC4BDD /* SideMenu-umbrella.h */,
+				B15F84C77A90AB4DBB4622C4127C23BF /* SideMenu.modulemap */,
+				0DC4372719C4363DDDE1EAD4D07FFA63 /* SideMenu.xcconfig */,
+				60FCC170DF3E2E52A13B4DAA9F9DDCC8 /* SideMenu-dummy.m */,
+				23B33983DB8AFE21AA5F5C4F4AD9B346 /* SideMenu-prefix.pch */,
+				2F2359810A2AB1AB2D8ADA29FF071631 /* SideMenu-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SideMenu";
+			sourceTree = "<group>";
+		};
+		995B56DAFAB6863BBC85F7219B732075 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3D74E07C84E1E5AB3F3A1C162F174BA /* Cosmos.modulemap */,
+				9685D4EB32255534227A8E6879726F8B /* Cosmos.xcconfig */,
+				1C38A38B58520D8E068FE4C51F7B91BA /* Cosmos-dummy.m */,
+				4F73781B445627665E97B0A3AA3FDB7B /* Cosmos-prefix.pch */,
+				358A01013E09414A56694AF39C5FC05C /* Cosmos-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cosmos";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -153,8 +336,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				7D34FA07FC7B9431D63786FEAE0BA6F5 /* Pods */,
-				83ECCC6713105FC8960FD92806048F55 /* Products */,
+				4310962FAC33A614D7581A959BB62173 /* Pods */,
+				DB344ED53229744A8492C5CF418CF04B /* Products */,
 				57509DF03BDB6CC7717CCC1D5EA291B4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -164,6 +347,17 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB344ED53229744A8492C5CF418CF04B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05C4280976BF93DA8B36818DE2E2A5E0 /* libCosmos.a */,
+				5CE79C5BF20743404E59BEFD080A364D /* libM13Checkbox.a */,
+				49B0996A8F6255072430413A522229B1 /* libPods-Do_Did_List.a */,
+				319D06AA0D1D0BA345459C039040A1ED /* libSideMenu.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F620F678474AFCC0D1BDF9065450CCC5 /* Pods-Do_Did_List */ = {
@@ -184,11 +378,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		095A48C082415EF8E59EB76052F657F7 /* Headers */ = {
+		1AE563E74E876585449E6EEB0F848DDE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				437D92B72A432EBFEAF159FA12810732 /* Pods-Do_Did_List-umbrella.h in Headers */,
+				4E97A0A1A0510A6D83EEB967C0DB54D5 /* Cosmos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E3FCE5D4FB13ECA750A9C3A9F3297A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB11F3426D29511BB0D88D9EE602BBE9 /* Pods-Do_Did_List-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,25 +402,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D866F1D9FD5F4C0230B5F59969604C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076D2EDAEB52654D20B6649CFFAFCC30 /* M13Checkbox-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3BE3F81C64E32458E1F5288B37B44D57 /* Pods-Do_Did_List */ = {
+		00F31BD5217A20974B5E9AAC6256D98E /* Cosmos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F60C98437A33D1F8DAFBD31B9C4C642B /* Build configuration list for PBXNativeTarget "Pods-Do_Did_List" */;
+			buildConfigurationList = 4DDA76BB47688887ACC59FF57F133341 /* Build configuration list for PBXNativeTarget "Cosmos" */;
 			buildPhases = (
-				095A48C082415EF8E59EB76052F657F7 /* Headers */,
-				2672E69F77276D23171734C85B965307 /* Sources */,
-				44C32356875A84D6D3D184AC359C0429 /* Frameworks */,
+				1AE563E74E876585449E6EEB0F848DDE /* Headers */,
+				C0E8D48853A56FA198BA403E5031CBA7 /* Sources */,
+				9F60315ABEB3F2E4300000E62A05FDF2 /* Frameworks */,
+				987AA26C9C652C749EBDE3DDE7AE5988 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				500A609442F78C71343310EC906B40E6 /* PBXTargetDependency */,
+			);
+			name = Cosmos;
+			productName = Cosmos;
+			productReference = 05C4280976BF93DA8B36818DE2E2A5E0 /* libCosmos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3BE3F81C64E32458E1F5288B37B44D57 /* Pods-Do_Did_List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59261CFBF3B5BD1A3F1259243F827E10 /* Build configuration list for PBXNativeTarget "Pods-Do_Did_List" */;
+			buildPhases = (
+				2E3FCE5D4FB13ECA750A9C3A9F3297A8 /* Headers */,
+				7994BE9AB5DBBEB798561DCFA0C931DA /* Sources */,
+				D45AB1EDCD1896CF9E72C013ACC40B58 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				372405AB7957762CAA22592D57080331 /* PBXTargetDependency */,
+				C828F4E91717C6CE5E8EF31FF46445AE /* PBXTargetDependency */,
+				ECDBA46E6F402BAE8940FFC47CC0C615 /* PBXTargetDependency */,
 			);
 			name = "Pods-Do_Did_List";
 			productName = "Pods-Do_Did_List";
 			productReference = 49B0996A8F6255072430413A522229B1 /* libPods-Do_Did_List.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0AB38E46360F258C2C0CBCAE8D3A5A1 /* Build configuration list for PBXNativeTarget "M13Checkbox" */;
+			buildPhases = (
+				6D866F1D9FD5F4C0230B5F59969604C1 /* Headers */,
+				3BD6B8918FE8FCF5A3A93076E19490F6 /* Sources */,
+				C7594B095CABE8E0BADE2B766B796D46 /* Frameworks */,
+				003863220B78990EC9CFFA57CDF601FB /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = M13Checkbox;
+			productName = M13Checkbox;
+			productReference = 5CE79C5BF20743404E59BEFD080A364D /* libM13Checkbox.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */ = {
@@ -257,10 +505,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 83ECCC6713105FC8960FD92806048F55 /* Products */;
+			productRefGroup = DB344ED53229744A8492C5CF418CF04B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				00F31BD5217A20974B5E9AAC6256D98E /* Cosmos */,
+				7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */,
 				3BE3F81C64E32458E1F5288B37B44D57 /* Pods-Do_Did_List */,
 				C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */,
 			);
@@ -268,6 +518,30 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		003863220B78990EC9CFFA57CDF601FB /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/M13Checkbox/M13Checkbox.modulemap",
+				"${PODS_ROOT}/Headers/Public/M13Checkbox/M13Checkbox-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/M13Checkbox/M13Checkbox.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/M13Checkbox/M13Checkbox-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
 		8798AA6AA5297F8E8BC02048AF0A5760 /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,14 +566,65 @@
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SideMenu/SideMenu.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SideMenu/SideMenu-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
 		};
+		987AA26C9C652C749EBDE3DDE7AE5988 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Cosmos/Cosmos.modulemap",
+				"${PODS_ROOT}/Headers/Public/Cosmos/Cosmos-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Cosmos-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Cosmos/Cosmos.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Cosmos/Cosmos-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2672E69F77276D23171734C85B965307 /* Sources */ = {
+		3BD6B8918FE8FCF5A3A93076E19490F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				014477497A2E966C770B5CE0573CD2D8 /* Pods-Do_Did_List-dummy.m in Sources */,
+				F2B89DDF4503B4AAECEAC79328A98FB2 /* DefaultValues.swift in Sources */,
+				AFC2631D8CCAF2282DA843268B313FD2 /* M13Checkbox+IB.swift in Sources */,
+				0A06AB0972D3540487C0F8EF31034D6B /* M13Checkbox-dummy.m in Sources */,
+				6D6D4DB754CD514BED3C108E7C4E5EB7 /* M13Checkbox.swift in Sources */,
+				2337D72E5E76F7419A9183D35436AA8E /* M13CheckboxAddRemovePathGenerator.swift in Sources */,
+				377C3C58F5AFEE3AEBDC2E4B5922CB28 /* M13CheckboxAnimationGenerator.swift in Sources */,
+				41EF4C3EE850532FDF272571B9C12619 /* M13CheckboxBounceController.swift in Sources */,
+				4A7B8D784516DBE292509DEE957E325C /* M13CheckboxCheckPathGenerator.swift in Sources */,
+				9FE2D00290DDA80B32DAD05E367605FA /* M13CheckboxController.swift in Sources */,
+				4643F8E9D8871D2767114E6E7D778403 /* M13CheckboxDisclosurePathGenerator.swift in Sources */,
+				22570DB0F7285EADF6DA2F1E0F1FDFB4 /* M13CheckboxDotController.swift in Sources */,
+				A18B6CC828BE50C012A3DA7320AA6149 /* M13CheckboxExpandController.swift in Sources */,
+				9EA9829B87FF20BBCB6E7D248F60AC25 /* M13CheckboxFadeController.swift in Sources */,
+				041D84D3DF567223EA2977DE987B8C14 /* M13CheckboxFillController.swift in Sources */,
+				4CF9A5A59FCD6B7706B239A332CCBD5C /* M13CheckboxFlatController.swift in Sources */,
+				9FFDE47E64593F6AD6ED19C4074B2139 /* M13CheckboxGestureRecognizer.swift in Sources */,
+				1E12A461814D852325C714EBB1A144B0 /* M13CheckboxPathGenerator.swift in Sources */,
+				41F12CD9821DDC53E1A7829177553D26 /* M13CheckboxRadioPathGenerator.swift in Sources */,
+				E3FDF75C6668FC3CFE0EDA827A8C63EF /* M13CheckboxSpiralController.swift in Sources */,
+				1703CAF29408A45FC1AA227AD3FC0691 /* M13CheckboxStrokeController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7994BE9AB5DBBEB798561DCFA0C931DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A0243B4DDD8C8DD9042DC4C5CA5E1F /* Pods-Do_Did_List-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,21 +650,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0E8D48853A56FA198BA403E5031CBA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA18563ED0226273C01A9684ACAE628 /* Cosmos-dummy.m in Sources */,
+				113E9A5727E3172AF80EBF7E28E3E7A5 /* CosmosAccessibility.swift in Sources */,
+				5373EC8FBDF5C1D714C2A5234CEA24B8 /* CosmosDefaultSettings.swift in Sources */,
+				CC5FC626921624E8B1BB012F0A18C556 /* CosmosLayerHelper.swift in Sources */,
+				82180CDFC0546A73F5564DF10E13855C /* CosmosLayers.swift in Sources */,
+				5B45916426FD2AD80BF4E801F8753898 /* CosmosLocalizedRating.swift in Sources */,
+				754936814720CEE456EDD7F30212826E /* CosmosRating.swift in Sources */,
+				A2195C35CF28FD50BCC85AEF21D09669 /* CosmosSettings.swift in Sources */,
+				E95FB0A79E8EB3A7EBB7B088C3B2B302 /* CosmosSize.swift in Sources */,
+				0C1F540CA3C133040FD9B0357A288932 /* CosmosText.swift in Sources */,
+				A2E781901A99066A34E382CADD034AC7 /* CosmosTouch.swift in Sources */,
+				CFA7580B367F2CB0A7CD2F88396AD411 /* CosmosTouchTarget.swift in Sources */,
+				CA5C5372C42B7DA97809F247421CC4BD /* CosmosView.swift in Sources */,
+				6D1E76B60BE51B7DF3CDFCE8E61C9830 /* RightToLeft.swift in Sources */,
+				F7C65DBF2D02714566D33F69D1113889 /* StarFillMode.swift in Sources */,
+				405D318EACD5EF4A658841382806B435 /* StarLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		500A609442F78C71343310EC906B40E6 /* PBXTargetDependency */ = {
+		372405AB7957762CAA22592D57080331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cosmos;
+			target = 00F31BD5217A20974B5E9AAC6256D98E /* Cosmos */;
+			targetProxy = 3A2384618A5C8E3CA16A03C6897C9220 /* PBXContainerItemProxy */;
+		};
+		C828F4E91717C6CE5E8EF31FF46445AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M13Checkbox;
+			target = 7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */;
+			targetProxy = C2A54DBBD43B98B272BFA2B239B373A5 /* PBXContainerItemProxy */;
+		};
+		ECDBA46E6F402BAE8940FFC47CC0C615 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SideMenu;
 			target = C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */;
-			targetProxy = C168BA44110069D7CC92135177D574BA /* PBXContainerItemProxy */;
+			targetProxy = FBB473A39543E15E2C87FED09D1E7821 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1E3DFF9D585878E7CBDFC0D435327EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E63444253082D228A23928887FAB2665 /* SideMenu.xcconfig */;
+			baseConfigurationReference = 0DC4372719C4363DDDE1EAD4D07FFA63 /* SideMenu.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -364,32 +724,61 @@
 			};
 			name = Release;
 		};
-		67FF4C434287230164AD14B62869F493 /* Debug */ = {
+		36DE2BB8259AB41B9F492D9966616D31 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACFB53A652972081A548E0FDD7AB3FF8 /* Pods-Do_Did_List.debug.xcconfig */;
+			baseConfigurationReference = 9685D4EB32255534227A8E6879726F8B /* Cosmos.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Do_Did_List/Pods-Do_Did_List.modulemap";
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Cosmos/Cosmos.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Cosmos;
+				PRODUCT_NAME = Cosmos;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
+		};
+		3D370EF48A9485ECC6D28D3171AA3022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12BC913F30A5C465F192FDA08551E32 /* M13Checkbox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/M13Checkbox/M13Checkbox-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/M13Checkbox/M13Checkbox.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = M13Checkbox;
+				PRODUCT_NAME = M13Checkbox;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		7404AA1A81A70F8A45F7934F9B95C799 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E63444253082D228A23928887FAB2665 /* SideMenu.xcconfig */;
+			baseConfigurationReference = 0DC4372719C4363DDDE1EAD4D07FFA63 /* SideMenu.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -477,7 +866,32 @@
 			};
 			name = Debug;
 		};
-		C7CE1055B0A9D579230E3AC54FE63D3E /* Release */ = {
+		9F7C2F78DCC819860A462402EB99FEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12BC913F30A5C465F192FDA08551E32 /* M13Checkbox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/M13Checkbox/M13Checkbox-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/M13Checkbox/M13Checkbox.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = M13Checkbox;
+				PRODUCT_NAME = M13Checkbox;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAC2CDD8A8C818FBCD7907D89B64E4D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2275D6555A10B18904FFD40C483B5CB5 /* Pods-Do_Did_List.release.xcconfig */;
 			buildSettings = {
@@ -500,6 +914,31 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		C81A8CDB20F028A8A9C5E80CC7A310B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9685D4EB32255534227A8E6879726F8B /* Cosmos.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Cosmos/Cosmos.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Cosmos;
+				PRODUCT_NAME = Cosmos;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -561,6 +1000,29 @@
 			};
 			name = Release;
 		};
+		ED3E07AF7553F4D31BC954FF704E6395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACFB53A652972081A548E0FDD7AB3FF8 /* Pods-Do_Did_List.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Do_Did_List/Pods-Do_Did_List.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,6 +1031,24 @@
 			buildConfigurations = (
 				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
 				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDA76BB47688887ACC59FF57F133341 /* Build configuration list for PBXNativeTarget "Cosmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81A8CDB20F028A8A9C5E80CC7A310B3 /* Debug */,
+				36DE2BB8259AB41B9F492D9966616D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59261CFBF3B5BD1A3F1259243F827E10 /* Build configuration list for PBXNativeTarget "Pods-Do_Did_List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3E07AF7553F4D31BC954FF704E6395 /* Debug */,
+				AAC2CDD8A8C818FBCD7907D89B64E4D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -582,11 +1062,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F60C98437A33D1F8DAFBD31B9C4C642B /* Build configuration list for PBXNativeTarget "Pods-Do_Did_List" */ = {
+		C0AB38E46360F258C2C0CBCAE8D3A5A1 /* Build configuration list for PBXNativeTarget "M13Checkbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67FF4C434287230164AD14B62869F493 /* Debug */,
-				C7CE1055B0A9D579230E3AC54FE63D3E /* Release */,
+				9F7C2F78DCC819860A462402EB99FEA2 /* Debug */,
+				3D370EF48A9485ECC6D28D3171AA3022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

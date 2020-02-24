@@ -1,16 +1,24 @@
 PODS:
+  - Cosmos (21.0.0)
+  - M13Checkbox (3.4.0)
   - SideMenu (6.4.7)
 
 DEPENDENCIES:
+  - Cosmos (~> 21.0)
+  - M13Checkbox
   - SideMenu
 
 SPEC REPOS:
   trunk:
+    - Cosmos
+    - M13Checkbox
     - SideMenu
 
 SPEC CHECKSUMS:
+  Cosmos: 3dfb6e4ba48bd48b8c9aa2a77048ae11ed114f96
+  M13Checkbox: 6f59404540ac98ba83a3d1afac335895a40c6a5d
   SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
 
-PODFILE CHECKSUM: 20df267c0b309ff95eca5f050b39b5f38080ab6a
+PODFILE CHECKSUM: a975526b46f1cc6fa10ddc403fa59aa6d1216e59
 
 COCOAPODS: 1.8.4

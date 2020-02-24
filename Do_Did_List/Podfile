@@ -8,5 +8,7 @@ target 'Do_Did_List' do
 
   # Pods for Do_Did_List
   pod 'SideMenu'
-
+  pod 'Cosmos', '~> 21.0'
+  pod 'M13Checkbox'
+  
 end
