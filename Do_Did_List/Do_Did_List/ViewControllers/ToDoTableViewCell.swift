@@ -7,9 +7,22 @@
 //
 
 import UIKit
+import Cosmos
+import M13Checkbox
 
 class ToDoTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var contentTextView: UITextView!
+    
+    @IBOutlet weak var importance: CosmosView!
+    
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBOutlet weak var checkbox: M13Checkbox!
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

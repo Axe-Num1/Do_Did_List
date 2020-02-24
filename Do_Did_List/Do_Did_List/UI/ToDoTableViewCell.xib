@@ -54,8 +54,9 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Koe-Cq-yUh" customClass="M13Checkbox" customModule="M13Checkbox">
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Koe-Cq-yUh" customClass="M13Checkbox" customModule="M13Checkbox">
                         <rect key="frame" x="318.5" y="21" width="41.5" height="38"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
@@ -77,21 +78,22 @@
                     <constraint firstAttribute="bottom" secondItem="q3X-oF-D4N" secondAttribute="bottom" constant="5" id="6v0-rW-p3f"/>
                     <constraint firstItem="3u6-gT-2Qy" firstAttribute="leading" secondItem="cvX-0n-5M9" secondAttribute="trailing" constant="24" id="Aye-92-A2I"/>
                     <constraint firstItem="3u6-gT-2Qy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Fuk-7G-0TN"/>
-                    <constraint firstItem="Koe-Cq-yUh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mq9-EP-48k"/>
-                    <constraint firstAttribute="bottom" secondItem="Koe-Cq-yUh" secondAttribute="bottom" constant="21" id="T6t-Y7-o7v"/>
                     <constraint firstAttribute="bottom" secondItem="3u6-gT-2Qy" secondAttribute="bottom" constant="18" id="TKK-6S-BPt"/>
                     <constraint firstItem="q3X-oF-D4N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="UvY-QX-TuN"/>
                     <constraint firstAttribute="bottom" secondItem="cvX-0n-5M9" secondAttribute="bottom" constant="25" id="YMS-qJ-qnh"/>
-                    <constraint firstItem="Koe-Cq-yUh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="efk-kT-cGV"/>
                     <constraint firstItem="cvX-0n-5M9" firstAttribute="leading" secondItem="q3X-oF-D4N" secondAttribute="trailing" constant="5" id="gv1-cs-lOy"/>
                     <constraint firstItem="q3X-oF-D4N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="0.01" id="nUu-qS-3BS"/>
-                    <constraint firstItem="Koe-Cq-yUh" firstAttribute="leading" secondItem="3u6-gT-2Qy" secondAttribute="trailing" constant="20" id="pmn-jh-8Xk"/>
-                    <constraint firstAttribute="trailing" secondItem="Koe-Cq-yUh" secondAttribute="trailing" constant="10" id="vUq-Hd-iJT"/>
                     <constraint firstItem="cvX-0n-5M9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="zc9-qB-m0Q"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.23137254900000001" green="0.42352941179999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkbox" destination="Koe-Cq-yUh" id="9qe-QM-PZE"/>
+                <outlet property="contentTextView" destination="q3X-oF-D4N" id="894-p9-vDF"/>
+                <outlet property="importance" destination="cvX-0n-5M9" id="Cgi-vO-fbZ"/>
+                <outlet property="timeLabel" destination="3u6-gT-2Qy" id="wfK-qW-ABa"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </tableViewCell>
     </objects>
