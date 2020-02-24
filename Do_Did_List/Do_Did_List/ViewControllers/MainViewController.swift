@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 import SideMenu
 
 class MainViewController: UIViewController {
@@ -22,9 +23,18 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var dateLabel: UILabel!
     
+    @IBOutlet weak var toDoTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        toDoTableView.delegate = self
+        toDoTableView.dataSource = self
+        
+        toDoTableView.backgroundColor = UIColor(red:0.23, green:0.42, blue:0.92, alpha:0) // hex: 3B6CEB
+        
+        let cellNib = UINib(nibName: "ToDoTableViewCell", bundle: nil)
+        toDoTableView.register(cellNib, forCellReuseIdentifier: "toDoCell")
 
         self.setUpSideMenu()
     }
@@ -40,12 +50,18 @@ class MainViewController: UIViewController {
 }
 
 
-
-
-
-
-
-
+// MARK: - TableView
+extension MainViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "toDoCell")
+        
+        return cell!
+    }
+}
 
 // MARK: - SideMenu Implementation
 extension MainViewController {

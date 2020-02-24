@@ -19,9 +19,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="bbr-QW-HMQ">
-                                        <rect key="frame" x="67" y="156" width="240" height="65"/>
+                                        <rect key="frame" x="60" y="149.66666666666666" width="255" height="71.333333333333343"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="65" id="ejA-Y8-aBR"/>
+                                            <constraint firstAttribute="height" constant="71.5" id="ejA-Y8-aBR"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="DateRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-f5-RY1">
@@ -36,8 +36,8 @@
                                 <constraints>
                                     <constraint firstItem="eXZ-f5-RY1" firstAttribute="centerX" secondItem="evN-iy-xu3" secondAttribute="centerX" id="IEM-Zc-NUG"/>
                                     <constraint firstItem="eXZ-f5-RY1" firstAttribute="top" secondItem="bbr-QW-HMQ" secondAttribute="bottom" constant="50" id="cmf-lW-dLG"/>
-                                    <constraint firstAttribute="trailing" secondItem="bbr-QW-HMQ" secondAttribute="trailing" constant="68" id="etM-nw-uHH"/>
-                                    <constraint firstItem="bbr-QW-HMQ" firstAttribute="leading" secondItem="evN-iy-xu3" secondAttribute="leading" constant="67" id="jEf-OY-Iyp"/>
+                                    <constraint firstAttribute="trailing" secondItem="bbr-QW-HMQ" secondAttribute="trailing" constant="60" id="etM-nw-uHH"/>
+                                    <constraint firstItem="bbr-QW-HMQ" firstAttribute="leading" secondItem="evN-iy-xu3" secondAttribute="leading" constant="60" id="jEf-OY-Iyp"/>
                                     <constraint firstItem="eXZ-f5-RY1" firstAttribute="centerY" secondItem="evN-iy-xu3" secondAttribute="centerY" id="oDd-Lg-MIz"/>
                                 </constraints>
                             </view>
