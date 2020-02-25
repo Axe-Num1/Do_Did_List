@@ -36,12 +36,28 @@ class MainViewController: UIViewController {
         let cellNib = UINib(nibName: "ToDoTableViewCell", bundle: nil)
         toDoTableView.register(cellNib, forCellReuseIdentifier: "toDoCell")
 
+        dateLabel.text = getDate()
+        
         self.setUpSideMenu()
     }
     
     // Status Bar 색상 설정
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent // white
+    }
+    
+    func getDate() -> String {
+        let date = Date()
+        let calendar = Calendar.current
+        
+        let monthNumber = calendar.component(.month, from: date)
+        let monthName = DateFormatter().monthSymbols[monthNumber - 1]
+        
+        let dayNumber = calendar.component(.day, from: date)
+        
+        let result = "\(monthName) \(String(dayNumber))"
+        
+        return result
     }
     
     @IBAction func sideMenuButton(_ sender: Any) {
