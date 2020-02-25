@@ -17,12 +17,15 @@ class StartViewController: UIViewController {
         
 //        self.setNeedsStatusBarAppearanceUpdate()
         
+        let stringDate = todayDate()
+        dateButton.setTitle(stringDate, for: .normal)
+    }
+    
+    func todayDate() -> String {
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd" // "yyyy-MM-dd"
-        let stringDate = dateFormatter.string(from: date)
-        
-        dateButton.setTitle(stringDate, for: .normal)
+        return dateFormatter.string(from: date)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
