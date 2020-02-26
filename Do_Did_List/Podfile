@@ -10,5 +10,11 @@ target 'Do_Did_List' do
   pod 'SideMenu'
   pod 'Cosmos', '~> 21.0'
   pod 'M13Checkbox'
+
+  # Add the Firebase pod
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+
   
 end

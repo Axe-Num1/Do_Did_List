@@ -17,6 +17,7 @@
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
 		F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73323EFF39500282434 /* FivoSans-Black.otf */; };
 		F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F283C1E323FFBA0A00392DC5 /* Assets.xcassets */; };
+		F2C889F6240659E80075E058 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2C889F5240659E80075E058 /* GoogleService-Info.plist */; };
 		F2CAB8832403EFF500ECCEBF /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */; };
 		F2CAB8842403EFF500ECCEBF /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */; };
 		F2E702CD2400E68200A0289E /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CB2400E68200A0289E /* SideMenuViewController.swift */; };
@@ -47,6 +48,7 @@
 		F2A3A0A92403E343004E81E0 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A3A0AA2403E343004E81E0 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B8019123FFE4AF0014D4B6 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C889F5240659E80075E058 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
 		F2E702CB2400E68200A0289E /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		F24AB1BF23EFC3AE00ECBE1E /* Do_Did_List */ = {
 			isa = PBXGroup;
 			children = (
+				F2C889F5240659E80075E058 /* GoogleService-Info.plist */,
 				F25FB73023EFF36000282434 /* Fonts */,
 				F2E702D524013C5500A0289E /* Extensions */,
 				F2E702D624013C7000A0289E /* UI */,
@@ -239,6 +242,7 @@
 				F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */,
 				F24AB1C823EFC3AE00ECBE1E /* Main.storyboard in Resources */,
 				F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */,
+				F2C889F6240659E80075E058 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
