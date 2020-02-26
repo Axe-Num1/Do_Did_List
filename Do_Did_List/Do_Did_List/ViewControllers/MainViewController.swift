@@ -55,7 +55,7 @@ class MainViewController: UIViewController {
         
         let dayNumber = calendar.component(.day, from: date)
         
-        let result = "\(monthName) \(String(dayNumber))"
+        let result = "\(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
         
         return result
     }

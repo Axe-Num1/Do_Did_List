@@ -17,11 +17,11 @@ class StartViewController: UIViewController {
         
 //        self.setNeedsStatusBarAppearanceUpdate()
         
-        let stringDate = todayDate()
+        let stringDate = getDate()
         dateButton.setTitle(stringDate, for: .normal)
     }
     
-    func todayDate() -> String {
+    func getDate() -> String {
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd" // "yyyy-MM-dd"
