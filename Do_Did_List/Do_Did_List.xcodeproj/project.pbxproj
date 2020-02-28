@@ -114,6 +114,7 @@
 		F24AB1BF23EFC3AE00ECBE1E /* Do_Did_List */ = {
 			isa = PBXGroup;
 			children = (
+				F24AB1D123EFC3B100ECBE1E /* Info.plist */,
 				F25FB73023EFF36000282434 /* Fonts */,
 				F2E702D524013C5500A0289E /* Extensions */,
 				F2C0A5302407CA070047B0A4 /* Models */,
@@ -163,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */,
-				F24AB1D123EFC3B100ECBE1E /* Info.plist */,
 				F283C1E323FFBA0A00392DC5 /* Assets.xcassets */,
 				F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */,
 				F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */,

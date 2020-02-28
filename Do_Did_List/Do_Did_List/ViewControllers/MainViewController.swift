@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
 
         dateLabel.text = getDate()
         
-        self.setUpSideMenu()
+        self.setupSideMenu()
     }
     
     // Status Bar 색상 설정
@@ -60,9 +60,9 @@ class MainViewController: UIViewController {
         return result
     }
     
-    @IBAction func sideMenuButton(_ sender: Any) {
-        present(SideMenuManager.default.leftMenuNavigationController!, animated: true, completion: nil)
-    }
+//    @IBAction func sideMenuButton(_ sender: Any) {
+//        present(SideMenuManager.default.leftMenuNavigationController!, animated: true, completion: nil)
+//    }
 }
 
 
@@ -82,21 +82,25 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
 // MARK: - SideMenu Implementation
 extension MainViewController {
     
-    func setUpSideMenu() {
-        let sideMenu = SideMenuViewController(nibName: "SideMenuViewController", bundle: nil)
+    func setupSideMenu() {
+//        let sideMenu = SideMenuViewController(nibName: "SideMenuViewController", bundle: nil)
+//
+//        let leftMenuNavigationController = SideMenuNavigationController(rootViewController: sideMenu)
+//        SideMenuManager.default.leftMenuNavigationController = leftMenuNavigationController
         
-        let leftMenuNavigationController = SideMenuNavigationController(rootViewController: sideMenu)
-        SideMenuManager.default.leftMenuNavigationController = leftMenuNavigationController
-        
-        // status bar alpha 값
-        leftMenuNavigationController.statusBarEndAlpha = 0
-        
-        // Side Menu presentation 방식
-        leftMenuNavigationController.presentationStyle = .menuSlideIn
+        SideMenuManager.default.leftMenuNavigationController = storyboard?.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? SideMenuNavigationController
         
         // swipe 제스처를 사용하여 Side Menu 열기
 //        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
 //        SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: self.view)
+        
+        // status bar alpha 값
+//        leftMenuNavigationController.statusBarEndAlpha = 0
+        
+        // Side Menu presentation 방식
+//        leftMenuNavigationController.presentationStyle = .menuSlideIn
+        
+        SideMenuManager.default.leftMenuNavigationController?.statusBarEndAlpha
         
     }
 }
