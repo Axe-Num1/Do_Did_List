@@ -11,6 +11,8 @@ import UIKit
 class SideMenuViewController: UIViewController {
     
     @IBOutlet weak var sideMenuView: UIView!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
