@@ -21,7 +21,6 @@
 		F2CAB8832403EFF500ECCEBF /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */; };
 		F2CAB8842403EFF500ECCEBF /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */; };
 		F2E702CD2400E68200A0289E /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CB2400E68200A0289E /* SideMenuViewController.swift */; };
-		F2E702CE2400E68200A0289E /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E702CC2400E68200A0289E /* SideMenuViewController.xib */; };
 		F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CF2400E6C300A0289E /* MainViewController.swift */; };
 		F2E702D424013C0300A0289E /* UIViewRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702D324013C0300A0289E /* UIViewRounding.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 		F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
 		F2E702CB2400E68200A0289E /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
-		F2E702CC2400E68200A0289E /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		F2E702CF2400E6C300A0289E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F2E702D324013C0300A0289E /* UIViewRounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRounding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +191,6 @@
 			children = (
 				F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */,
 				F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */,
-				F2E702CC2400E68200A0289E /* SideMenuViewController.xib */,
 				F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */,
 			);
 			path = Storyboards;
@@ -262,7 +259,6 @@
 				F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */,
 				F2CAB8842403EFF500ECCEBF /* ToDoTableViewCell.xib in Resources */,
 				F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */,
-				F2E702CE2400E68200A0289E /* SideMenuViewController.xib in Resources */,
 				F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */,
 				F24AB1C823EFC3AE00ECBE1E /* Main.storyboard in Resources */,
 				F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */,

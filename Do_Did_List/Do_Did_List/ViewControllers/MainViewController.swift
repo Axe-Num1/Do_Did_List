@@ -28,6 +28,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupSideMenu()
+        
         toDoTableView.delegate = self
         toDoTableView.dataSource = self
         
@@ -37,8 +39,6 @@ class MainViewController: UIViewController {
         toDoTableView.register(cellNib, forCellReuseIdentifier: "toDoCell")
 
         dateLabel.text = getDate()
-        
-        self.setupSideMenu()
     }
     
     // Status Bar 색상 설정
@@ -59,10 +59,6 @@ class MainViewController: UIViewController {
         
         return result
     }
-    
-//    @IBAction func sideMenuButton(_ sender: Any) {
-//        present(SideMenuManager.default.leftMenuNavigationController!, animated: true, completion: nil)
-//    }
 }
 
 
@@ -79,31 +75,31 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+
 // MARK: - SideMenu Implementation
 extension MainViewController {
     
+    func makeSettings() -> SideMenuSettings {
+        var settings = SideMenuSettings()
+        settings.presentationStyle = .menuSlideIn
+        settings.presentationStyle.menuStartAlpha = 0.8
+        settings.presentationStyle.presentingEndAlpha = 0.6
+        settings.presentationStyle.onTopShadowOpacity = 0.5
+        settings.statusBarEndAlpha = 0
+        
+        return settings
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let sideMenuNavigationController = segue.destination as? SideMenuNavigationController else { return }
+        sideMenuNavigationController.settings = makeSettings()
+    }
+    
     func setupSideMenu() {
-//        let sideMenu = SideMenuViewController(nibName: "SideMenuViewController", bundle: nil)
-//
-//        let leftMenuNavigationController = SideMenuNavigationController(rootViewController: sideMenu)
-//        SideMenuManager.default.leftMenuNavigationController = leftMenuNavigationController
-        
         SideMenuManager.default.leftMenuNavigationController = storyboard?.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? SideMenuNavigationController
-        
-        // swipe 제스처를 사용하여 Side Menu 열기
-//        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
-//        SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: self.view)
-        
-        // status bar alpha 값
-//        leftMenuNavigationController.statusBarEndAlpha = 0
-        
-        // Side Menu presentation 방식
-//        leftMenuNavigationController.presentationStyle = .menuSlideIn
-        
-        SideMenuManager.default.leftMenuNavigationController?.statusBarEndAlpha
-        
     }
 }
+
 
 // MARK: - UISideMenuNavigationControllerDelegate
 extension MainViewController: SideMenuNavigationControllerDelegate {
