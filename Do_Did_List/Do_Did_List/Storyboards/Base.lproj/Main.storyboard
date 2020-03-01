@@ -120,16 +120,16 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6jH-xz-6OK">
-                                        <rect key="frame" x="92" y="149" width="230" height="117"/>
+                                        <rect key="frame" x="92" y="152.5" width="230" height="110"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAf-hU-C9a">
-                                                <rect key="frame" x="59" y="0.0" width="112.5" height="21"/>
+                                                <rect key="frame" x="49" y="0.0" width="132" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="18"/>
                                                 <color key="textColor" red="0.2001197934" green="0.73293036219999996" blue="0.48623937369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jdn-0L-SdY">
-                                                <rect key="frame" x="0.0" y="29" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="25.5" width="230" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="Mog-Gn-DUD"/>
@@ -141,7 +141,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00 ~ 0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMb-0a-9IE">
-                                                <rect key="frame" x="72" y="97" width="86" height="20"/>
+                                                <rect key="frame" x="61.5" y="93.5" width="107.5" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="17"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.42352941179999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -149,7 +149,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yg2-nt-0wk">
-                                        <rect key="frame" x="57" y="76" width="190" height="47"/>
+                                        <rect key="frame" x="57" y="84" width="205.5" height="38"/>
                                         <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -176,20 +176,20 @@
                                 <rect key="frame" x="0.0" y="344" width="414" height="518"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January 27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cT-DW-1Lv">
-                                        <rect key="frame" x="25" y="5" width="163" height="35"/>
+                                        <rect key="frame" x="25" y="5" width="163" height="28.5"/>
                                         <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="List Line" translatesAutoresizingMaskIntoConstraints="NO" id="iOE-Wx-VJ1">
-                                        <rect key="frame" x="17" y="69.5" width="380" height="13"/>
+                                        <rect key="frame" x="17" y="63" width="380" height="13"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="13" id="GOV-IO-fcg"/>
                                             <constraint firstAttribute="width" constant="380" id="Lca-YC-e2D"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bm8-Vp-h6L">
-                                        <rect key="frame" x="17" y="47.5" width="380" height="20"/>
+                                        <rect key="frame" x="17" y="41" width="380" height="20"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Importance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHW-FF-jNv">
                                                 <rect key="frame" x="144" y="3" width="86.5" height="14.5"/>
@@ -219,7 +219,7 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rLf-Bv-HF0">
-                                        <rect key="frame" x="25" y="82.5" width="364" height="435.5"/>
+                                        <rect key="frame" x="25" y="76" width="364" height="442"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </tableView>
                                 </subviews>
@@ -314,7 +314,7 @@
                                                 <rect key="frame" x="105" y="43" width="123.5" height="86"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0d-XZ-1oL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="114" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="23"/>
                                                         <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="24"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -352,7 +352,7 @@
                                                 </constraints>
                                                 <state key="normal" backgroundImage="BT_Add-To Do"/>
                                                 <connections>
-                                                    <segue destination="GKV-8D-Dqu" kind="presentation" modalPresentationStyle="fullScreen" id="onE-UZ-Hmv"/>
+                                                    <segue destination="hM1-D3-Lrx" kind="presentation" modalPresentationStyle="fullScreen" id="h2B-R3-7s0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgT-o3-lgB">
@@ -415,30 +415,28 @@
             </objects>
             <point key="canvasLocation" x="2377" y="871"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="qCw-04-bnY">
+        <!--Add: To Do-->
+        <scene sceneID="lUc-rQ-cMX">
             <objects>
-                <viewController id="GKV-8D-Dqu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bdw-0u-Vcm">
+                <viewController id="Kim-sF-VHc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CTx-6j-2cs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-Zu-6dW">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="Z4m-8w-gMD"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="X9Y-Q5-Qdi"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="fGn-wy-oc8"/>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="6Ag-nB-n2k"/>
+                    <navigationItem key="navigationItem" title="Add: To Do" id="Etk-dy-RCY">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="60N-P1-nL7">
+                            <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="wCI-hR-aVo">
+                            <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IFE-Wk-c9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JF4-h7-xMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1209" y="1600"/>
+            <point key="canvasLocation" x="1059" y="1600"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="khr-Gc-sIS">
@@ -459,6 +457,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYI-ZJ-wR7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1987" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f1Z-9t-o9g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hM1-D3-Lrx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="5Cb-Rq-MGo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kim-sF-VHc" kind="relationship" relationship="rootViewController" id="bxz-0Q-grF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUl-rk-bFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365" y="1601"/>
         </scene>
     </scenes>
     <resources>

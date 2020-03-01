@@ -23,6 +23,7 @@
 		F2E702CD2400E68200A0289E /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CB2400E68200A0289E /* SideMenuViewController.swift */; };
 		F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CF2400E6C300A0289E /* MainViewController.swift */; };
 		F2E702D424013C0300A0289E /* UIViewRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702D324013C0300A0289E /* UIViewRounding.swift */; };
+		F2FE47A1240BEDC300EAD268 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE47A0240BEDC300EAD268 /* AddToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		F2E702CB2400E68200A0289E /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		F2E702CF2400E6C300A0289E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F2E702D324013C0300A0289E /* UIViewRounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRounding.swift; sourceTree = "<group>"; };
+		F2FE47A0240BEDC300EAD268 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			children = (
 				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
 				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
+				F2FE47A0240BEDC300EAD268 /* AddToDoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			files = (
 				F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */,
 				F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */,
+				F2FE47A1240BEDC300EAD268 /* AddToDoViewController.swift in Sources */,
 				F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */,
 				F2CAB8832403EFF500ECCEBF /* ToDoTableViewCell.swift in Sources */,
 				F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */,
