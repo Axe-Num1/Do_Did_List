@@ -15,4 +15,9 @@ class AddToDoViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    @IBAction func cancelItem(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

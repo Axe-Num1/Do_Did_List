@@ -418,7 +418,7 @@
         <!--Add: To Do-->
         <scene sceneID="lUc-rQ-cMX">
             <objects>
-                <viewController id="Kim-sF-VHc" sceneMemberID="viewController">
+                <viewController id="Kim-sF-VHc" customClass="AddToDoViewController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CTx-6j-2cs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -428,6 +428,9 @@
                     <navigationItem key="navigationItem" title="Add: To Do" id="Etk-dy-RCY">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="60N-P1-nL7">
                             <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="cancelItem:" destination="Kim-sF-VHc" id="xb1-sF-Jw1"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="wCI-hR-aVo">
                             <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
