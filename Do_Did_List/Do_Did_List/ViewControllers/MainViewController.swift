@@ -35,10 +35,9 @@ class MainViewController: UIViewController {
         
         toDoTableView.backgroundColor = UIColor(red:0.23, green:0.42, blue:0.92, alpha:0) // hex: 3B6CEB
         
-        let cellNib = UINib(nibName: "ToDoTableViewCell", bundle: nil)
-        toDoTableView.register(cellNib, forCellReuseIdentifier: "toDoCell")
+        registerXib()
 
-        dateLabel.text = getDate()
+        setDate()
     }
     
     // Status Bar 색상 설정
@@ -46,7 +45,7 @@ class MainViewController: UIViewController {
         return .lightContent // white
     }
     
-    func getDate() -> String {
+    func setDate() {
         let date = Date()
         let calendar = Calendar.current
         
@@ -55,9 +54,12 @@ class MainViewController: UIViewController {
         
         let dayNumber = calendar.component(.day, from: date)
         
-        let result = "\(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
-        
-        return result
+        dateLabel.text = "\(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
+    }
+    
+    func registerXib() {
+        let cellNib = UINib(nibName: "ToDoTableViewCell", bundle: nil)
+        toDoTableView.register(cellNib, forCellReuseIdentifier: "toDoCell")
     }
 }
 
@@ -69,9 +71,9 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "toDoCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "toDoCell", for: indexPath) as! ToDoTableViewCell
         
-        return cell!
+        return cell
     }
 }
 
