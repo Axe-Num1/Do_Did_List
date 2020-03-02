@@ -7,12 +7,14 @@ PODS:
   - RealmSwift (4.3.2):
     - Realm (= 4.3.2)
   - SideMenu (6.4.7)
+  - SOPullUpView (1.1.0)
 
 DEPENDENCIES:
   - Cosmos (~> 21.0)
   - M13Checkbox
   - RealmSwift
   - SideMenu
+  - SOPullUpView
 
 SPEC REPOS:
   trunk:
@@ -21,6 +23,7 @@ SPEC REPOS:
     - Realm
     - RealmSwift
     - SideMenu
+    - SOPullUpView
 
 SPEC CHECKSUMS:
   Cosmos: 3dfb6e4ba48bd48b8c9aa2a77048ae11ed114f96
@@ -28,7 +31,8 @@ SPEC CHECKSUMS:
   Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
   RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
   SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
+  SOPullUpView: a18cab4bdce7cc07c227e705cc4270e0a36ca2fa
 
-PODFILE CHECKSUM: c59568debd7bbc3d759dd0a89cf009cad704e4d7
+PODFILE CHECKSUM: 1c8bb20f0d22765f6d5e678f4bc1dd86073316d6
 
 COCOAPODS: 1.8.4
