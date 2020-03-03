@@ -9,29 +9,49 @@
 import UIKit
 import SOPullUpView
 
-class AddToDoPullUpTableViewController: UITableViewController {
-
-//    var pullUpControl: SOPullUpControl? {
-//        didSet {
-//            pullUpControl?.delegate = self
-//        }
-//    }
+class AddToDoPullUpViewController: UIViewController {
+    
+    @IBOutlet weak var handleArea: UIView!
+    
+    @IBOutlet weak var topLine: UIImageView!
+    
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    
+    var pullUpControl: SOPullUpControl? {
+        didSet {
+            pullUpControl?.delegate = self
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        topLine.alpha = 0
+        navigationBar.isUserInteractionEnabled = false
     }
     
+}
 
-    /*
-    // MARK: - Navigation
+// MARK: - SOPullUpViewDelegate
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension AddToDoPullUpViewController: SOPullUpViewDelegate {
+
+    func pullUpViewStatus(_ sender: UIViewController, didChangeTo status: PullUpStatus) {
+        switch status {
+        case .collapsed:
+            UIView.animate(withDuration: 0.7) { [weak self] in
+                self?.topLine.alpha = 0
+            }
+            navigationBar.isUserInteractionEnabled = false
+        case .expanded:
+            UIView.animate(withDuration: 0.7) { [weak self] in
+                self?.topLine.alpha = 1
+            }
+            navigationBar.isUserInteractionEnabled = true
+        }
     }
-    */
-
+    
+    func pullUpHandleArea(_ sender: UIViewController) -> UIView {
+        return handleArea
+    }
 }
