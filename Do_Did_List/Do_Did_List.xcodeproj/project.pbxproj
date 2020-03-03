@@ -15,7 +15,6 @@
 		F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */; };
 		F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */; };
 		F25C3787240D0F5F00E0EF0C /* AddToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */; };
-		F25C3788240D0F5F00E0EF0C /* AddToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25C3786240D0F5F00E0EF0C /* AddToDoTableViewCell.xib */; };
 		F25C378A240D487200E0EF0C /* AddToDoPullUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25C3789240D487200E0EF0C /* AddToDoPullUp.storyboard */; };
 		F25C378C240D494700E0EF0C /* AddToDoPullUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C378B240D494700E0EF0C /* AddToDoPullUpViewController.swift */; };
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
@@ -44,7 +43,6 @@
 		F24AB1CF23EFC3B100ECBE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F24AB1D123EFC3B100ECBE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoTableViewCell.swift; sourceTree = "<group>"; };
-		F25C3786240D0F5F00E0EF0C /* AddToDoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddToDoTableViewCell.xib; sourceTree = "<group>"; };
 		F25C3789240D487200E0EF0C /* AddToDoPullUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddToDoPullUp.storyboard; sourceTree = "<group>"; };
 		F25C378B240D494700E0EF0C /* AddToDoPullUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoPullUpViewController.swift; sourceTree = "<group>"; };
 		F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FivoSans-Black-Oblique.otf"; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 		F2C0A5342407E2DB0047B0A4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F2E702CB2400E68200A0289E /* SideMenuViewController.swift */,
 				F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */,
 				F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */,
 			);
@@ -183,6 +180,7 @@
 		F2E702C62400DE1400A0289E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F2E702CB2400E68200A0289E /* SideMenuViewController.swift */,
 				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
 				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
 				F2FE47A0240BEDC300EAD268 /* AddToDoViewController.swift */,
@@ -205,7 +203,6 @@
 				F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */,
 				F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */,
 				F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */,
-				F25C3786240D0F5F00E0EF0C /* AddToDoTableViewCell.xib */,
 				F25C3789240D487200E0EF0C /* AddToDoPullUp.storyboard */,
 			);
 			path = Storyboards;
@@ -278,7 +275,6 @@
 				F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */,
 				F24AB1C823EFC3AE00ECBE1E /* Main.storyboard in Resources */,
 				F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */,
-				F25C3788240D0F5F00E0EF0C /* AddToDoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
