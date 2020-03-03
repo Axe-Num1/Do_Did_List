@@ -87,6 +87,7 @@ extension MainViewController {
         settings.presentationStyle.menuStartAlpha = 0.8
         settings.presentationStyle.presentingEndAlpha = 0.6
         settings.presentationStyle.onTopShadowOpacity = 0.5
+        settings.usingSpringWithDamping = 0.8
         settings.statusBarEndAlpha = 0
         
         return settings
