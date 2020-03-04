@@ -75,7 +75,7 @@ extension AddToDoViewController: SOPullUpViewDataSource {
 // MARK: - TableView
 extension AddToDoViewController : UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
