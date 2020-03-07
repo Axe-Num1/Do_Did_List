@@ -68,7 +68,7 @@ extension AddToDoViewController: SOPullUpViewDataSource {
     }
     
     func pullUpViewExpandedViewHeight() -> CGFloat {
-        return 750
+        return 770
     }
 }
 

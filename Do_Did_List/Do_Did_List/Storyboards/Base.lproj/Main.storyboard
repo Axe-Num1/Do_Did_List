@@ -140,8 +140,8 @@
                                                 <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00 ~ 0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMb-0a-9IE">
-                                                <rect key="frame" x="61.5" y="93.5" width="107.5" height="16.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMb-0a-9IE">
+                                                <rect key="frame" x="87" y="93.5" width="56" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="17"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.42352941179999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -466,12 +466,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 ~ 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgy-Ur-BSw">
-                                                    <rect key="frame" x="242" y="95" width="120" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9U-OI-Jlr" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="277" y="135" width="85" height="27"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -520,6 +514,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgy-Ur-BSw">
+                                                    <rect key="frame" x="311.5" y="95" width="50.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Kaj-xb-UWg" firstAttribute="top" secondItem="KPY-8F-RFa" secondAttribute="bottom" constant="10" id="2dq-f8-adK"/>
@@ -534,7 +534,6 @@
                                                 <constraint firstItem="AAq-1F-qWN" firstAttribute="leading" secondItem="BxN-c9-FKr" secondAttribute="trailing" constant="5" id="IML-1p-aJL"/>
                                                 <constraint firstItem="yUT-4Y-CxI" firstAttribute="top" secondItem="4Q4-gS-3aC" secondAttribute="bottom" constant="10" id="Ja5-qj-7rL"/>
                                                 <constraint firstItem="KPY-8F-RFa" firstAttribute="top" secondItem="rhp-Oa-z8q" secondAttribute="bottom" constant="11" id="LTZ-PG-sAB"/>
-                                                <constraint firstItem="Tgy-Ur-BSw" firstAttribute="leading" relation="lessThanOrEqual" secondItem="rhp-Oa-z8q" secondAttribute="trailing" constant="192" id="LUH-7U-Q6q"/>
                                                 <constraint firstAttribute="bottom" secondItem="Kaj-xb-UWg" secondAttribute="bottom" constant="11" id="N5y-Bf-YzS"/>
                                                 <constraint firstItem="rhp-Oa-z8q" firstAttribute="top" secondItem="yUT-4Y-CxI" secondAttribute="bottom" constant="10" id="Q84-D6-7X7"/>
                                                 <constraint firstItem="gfL-1y-3Nf" firstAttribute="leading" secondItem="Z4k-jx-qKE" secondAttribute="leading" constant="10" id="XIO-wf-kBW"/>
@@ -547,6 +546,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="yUT-4Y-CxI" secondAttribute="trailing" id="kXR-hy-zYh"/>
                                                 <constraint firstAttribute="trailing" secondItem="d9U-OI-Jlr" secondAttribute="trailing" constant="12" id="lLU-hn-JZ1"/>
                                                 <constraint firstAttribute="trailing" secondItem="AAq-1F-qWN" secondAttribute="trailing" constant="10" id="lmE-qo-jvB"/>
+                                                <constraint firstItem="Tgy-Ur-BSw" firstAttribute="leading" relation="lessThanOrEqual" secondItem="rhp-Oa-z8q" secondAttribute="trailing" constant="261.5" id="nMK-5T-oW1"/>
                                                 <constraint firstItem="AAq-1F-qWN" firstAttribute="top" secondItem="Z4k-jx-qKE" secondAttribute="top" constant="10" id="oUn-nY-UgS"/>
                                                 <constraint firstItem="gfL-1y-3Nf" firstAttribute="top" secondItem="Z4k-jx-qKE" secondAttribute="top" constant="10" id="v8l-G9-0uO"/>
                                                 <constraint firstItem="Kaj-xb-UWg" firstAttribute="leading" secondItem="Z4k-jx-qKE" secondAttribute="leading" constant="12" id="yct-td-HU8"/>
