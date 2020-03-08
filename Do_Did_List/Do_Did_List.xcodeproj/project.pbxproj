@@ -20,7 +20,8 @@
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
 		F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73323EFF39500282434 /* FivoSans-Black.otf */; };
 		F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F283C1E323FFBA0A00392DC5 /* Assets.xcassets */; };
-		F2C0A52F2407C52A0047B0A4 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0A52E2407C52A0047B0A4 /* Database.swift */; };
+		F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */; };
+		F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */; };
 		F2CAB8832403EFF500ECCEBF /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */; };
 		F2CAB8842403EFF500ECCEBF /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */; };
 		F2E702CD2400E68200A0289E /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CB2400E68200A0289E /* SideMenuViewController.swift */; };
@@ -53,8 +54,9 @@
 		F2A3A0A82403E343004E81E0 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A3A0A92403E343004E81E0 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A3A0AA2403E343004E81E0 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoTableViewController.swift; sourceTree = "<group>"; };
 		F2B8019123FFE4AF0014D4B6 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2C0A52E2407C52A0047B0A4 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
 		F2E702CB2400E68200A0289E /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +154,7 @@
 		F2C0A5302407CA070047B0A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F2C0A52E2407C52A0047B0A4 /* Database.swift */,
+				F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +187,7 @@
 				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
 				F2FE47A0240BEDC300EAD268 /* AddToDoViewController.swift */,
 				F25C378B240D494700E0EF0C /* AddToDoPullUpViewController.swift */,
+				F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25C378C240D494700E0EF0C /* AddToDoPullUpViewController.swift in Sources */,
+				F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */,
 				F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */,
 				F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */,
 				F2FE47A1240BEDC300EAD268 /* AddToDoViewController.swift in Sources */,
@@ -336,7 +340,7 @@
 				F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */,
 				F2E702D424013C0300A0289E /* UIViewRounding.swift in Sources */,
 				F2E702CD2400E68200A0289E /* SideMenuViewController.swift in Sources */,
-				F2C0A52F2407C52A0047B0A4 /* Database.swift in Sources */,
+				F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */,
 				F25C3787240D0F5F00E0EF0C /* AddToDoTableViewCell.swift in Sources */,
 				F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */,
 			);
