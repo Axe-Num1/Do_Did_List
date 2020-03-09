@@ -134,7 +134,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq7-tZ-XVp">
-                                                    <rect key="frame" x="207" y="14" width="147" height="21"/>
+                                                    <rect key="frame" x="96" y="14" width="258" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -154,7 +154,6 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="216"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="216" id="bOY-g7-tJt"/>
-                                                        <constraint firstAttribute="width" constant="374" id="hfN-4W-FjW"/>
                                                     </constraints>
                                                     <connections>
                                                         <action selector="setTime:" destination="uSO-Ly-WUE" eventType="valueChanged" id="jID-Wc-8fc"/>
@@ -162,8 +161,9 @@
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rcd-59-s9i" firstAttribute="centerX" secondItem="UC7-JU-q8V" secondAttribute="centerX" id="3zI-Qv-YjN"/>
-                                                <constraint firstItem="rcd-59-s9i" firstAttribute="centerY" secondItem="UC7-JU-q8V" secondAttribute="centerY" id="Nin-0p-SxI"/>
+                                                <constraint firstAttribute="trailing" secondItem="rcd-59-s9i" secondAttribute="trailing" constant="0.01" id="2dg-6C-RIU"/>
+                                                <constraint firstItem="rcd-59-s9i" firstAttribute="top" secondItem="UC7-JU-q8V" secondAttribute="top" constant="0.01" id="4Rb-6x-54w"/>
+                                                <constraint firstItem="rcd-59-s9i" firstAttribute="leading" secondItem="UC7-JU-q8V" secondAttribute="leading" constant="0.01" id="Y8e-Hm-AyX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

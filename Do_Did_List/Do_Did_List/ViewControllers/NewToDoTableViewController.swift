@@ -10,7 +10,7 @@ import UIKit
 import Cosmos
 
 class NewToDoTableViewController: UITableViewController {
-
+    
     @IBOutlet weak var categoryName: UITextField!
     
     @IBOutlet weak var categoryIcon: UIButton!
@@ -34,6 +34,19 @@ class NewToDoTableViewController: UITableViewController {
         
         timePicker.isHidden = true
         arrowImage.image = UIImage(named: "Popover Arrow Down")
+        format()
+    }
+    
+    func format() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .full
+        dateFormatter.timeStyle = .short
+        
+        let str = dateFormatter.string(from: Date())
+        
+        let date = dateFormatter.date(from: str)
+        
+        timePicker.date = date!
     }
     
     @IBAction func setTime(_ sender: UIDatePicker) {
@@ -57,7 +70,7 @@ class NewToDoTableViewController: UITableViewController {
             
             timePicker.isHidden = !timePicker.isHidden
             
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.25) {
                 self.tableView.beginUpdates()
                 // apple bug fix - some TV lines hide after animation
                 self.tableView.deselectRow(at: indexPath, animated: true)
@@ -66,7 +79,6 @@ class NewToDoTableViewController: UITableViewController {
             
             let imageName = timePicker.isHidden ? "Popover Arrow Down" : "Popover Arrow Up"
             arrowImage.image = UIImage(named: imageName)
-            
         }
         
         let cell = tableView.cellForRow(at: indexPath)

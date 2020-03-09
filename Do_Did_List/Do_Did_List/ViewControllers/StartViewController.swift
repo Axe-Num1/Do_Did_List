@@ -23,10 +23,9 @@ class StartViewController: UIViewController {
     }
     
     func getDate() -> String {
-        let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd" // "yyyy-MM-dd"
-        return dateFormatter.string(from: date)
+        return dateFormatter.string(from: Date())
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
