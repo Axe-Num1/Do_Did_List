@@ -28,29 +28,19 @@ class NewToDoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let formatterTime = DateFormatter()
-        formatterTime.dateFormat = "HH:mm"
-        timeLabel.text = "\(formatterTime.string(from: Date()))"
+        onDidChangeDate(timePicker)
         
         timePicker.isHidden = true
         arrowImage.image = UIImage(named: "Popover Arrow Down")
-        format()
     }
     
-    func format() {
+    @IBAction func onDidChangeDate(_ sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .full
-        dateFormatter.timeStyle = .short
+        dateFormatter.dateFormat = "yyyy-MM-dd-hh:mm a"
         
-        let str = dateFormatter.string(from: Date())
+        let selectDate = dateFormatter.string(from: sender.date)
         
-        let date = dateFormatter.date(from: str)
-        
-        timePicker.date = date!
-    }
-    
-    @IBAction func setTime(_ sender: UIDatePicker) {
-        timeLabel.text = "\(sender.date)"
+        timeLabel.text = selectDate
     }
     
     

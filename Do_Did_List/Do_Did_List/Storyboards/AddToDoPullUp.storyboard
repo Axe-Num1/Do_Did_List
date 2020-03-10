@@ -156,7 +156,7 @@
                                                         <constraint firstAttribute="height" constant="216" id="bOY-g7-tJt"/>
                                                     </constraints>
                                                     <connections>
-                                                        <action selector="setTime:" destination="uSO-Ly-WUE" eventType="valueChanged" id="jID-Wc-8fc"/>
+                                                        <action selector="onDidChangeDate:" destination="uSO-Ly-WUE" eventType="valueChanged" id="A59-a2-l0s"/>
                                                     </connections>
                                                 </datePicker>
                                             </subviews>
