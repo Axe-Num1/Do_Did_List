@@ -24,9 +24,12 @@ class NewToDoTableViewController: UITableViewController {
     @IBOutlet weak var starRating: CosmosView!
     
     @IBOutlet weak var contentTextView: UITextView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        contentTextView.delegate = self
+        textViewSetupView()
         
         onDidChangeDate(timePicker)
         
@@ -54,9 +57,11 @@ class NewToDoTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let timeIndexPath = NSIndexPath(row: 0, section: 1) as IndexPath
         
-        if timeIndexPath == indexPath {
+        let timeIndexPath1 = NSIndexPath(row: 0, section: 1) as IndexPath
+        let timeIndexPath2 = NSIndexPath(row: 2, section: 1) as IndexPath
+        
+        if timeIndexPath1 == indexPath || timeIndexPath2 == indexPath {
             
             timePicker.isHidden = !timePicker.isHidden
             
@@ -74,5 +79,36 @@ class NewToDoTableViewController: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath)
         cell?.selectionStyle = .none
     }
+    
+}
+
+
+extension NewToDoTableViewController: UITextViewDelegate {
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textViewSetupView()
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        textViewSetupView()
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            contentTextView.resignFirstResponder()
+        }
+        return true
+    }
+    
+    func textViewSetupView() {
+        if contentTextView.text == "To Do:" {
+            contentTextView.text = ""
+            contentTextView.textColor = UIColor.black
+        } else if contentTextView.text == "" {
+            contentTextView.text = "To Do:"
+            contentTextView.textColor = UIColor.lightGray
+        }
+    }
+    
     
 }
