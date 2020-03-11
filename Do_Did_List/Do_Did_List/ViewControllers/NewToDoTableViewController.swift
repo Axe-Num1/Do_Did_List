@@ -34,7 +34,12 @@ class NewToDoTableViewController: UITableViewController {
         onDidChangeDate(timePicker)
         
         timePicker.isHidden = true
-        arrowImage.image = UIImage(named: "Popover Arrow Down")
+        arrowDirection()
+    }
+    
+    func arrowDirection() {
+        let imageName = timePicker.isHidden ? "Popover Arrow Down" : "Popover Arrow Up"
+        arrowImage.image = UIImage(named: imageName)
     }
     
     @IBAction func onDidChangeDate(_ sender: UIDatePicker) {
@@ -45,8 +50,12 @@ class NewToDoTableViewController: UITableViewController {
         
         timeLabel.text = selectDate
     }
-    
-    
+}
+
+
+ // MARK: - UITableViewDelegate
+extension NewToDoTableViewController {
+   
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 1 && indexPath.row == 1 {
             let height: CGFloat = timePicker.isHidden ? 0.0 : 216.0
@@ -72,17 +81,16 @@ class NewToDoTableViewController: UITableViewController {
                 self.tableView.endUpdates()
             }
             
-            let imageName = timePicker.isHidden ? "Popover Arrow Down" : "Popover Arrow Up"
-            arrowImage.image = UIImage(named: imageName)
+            arrowDirection()
         }
         
         let cell = tableView.cellForRow(at: indexPath)
         cell?.selectionStyle = .none
     }
-    
 }
 
 
+// MARK: - UITextView Custom Placeholder
 extension NewToDoTableViewController: UITextViewDelegate {
     
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -109,6 +117,4 @@ extension NewToDoTableViewController: UITextViewDelegate {
             contentTextView.textColor = UIColor.lightGray
         }
     }
-    
-    
 }
