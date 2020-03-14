@@ -266,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HD9-2P-9ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2732" y="138"/>
+            <point key="canvasLocation" x="2731.8840579710145" y="137.94642857142856"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="WYW-mB-Qku">
@@ -466,7 +466,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9U-OI-Jlr" customClass="CosmosView" customModule="Cosmos">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9U-OI-Jlr" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="277" y="135" width="85" height="27"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <userDefinedRuntimeAttributes>

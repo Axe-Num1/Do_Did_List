@@ -12,7 +12,7 @@ import M13Checkbox
 
 class ToDoTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var contentTextView: UITextView!
+    @IBOutlet weak var contentLabel: UILabel!
     
     @IBOutlet weak var importance: CosmosView!
     
