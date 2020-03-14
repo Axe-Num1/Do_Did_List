@@ -17,6 +17,8 @@ class AddToDoPullUpViewController: UIViewController {
     
     @IBOutlet weak var navigationBar: UINavigationBar!
     
+    let tableview = NewToDoTableViewController()
+    
     var pullUpControl: SOPullUpControl? {
         didSet {
             pullUpControl?.delegate = self
@@ -28,6 +30,11 @@ class AddToDoPullUpViewController: UIViewController {
         
         topLine.alpha = 0
         navigationBar.isUserInteractionEnabled = false
+    }
+    
+    
+    @IBAction func addToDo(_ sender: UIBarButtonItem) {
+        tableview.add()
     }
     
 }

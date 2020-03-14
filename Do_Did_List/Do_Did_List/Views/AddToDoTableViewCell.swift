@@ -24,18 +24,21 @@ class AddToDoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
-        let image = UIImage(named: "Category")?.withRenderingMode(.alwaysTemplate)
-        
-        categoryImage.tintColor = UIColor(red:0.30, green:0.85, blue:0.39, alpha:1.0)
-        categoryImage.image = image
+        setCategoryIcon()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         self.selectionStyle = .none
+    }
+    
+    func setCategoryIcon() {
+        let image = UIImage(named: "Category")?.withRenderingMode(.alwaysTemplate)
+        
+        categoryImage.tintColor = UIColor(red:0.30, green:0.85, blue:0.39, alpha:1.0)
+        categoryImage.image = image
     }
     
 }
