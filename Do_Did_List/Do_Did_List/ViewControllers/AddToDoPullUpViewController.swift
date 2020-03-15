@@ -12,12 +12,11 @@ import SOPullUpView
 class AddToDoPullUpViewController: UIViewController {
     
     @IBOutlet weak var handleArea: UIView!
-    
     @IBOutlet weak var topLine: UIImageView!
-    
     @IBOutlet weak var navigationBar: UINavigationBar!
     
-    let tableview = NewToDoTableViewController()
+    @IBOutlet weak var containerView: UIView!
+    
     
     var pullUpControl: SOPullUpControl? {
         didSet {
@@ -33,8 +32,9 @@ class AddToDoPullUpViewController: UIViewController {
     }
     
     
+    
     @IBAction func addToDo(_ sender: UIBarButtonItem) {
-        tableview.add()
+
     }
     
 }

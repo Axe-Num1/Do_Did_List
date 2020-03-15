@@ -12,6 +12,10 @@ import RealmSwift
 
 class NewToDoTableViewController: UITableViewController {
     
+    let realm = try! Realm()
+    
+//    let items: Results<ToDoItem>
+    
     @IBOutlet weak var categoryName: UITextField!
     
     @IBOutlet weak var categoryIcon: UIButton!
@@ -25,8 +29,6 @@ class NewToDoTableViewController: UITableViewController {
     @IBOutlet weak var starRating: CosmosView!
     
     @IBOutlet weak var contentTextView: UITextView!
-
-    let item = ToDoItem()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,8 @@ class NewToDoTableViewController: UITableViewController {
         
         timePicker.isHidden = true
         arrowDirection()
+        
+//        print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
     func arrowDirection() {
@@ -46,34 +50,18 @@ class NewToDoTableViewController: UITableViewController {
     }
     
     func add() {
-        if let text = self.categoryName.text {
-            item.categoryName = text
+        let item = ToDoItem()
+        
+        guard let text = self.categoryName.text else {
+            print("none")
+            return
         }
+        item.categoryName = text
         
-        let realm = try! Realm()
-        
-        //write 트랜젝션
         try! realm.write {
-            //객체 복사 및 업데이트
-            //해당 객체가 있으면 업데이트를 하고 아니면 새로 생성한다.
-            //companyInfo의 값이 복사되어 새로운 객체가 생성된다.
-            //새로 생성된 객체는 관리객체, 원본은 비관리객체로 남게된다.
-            let newToDo = realm.create(ToDoItem.self, value: item, update: .all)
-            
-            //object add and update
-            //객체 add 및 업데이트
-            //companyInfo가 관리객체로 변경이 된다.
-            //add함수 이후 companyInfo를 수정하면 realm에도 반영이 된다.
-            realm.add(item, update: .all)
+            self.realm.add(item)
         }
-        
-        // Realm파일이 생성되는 위치 출력
-//        print(Realm.Configuration.defaultConfiguration.fileURL!)
-        
     }
-    
-    
-    
     
     @IBAction func onDidChangeDate(_ sender: UIDatePicker) {
         let dateFormatter = DateFormatter()

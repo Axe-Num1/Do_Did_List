@@ -76,6 +76,7 @@
                         <viewLayoutGuide key="safeArea" id="uOz-re-I6t"/>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="82W-jt-oWV" id="olW-4l-L69"/>
                         <outlet property="handleArea" destination="cGh-2v-Mxu" id="v6d-6S-3Zz"/>
                         <outlet property="navigationBar" destination="I6r-74-2dX" id="cf3-t6-Nvy"/>
                         <outlet property="topLine" destination="T5F-6w-q0L" id="SYG-PX-qd1"/>
@@ -294,7 +295,7 @@
                     <connections>
                         <outlet property="arrowImage" destination="Uzp-Js-2Hu" id="a7E-6Y-oap"/>
                         <outlet property="categoryIcon" destination="c1f-5E-W0m" id="bhr-za-N8P"/>
-                        <outlet property="categoryName" destination="FHN-N6-GKU" id="iYC-cL-yhh"/>
+                        <outlet property="categoryName" destination="FHN-N6-GKU" id="2hd-8w-240"/>
                         <outlet property="contentTextView" destination="7Qk-al-Xk9" id="Cdx-qZ-WyN"/>
                         <outlet property="starRating" destination="HtT-cg-LaZ" id="EIS-6K-EbP"/>
                         <outlet property="timeLabel" destination="fq7-tZ-XVp" id="jZB-cV-g0L"/>
