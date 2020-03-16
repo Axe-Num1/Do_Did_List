@@ -59,7 +59,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82W-jt-oWV">
                                 <rect key="frame" x="0.0" y="109" width="414" height="753"/>
                                 <connections>
-                                    <segue destination="6jd-aL-fcD" kind="embed" id="1L6-di-xbp"/>
+                                    <segue destination="6jd-aL-fcD" kind="embed" identifier="containerViewSegue" id="1L6-di-xbp"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -76,7 +76,6 @@
                         <viewLayoutGuide key="safeArea" id="uOz-re-I6t"/>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="82W-jt-oWV" id="olW-4l-L69"/>
                         <outlet property="handleArea" destination="cGh-2v-Mxu" id="v6d-6S-3Zz"/>
                         <outlet property="navigationBar" destination="I6r-74-2dX" id="cf3-t6-Nvy"/>
                         <outlet property="topLine" destination="T5F-6w-q0L" id="SYG-PX-qd1"/>

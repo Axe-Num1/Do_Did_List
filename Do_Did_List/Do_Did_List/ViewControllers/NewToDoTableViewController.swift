@@ -50,13 +50,19 @@ class NewToDoTableViewController: UITableViewController {
     }
     
     func add() {
-        let item = ToDoItem()
-        
         guard let text = self.categoryName.text else {
             print("none")
             return
         }
-        item.categoryName = text
+        
+        let item = ToDoItem(
+            categoryName: text,
+            imageTag: <#T##Int#>,
+            timestamp: <#T##Date#>,
+            content: <#T##String#>,
+            importance: <#T##Int#>,
+            isDone: <#T##Bool#>
+        )
         
         try! realm.write {
             self.realm.add(item)

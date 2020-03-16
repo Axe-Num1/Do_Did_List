@@ -25,5 +25,17 @@ class ToDoItem: Object {
         return "id"
     }
     
+    init(categoryName: String, imageTag: Int, timestamp: Date, importance: Int, content: String, isDone: Bool) {
+        self.categoryName = categoryName
+        self.imageTag = imageTag
+        self.timestamp = timestamp
+        self.importance = importance
+        self.content = content
+        self.isDone = isDone
+    }
+    
+    required init() {
+        fatalError("init() has not been implemented")
+    }
     
 }
