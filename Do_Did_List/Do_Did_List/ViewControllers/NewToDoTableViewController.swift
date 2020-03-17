@@ -55,18 +55,18 @@ class NewToDoTableViewController: UITableViewController {
             return
         }
         
-        let item = ToDoItem(
-            categoryName: text,
-            imageTag: <#T##Int#>,
-            timestamp: <#T##Date#>,
-            content: <#T##String#>,
-            importance: <#T##Int#>,
-            isDone: <#T##Bool#>
-        )
+//        let item = ToDoItem(
+//            categoryName: text,
+//            imageTag: <#T##Int#>,
+//            timestamp: <#T##Date#>,
+//            content: <#T##String#>,
+//            importance: <#T##Int#>,
+//            isDone: <#T##Bool#>
+//        )
         
-        try! realm.write {
-            self.realm.add(item)
-        }
+//        try! realm.write {
+//            self.realm.add(item)
+//        }
     }
     
     @IBAction func onDidChangeDate(_ sender: UIDatePicker) {

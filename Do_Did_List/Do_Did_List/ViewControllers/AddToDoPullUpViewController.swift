@@ -15,7 +15,7 @@ class AddToDoPullUpViewController: UIViewController {
     @IBOutlet weak var topLine: UIImageView!
     @IBOutlet weak var navigationBar: UINavigationBar!
     
-//    var containerViewController: NewToDoTableViewController?
+    private var newToDoTableViewController: NewToDoTableViewController?
     
     var pullUpControl: SOPullUpControl? {
         didSet {
@@ -28,17 +28,19 @@ class AddToDoPullUpViewController: UIViewController {
         
         topLine.alpha = 0
         navigationBar.isUserInteractionEnabled = false
+        
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "containerViewSegue" {
-//            containerViewController = segue.destination as? NewToDoTableViewController
-//            containerViewController?.add()
-//        }
-//    }
     
     @IBAction func addToDo(_ sender: UIBarButtonItem) {
         
+        guard let newToDoTableView = children.first as? NewToDoTableViewController else {
+            print("faild")
+            return
+        }
+        newToDoTableViewController = newToDoTableView
+        
+        
+        print(newToDoTableViewController?.categoryName.text)
     }
     
 }

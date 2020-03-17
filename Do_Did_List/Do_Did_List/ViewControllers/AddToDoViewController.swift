@@ -61,7 +61,9 @@ extension AddToDoViewController: SOPullUpViewDataSource {
     }
     
     func pullUpViewController() -> UIViewController {
-        guard let vc = UIStoryboard(name: "AddToDoPullUp", bundle: nil).instantiateInitialViewController() as? AddToDoPullUpViewController else {return UIViewController()}
+        guard let vc = UIStoryboard(name: "AddToDoPullUp", bundle: nil).instantiateInitialViewController() as? AddToDoPullUpViewController else {
+            return UIViewController()
+        }
         
         vc.pullUpControl = self.pullUpController
         return vc
