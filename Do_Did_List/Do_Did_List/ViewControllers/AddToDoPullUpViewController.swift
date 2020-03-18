@@ -15,8 +15,6 @@ class AddToDoPullUpViewController: UIViewController {
     @IBOutlet weak var topLine: UIImageView!
     @IBOutlet weak var navigationBar: UINavigationBar!
     
-    private var newToDoTableViewController: NewToDoTableViewController?
-    
     var pullUpControl: SOPullUpControl? {
         didSet {
             pullUpControl?.delegate = self
@@ -32,15 +30,10 @@ class AddToDoPullUpViewController: UIViewController {
     }
     
     @IBAction func addToDo(_ sender: UIBarButtonItem) {
-        
-        guard let newToDoTableView = children.first as? NewToDoTableViewController else {
-            print("faild")
-            return
+        var managed: NewToDoTableViewController? {
+            return self.children.last as! NewToDoTableViewController?
         }
-        newToDoTableViewController = newToDoTableView
-        
-        
-        print(newToDoTableViewController?.categoryName.text)
+        managed?.add(sender: self)
     }
     
 }

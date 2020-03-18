@@ -49,8 +49,11 @@ class NewToDoTableViewController: UITableViewController {
         arrowImage.image = UIImage(named: imageName)
     }
     
-    func add() {
-        guard let text = self.categoryName.text else {
+    func add(sender: AddToDoPullUpViewController) {
+        
+//        print(categoryName.text)
+        
+        guard categoryName.text != nil else {
             print("none")
             return
         }

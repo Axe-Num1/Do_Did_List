@@ -19,6 +19,7 @@
 		F25C378C240D494700E0EF0C /* AddToDoPullUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C378B240D494700E0EF0C /* AddToDoPullUpViewController.swift */; };
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
 		F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73323EFF39500282434 /* FivoSans-Black.otf */; };
+		F26B3BE92421CEFC00052ABF /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B3BE82421CEFC00052ABF /* ModelManager.swift */; };
 		F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F283C1E323FFBA0A00392DC5 /* Assets.xcassets */; };
 		F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */; };
 		F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */; };
@@ -50,6 +51,7 @@
 		F25FB73323EFF39500282434 /* FivoSans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FivoSans-Black.otf"; sourceTree = "<group>"; };
 		F25FB73523EFF86200282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25FB73B23EFFA0500282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26B3BE82421CEFC00052ABF /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		F283C1E323FFBA0A00392DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2A3A0A82403E343004E81E0 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A3A0A92403E343004E81E0 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */,
+				F26B3BE82421CEFC00052ABF /* ModelManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				F25C378C240D494700E0EF0C /* AddToDoPullUpViewController.swift in Sources */,
 				F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */,
 				F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */,
+				F26B3BE92421CEFC00052ABF /* ModelManager.swift in Sources */,
 				F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */,
 				F2FE47A1240BEDC300EAD268 /* AddToDoViewController.swift in Sources */,
 				F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */,

@@ -59,7 +59,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82W-jt-oWV">
                                 <rect key="frame" x="0.0" y="109" width="414" height="753"/>
                                 <connections>
-                                    <segue destination="VtJ-M6-nxr" kind="embed" id="SlS-hs-1NB"/>
+                                    <segue destination="uSO-Ly-WUE" kind="embed" id="ma3-23-QiV"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -116,7 +116,7 @@
                                                     </constraints>
                                                     <state key="normal" backgroundImage="CategoryIcon"/>
                                                     <connections>
-                                                        <segue destination="xCz-uY-4iB" kind="show" id="OgB-2a-tT3"/>
+                                                        <segue destination="xCz-uY-4iB" kind="presentation" id="OgB-2a-tT3"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -311,7 +311,7 @@
             <objects>
                 <viewController id="xCz-uY-4iB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YIm-3P-o8d">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="753"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="699"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tes-M5-EvO"/>
@@ -321,23 +321,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iap-r7-coZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3745" y="-254"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="05k-tq-O8X">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="VtJ-M6-nxr" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uAb-Dw-odu">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="uSO-Ly-WUE" kind="relationship" relationship="rootViewController" id="IUs-6m-NlF"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TMN-y2-8uf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2987" y="-920"/>
         </scene>
     </scenes>
     <resources>
