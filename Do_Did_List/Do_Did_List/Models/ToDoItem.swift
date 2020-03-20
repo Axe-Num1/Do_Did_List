@@ -11,31 +11,29 @@ import RealmSwift
 
 class ToDoItem: Object {
     
-    @objc dynamic var id: String = UUID().uuidString
+    @objc dynamic var id: String = UUID().uuidString // 고유 아이디
     
-    @objc dynamic var content: String = ""
+    @objc dynamic var title: String = "" // 매인 타이틀
+    @objc dynamic var imageTag: Int = 0 // 이미지 태그
+    
+    @objc dynamic var timestamp: Date = Date() // 날짜, 시간
     @objc dynamic var importance: Int = 0 // 0 ~ 3
-    @objc dynamic var timestamp: Date = Date()
-    @objc dynamic var isDone: Bool = false
+    @objc dynamic var content: String = "" // 내용
     
-    @objc dynamic var imageTag: Int = 0
-    @objc dynamic var categoryName: String = ""
+    @objc dynamic var isDone: Bool = false
     
     override static func primaryKey() -> String? {
         return "id"
     }
     
-    init(categoryName: String, imageTag: Int, timestamp: Date, importance: Int, content: String, isDone: Bool) {
-        self.categoryName = categoryName
+    convenience init(title: String, imageTag: Int, timestamp: Date, importance: Int, content: String, isDone: Bool) {
+        self.init()
+        
+        self.title = title
         self.imageTag = imageTag
         self.timestamp = timestamp
         self.importance = importance
         self.content = content
         self.isDone = isDone
     }
-    
-    required init() {
-//        fatalError("init() has not been implemented")
-    }
-    
 }
