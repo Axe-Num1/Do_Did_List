@@ -12,6 +12,8 @@ import RealmSwift
 
 class NewToDoTableViewController: UITableViewController {
     
+    var modelManager: ModelManager?
+    
     let realm = try! Realm()
     
 //    let items: Results<ToDoItem>
@@ -28,7 +30,7 @@ class NewToDoTableViewController: UITableViewController {
     
     @IBOutlet weak var starRating: CosmosView!
     
-    @IBOutlet weak var contentTextView: UITextView!
+    @IBOutlet weak var contentTextView: UITextView! // Label 사용 고려...
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,27 +51,17 @@ class NewToDoTableViewController: UITableViewController {
         arrowImage.image = UIImage(named: imageName)
     }
     
-    func add(sender: AddToDoPullUpViewController) {
+    func passToManager(sender: AddToDoPullUpViewController) {
         
-//        print(categoryName.text)
+        let item = ToDoItem(title: categoryName.text!,
+                            imageTag: ,
+                            timestamp: ,
+                            importance: ,
+                            content: contentTextView.text,
+                            isDone: false)
         
-        guard categoryName.text != nil else {
-            print("none")
-            return
-        }
+        ModelManager.add(<#T##self: ModelManager##ModelManager#>)
         
-//        let item = ToDoItem(
-//            categoryName: text,
-//            imageTag: <#T##Int#>,
-//            timestamp: <#T##Date#>,
-//            content: <#T##String#>,
-//            importance: <#T##Int#>,
-//            isDone: <#T##Bool#>
-//        )
-        
-//        try! realm.write {
-//            self.realm.add(item)
-//        }
     }
     
     @IBAction func onDidChangeDate(_ sender: UIDatePicker) {

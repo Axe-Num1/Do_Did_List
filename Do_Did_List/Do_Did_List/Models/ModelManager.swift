@@ -11,4 +11,20 @@ import RealmSwift
 
 class ModelManager {
     
+    
+    
+    
+    
+    func add(_ : ToDoItem) {
+        
+    }
+    
+    func remove() {
+        
+    }
+    
+    func sync() {
+        
+    }
+    
 }

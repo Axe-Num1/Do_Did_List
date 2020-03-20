@@ -33,7 +33,7 @@ class AddToDoPullUpViewController: UIViewController {
         var managed: NewToDoTableViewController? {
             return self.children.last as! NewToDoTableViewController?
         }
-        managed?.add(sender: self)
+        managed?.passToManager(sender: self)
     }
     
 }
