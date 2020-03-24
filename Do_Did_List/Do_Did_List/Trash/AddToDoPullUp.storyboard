@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="2211.594202898551" y="-254.46428571428569"/>
         </scene>
-        <!--New To Do Table View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="8ML-6I-VOJ">
             <objects>
-                <tableViewController id="uSO-Ly-WUE" customClass="NewToDoTableViewController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="uSO-Ly-WUE" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="RGQ-c1-EJW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="753"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,9 +176,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="216" id="bOY-g7-tJt"/>
                                                     </constraints>
-                                                    <connections>
-                                                        <action selector="onDidChangeDate:" destination="uSO-Ly-WUE" eventType="valueChanged" id="A59-a2-l0s"/>
-                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -292,15 +289,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Diu-G4-k5C"/>
-                    <connections>
-                        <outlet property="arrowImage" destination="Uzp-Js-2Hu" id="a7E-6Y-oap"/>
-                        <outlet property="categoryIcon" destination="c1f-5E-W0m" id="bhr-za-N8P"/>
-                        <outlet property="categoryName" destination="FHN-N6-GKU" id="2hd-8w-240"/>
-                        <outlet property="contentTextView" destination="7Qk-al-Xk9" id="Cdx-qZ-WyN"/>
-                        <outlet property="starRating" destination="HtT-cg-LaZ" id="EIS-6K-EbP"/>
-                        <outlet property="timeLabel" destination="fq7-tZ-XVp" id="jZB-cV-g0L"/>
-                        <outlet property="timePicker" destination="rcd-59-s9i" id="f65-Ai-zYK"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7N-ta-nLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

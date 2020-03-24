@@ -132,6 +132,7 @@
 				F2E702C62400DE1400A0289E /* ViewControllers */,
 				F2E702D624013C7000A0289E /* Storyboards */,
 				F2C0A5352407E3370047B0A4 /* MISC */,
+				F2BF3EDF242A50EB000E52F4 /* Trash */,
 			);
 			path = Do_Did_List;
 			sourceTree = "<group>";
@@ -151,6 +152,15 @@
 				16F537CFBF1802084E4F37B6 /* Pods_Do_Did_List.framework */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		F2BF3EDF242A50EB000E52F4 /* Trash */ = {
+			isa = PBXGroup;
+			children = (
+				F25C3789240D487200E0EF0C /* AddToDoPullUp.storyboard */,
+				F25C378B240D494700E0EF0C /* AddToDoPullUpViewController.swift */,
+			);
+			path = Trash;
 			sourceTree = "<group>";
 		};
 		F2C0A5302407CA070047B0A4 /* Models */ = {
@@ -189,7 +199,6 @@
 				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
 				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
 				F2FE47A0240BEDC300EAD268 /* AddToDoViewController.swift */,
-				F25C378B240D494700E0EF0C /* AddToDoPullUpViewController.swift */,
 				F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */,
 			);
 			path = ViewControllers;
@@ -209,7 +218,6 @@
 				F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */,
 				F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */,
 				F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */,
-				F25C3789240D487200E0EF0C /* AddToDoPullUp.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
