@@ -26,13 +26,10 @@ class NewToDoTableViewController: UITableViewController {
     
     @IBOutlet weak var starRating: CosmosView!
     
-    @IBOutlet weak var contentTextView: UITextView! // Label 사용 고려...
+    @IBOutlet weak var contentField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        contentTextView.delegate = self
-        textViewSetupView()
         
         onDidChangeDate(timePicker)
         
@@ -49,19 +46,20 @@ class NewToDoTableViewController: UITableViewController {
         arrowImage.image = UIImage(named: imageName)
     }
     
-    func passToManager(sender: AddToDoPullUpViewController) {
+    @IBAction func passToManager(_ sender: Any) {
         
         let item = ToDoItem(title: categoryName.text!,
                             imageTag: 0,
                             timestamp: timePicker.date,
                             importance: starRating.rating,
-                            content: contentTextView.text,
-                            isDone: false)
+                            content: contentField.text!,
+                            isDone: false) // 기본값 (생성시 false)
         
         modelManager.add(item)
     }
     
     @IBAction func onDidChangeDate(_ sender: UIDatePicker) {
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd-hh:mm a"
         
@@ -105,35 +103,5 @@ extension NewToDoTableViewController {
         
         let cell = tableView.cellForRow(at: indexPath)
         cell?.selectionStyle = .none
-    }
-}
-
-
-// MARK: - UITextView Custom Placeholder
-extension NewToDoTableViewController: UITextViewDelegate {
-    
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        textViewSetupView()
-    }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        textViewSetupView()
-    }
-    
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if text == "\n" {
-            contentTextView.resignFirstResponder()
-        }
-        return true
-    }
-    
-    func textViewSetupView() {
-        if contentTextView.text == "To Do:" {
-            contentTextView.text = ""
-            contentTextView.textColor = UIColor.black
-        } else if contentTextView.text == "" {
-            contentTextView.text = "To Do:"
-            contentTextView.textColor = UIColor.lightGray
-        }
     }
 }

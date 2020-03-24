@@ -7,13 +7,10 @@
 //
 
 import UIKit
-import SOPullUpView
 
 class AddToDoViewController: UIViewController {
     
     @IBOutlet weak var addToDoTableView: UITableView!
-    
-    let pullUpController = SOPullUpControl()
     
     var bottomPadding: CGFloat {
         let bottomSafeArea: CGFloat
@@ -29,9 +26,6 @@ class AddToDoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        pullUpController.dataSource = self
-        pullUpController.setupCard(from: view)
         
         addToDoTableView.delegate = self
         addToDoTableView.dataSource = self
@@ -51,27 +45,6 @@ class AddToDoViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
     }
     
-}
-
-// MARK: - SOPullUpViewDataSource
-
-extension AddToDoViewController: SOPullUpViewDataSource {
-    func pullUpViewCollapsedViewHeight() -> CGFloat {
-        return bottomPadding + 90
-    }
-    
-    func pullUpViewController() -> UIViewController {
-        guard let vc = UIStoryboard(name: "AddToDoPullUp", bundle: nil).instantiateInitialViewController() as? AddToDoPullUpViewController else {
-            return UIViewController()
-        }
-        
-        vc.pullUpControl = self.pullUpController
-        return vc
-    }
-    
-    func pullUpViewExpandedViewHeight() -> CGFloat {
-        return 770
-    }
 }
 
 // MARK: - TableView
