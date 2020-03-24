@@ -11,16 +11,30 @@ import RealmSwift
 
 class ModelManager {
     
+    var realm: Realm!
     
-    
-    
-    
-    func add(_ : ToDoItem) {
-        
+    init() {
+        realm = try! Realm()
     }
     
-    func remove() {
-        
+    func add(_ item: ToDoItem) {
+        do {
+            try realm.write {
+                realm.add(item)
+            }
+        } catch {
+            print("Faild to add")
+        }
+    }
+    
+    func remove(_ item: ToDoItem) {
+        do {
+            try realm.write {
+                realm.delete(item)
+            }
+        } catch {
+            print("Faild to remove")
+        }
     }
     
     func sync() {
