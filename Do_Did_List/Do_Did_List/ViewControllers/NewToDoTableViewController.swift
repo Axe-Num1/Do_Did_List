@@ -12,11 +12,7 @@ import RealmSwift
 
 class NewToDoTableViewController: UITableViewController {
     
-    var modelManager: ModelManager?
-    
-    let realm = try! Realm()
-    
-//    let items: Results<ToDoItem>
+    let modelManager = ModelManager()
     
     @IBOutlet weak var categoryName: UITextField!
     
@@ -43,7 +39,9 @@ class NewToDoTableViewController: UITableViewController {
         timePicker.isHidden = true
         arrowDirection()
         
-//        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        starRating.settings.fillMode = .half
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
     func arrowDirection() {
@@ -54,14 +52,13 @@ class NewToDoTableViewController: UITableViewController {
     func passToManager(sender: AddToDoPullUpViewController) {
         
         let item = ToDoItem(title: categoryName.text!,
-                            imageTag: ,
-                            timestamp: ,
-                            importance: ,
+                            imageTag: 0,
+                            timestamp: timePicker.date,
+                            importance: starRating.rating,
                             content: contentTextView.text,
                             isDone: false)
         
-        ModelManager.add(<#T##self: ModelManager##ModelManager#>)
-        
+        modelManager.add(item)
     }
     
     @IBAction func onDidChangeDate(_ sender: UIDatePicker) {
