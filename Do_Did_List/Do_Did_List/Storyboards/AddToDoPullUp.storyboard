@@ -115,9 +115,6 @@
                                                         <constraint firstAttribute="width" constant="46" id="qPS-9e-bOD"/>
                                                     </constraints>
                                                     <state key="normal" backgroundImage="CategoryIcon"/>
-                                                    <connections>
-                                                        <segue destination="xCz-uY-4iB" kind="presentation" id="OgB-2a-tT3"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -247,6 +244,9 @@
                                                         <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
                                                             <color key="value" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="minTouchRating">
+                                                            <real key="value" value="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
@@ -305,22 +305,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7N-ta-nLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2988" y="-254"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="aak-Y0-NiU">
-            <objects>
-                <viewController id="xCz-uY-4iB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YIm-3P-o8d">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="699"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="tes-M5-EvO"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Pfx-wl-udp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iap-r7-coZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3745" y="-254"/>
         </scene>
     </scenes>
     <resources>
