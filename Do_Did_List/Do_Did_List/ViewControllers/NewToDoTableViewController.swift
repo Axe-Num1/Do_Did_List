@@ -26,7 +26,7 @@ class NewToDoTableViewController: UITableViewController {
     
     @IBOutlet weak var starRating: CosmosView!
     
-    @IBOutlet weak var contentField: UITextField!
+    @IBOutlet weak var contentTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +52,7 @@ class NewToDoTableViewController: UITableViewController {
                             imageTag: 0,
                             timestamp: timePicker.date,
                             importance: starRating.rating,
-                            content: contentField.text!,
+                            content: contentTextView.text!,
                             isDone: false) // 기본값 (생성시 false)
         
         modelManager.add(item)
