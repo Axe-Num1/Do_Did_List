@@ -49,7 +49,7 @@ class NewToDoTableViewController: UITableViewController {
     @IBAction func passToManager(_ sender: Any) {
         
         let item = ToDoItem(title: categoryName.text!,
-                            imageTag: 0,
+                            imageTag: "",
                             timestamp: timePicker.date,
                             importance: starRating.rating,
                             content: contentTextView.text!,

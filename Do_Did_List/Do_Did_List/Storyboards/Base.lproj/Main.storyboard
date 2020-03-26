@@ -844,6 +844,9 @@
                                     <navigationItem title=" Icon" id="ove-gi-qhc">
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="kqF-H5-azw">
                                             <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="doneButton:" destination="cr1-UA-chs" id="DR6-IO-Gsv"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -888,6 +891,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g98-8j-HVj"/>
                     </view>
+                    <connections>
+                        <outlet property="iconImageView" destination="jix-fw-oEt" id="tsO-hZ-7hM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gg-vZ-EPx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

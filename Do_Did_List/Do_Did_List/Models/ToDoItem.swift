@@ -14,7 +14,7 @@ class ToDoItem: Object {
     @objc dynamic var id: String = UUID().uuidString // 고유 아이디
     
     @objc dynamic var title: String = "" // 매인 타이틀
-    @objc dynamic var imageTag: Int = 0 // 이미지 태그
+    @objc dynamic var imageTag: String = "" // 이미지 태그
     
     @objc dynamic var timestamp: Date = Date() // 날짜, 시간
     @objc dynamic var importance: Double = 0.0 // 0.0 ~ 3.0
@@ -26,7 +26,7 @@ class ToDoItem: Object {
         return "id"
     }
     
-    convenience init(title: String, imageTag: Int, timestamp: Date, importance: Double, content: String, isDone: Bool) {
+    convenience init(title: String, imageTag: String, timestamp: Date, importance: Double, content: String, isDone: Bool) {
         self.init()
         
         self.title = title
