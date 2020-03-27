@@ -22,6 +22,8 @@
 		F26B3BE92421CEFC00052ABF /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B3BE82421CEFC00052ABF /* ModelManager.swift */; };
 		F26F187E242AFFE500030938 /* Pods_Do_Did_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977E1452DED3D85498DC6191 /* Pods_Do_Did_List.framework */; };
 		F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F283C1E323FFBA0A00392DC5 /* Assets.xcassets */; };
+		F2897339242E416A0079B0BD /* IconColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2897338242E416A0079B0BD /* IconColorViewController.swift */; };
+		F289733C242E41A90079B0BD /* IconGlyphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289733B242E41A90079B0BD /* IconGlyphViewController.swift */; };
 		F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */; };
 		F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */; };
 		F2CAB8832403EFF500ECCEBF /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */; };
@@ -67,6 +69,8 @@
 		F25FB73B23EFFA0500282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26B3BE82421CEFC00052ABF /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		F283C1E323FFBA0A00392DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2897338242E416A0079B0BD /* IconColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconColorViewController.swift; sourceTree = "<group>"; };
+		F289733B242E41A90079B0BD /* IconGlyphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconGlyphViewController.swift; sourceTree = "<group>"; };
 		F2A3A0A82403E343004E81E0 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A3A0A92403E343004E81E0 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A3A0AA2403E343004E81E0 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +176,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		F289733A242E41730079B0BD /* IconSettings */ = {
+			isa = PBXGroup;
+			children = (
+				F22E3208242BA6530089E58E /* IconViewController.swift */,
+				F2897338242E416A0079B0BD /* IconColorViewController.swift */,
+				F289733B242E41A90079B0BD /* IconGlyphViewController.swift */,
+			);
+			path = IconSettings;
+			sourceTree = "<group>";
+		};
 		F2B8019023FFE4A60014D4B6 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,7 +240,7 @@
 				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
 				F2FE47A0240BEDC300EAD268 /* AddToDoViewController.swift */,
 				F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */,
-				F22E3208242BA6530089E58E /* IconViewController.swift */,
+				F289733A242E41730079B0BD /* IconSettings */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -382,7 +396,9 @@
 				F22E3209242BA6530089E58E /* IconViewController.swift in Sources */,
 				F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */,
 				F25C3787240D0F5F00E0EF0C /* AddToDoTableViewCell.swift in Sources */,
+				F289733C242E41A90079B0BD /* IconGlyphViewController.swift in Sources */,
 				F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */,
+				F2897339242E416A0079B0BD /* IconColorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
