@@ -10,7 +10,7 @@ import UIKit
 import Cosmos
 import RealmSwift
 
-class NewToDoTableViewController: UITableViewController {
+class NewToDoTableViewController: UITableViewController, IconViewControllerDelegate {
     
     let modelManager = ModelManager()
     
@@ -28,6 +28,8 @@ class NewToDoTableViewController: UITableViewController {
     
     @IBOutlet weak var contentTextView: UITextView!
     
+    var iconName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,6 +43,17 @@ class NewToDoTableViewController: UITableViewController {
         print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "NewVCToIconVC" {
+            let iconView = segue.destination as! IconViewController
+            iconView.delegate = self
+        }
+    }
+    
+    func iconName(name: String) {
+        iconName = name
+    }
+    
     func arrowDirection() {
         let imageName = timePicker.isHidden ? "Popover Arrow Down" : "Popover Arrow Up"
         arrowImage.image = UIImage(named: imageName)
@@ -49,7 +62,7 @@ class NewToDoTableViewController: UITableViewController {
     @IBAction func passToManager(_ sender: Any) {
         
         let item = ToDoItem(title: categoryName.text!,
-                            imageTag: "",
+                            imageTag: iconName ?? "",
                             timestamp: timePicker.date,
                             importance: starRating.rating,
                             content: contentTextView.text!,
