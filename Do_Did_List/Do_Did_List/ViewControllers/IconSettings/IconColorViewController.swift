@@ -54,8 +54,8 @@ extension IconColorViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorCell", for: indexPath)
         guard let colors = colorsTable[indexPath.row] else { fatalError("Colors table error") }
-        cell.setGradientBackgroundColor(colorOne: colors[0], colorTow: colors[1])
-        cell.makeRoundedCorners()
+//        cell.setGradientBackgroundColor(colorOne: colors[0], colorTow: colors[1])
+//        cell.makeRoundedCorners()
         return cell
     }
     

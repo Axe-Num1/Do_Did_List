@@ -27,7 +27,7 @@ class IconGlyphViewController: UIViewController {
         glyphCollectionView.allowsSelection = true
         glyphCollectionView.allowsMultipleSelection = false
         
-        if let layout = iconCollectionVIew.collectionViewLayout as? UICollectionViewFlowLayout {
+        if let layout = glyphCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
             
             layout.itemSize = CGSize(width: 50, height: 50)
@@ -65,7 +65,7 @@ extension IconGlyphViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("#1", indexPath, #function)
         
-        iconImageView.image = UIImage(named: "CategoryIcon")
+//        iconImageView.image = UIImage(named: "CategoryIcon")
         
         if let cell = collectionView.cellForItem(at: indexPath) {
             cell.contentView.backgroundColor = UIColor.systemGray4
