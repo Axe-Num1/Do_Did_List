@@ -8,41 +8,44 @@
 
 import UIKit
 
+var firstColorData: Data?
+var secondColorData: Data?
+
 protocol IconViewControllerDelegate: NSObjectProtocol {
     func iconName(name: String)
 }
 
 class IconViewController: UIViewController {
     
-    @IBOutlet weak var iconImageView: UIImageView!
-    
-    @IBOutlet weak var iconCollectionVIew: UICollectionView!
+    @IBOutlet weak var iconView: IconView!
+    @IBOutlet weak var selectColorView: UIView!
+    @IBOutlet weak var selectGlyphView: UIView!
     
     weak var delegate: IconViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         isModalInPresentation = true
         
-        setCollectionView()
+        switchViews(firstView: 1.0, secondView: 0.0)
+        
+        setupIconView()
         
     }
     
-    func setCollectionView() {
-        iconCollectionVIew.dataSource = self
-        iconCollectionVIew.delegate = self
-        
-        iconCollectionVIew.showsHorizontalScrollIndicator = false
-        iconCollectionVIew.allowsSelection = true
-        iconCollectionVIew.allowsMultipleSelection = false
-        
-        if let layout = iconCollectionVIew.collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.scrollDirection = .horizontal
-            
-            layout.itemSize = CGSize(width: 50, height: 50)
-            
-            layout.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
+    @IBAction func handleSelectView(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            UIView.animate(withDuration: 0.3) {
+                self.switchViews(firstView: 1.0, secondView: 0.0)
+            }
+        case 1:
+            UIView.animate(withDuration: 0.3) {
+                self.switchViews(firstView: 0.0, secondView: 1.0)
+            }
+        default:
+            break
         }
     }
     
@@ -52,54 +55,26 @@ class IconViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-}
-
-
-// MARK: - UICollectionViewDataSource
-extension IconViewController: UICollectionViewDataSource {
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+    private func switchViews(firstView: CGFloat, secondView: CGFloat) {
+        selectColorView.alpha = firstView
+        selectGlyphView.alpha = secondView
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        
-        if let icon = cell.contentView.viewWithTag(100) as? UIImageView {
-            icon.image = UIImage(named: "CategoryIcon")
-        }
-        
-        cell.contentView.layer.cornerRadius = 10
-        
-        return cell
-    }
-}
-
-// MARK: - UICollectionViewDelegate
-extension IconViewController: UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("#1", indexPath, #function)
-        
-        iconImageView.image = UIImage(named: "CategoryIcon")
-        
-        if let cell = collectionView.cellForItem(at: indexPath) {
-            cell.contentView.backgroundColor = UIColor.systemGray4
-        }
+    @objc func handleChangeColor(notification:  Notification) {
+        guard let colorDict = notification.userInfo else { return }
+        guard let colors = colorDict["colorDict"] as? [UIColor] else { return }
+        //        firstColorData = colors[0].encode()
+        //        secondColorData = colors[1].encode()
+        iconView.backgroundImage.image = nil
+        iconView.topColor = colors[0]
+        iconView.bottomColor = colors[1]
     }
     
-    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        print("#2", indexPath, #function)
+    func setupIconView() {
+        iconView.roundCorners(.allCorners, radius: 32)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleChangeColor), name: NSNotification.Name(rawValue: "colorRefersh"), object: nil)
         
-        guard let list = collectionView.indexPathsForSelectedItems else { return true }
-        
-        return !list.contains(indexPath)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        if let cell = collectionView.cellForItem(at: indexPath) {
-            cell.contentView.backgroundColor = nil
-        }
+        //        NotificationCenter.default.addObserver(self, selector: #selector(handleChangeIcon), name: Notification.Name(rawValue: "iconRefresh"), object: nil)
     }
     
 }
