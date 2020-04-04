@@ -110,8 +110,5 @@ extension NewToDoTableViewController {
             
             arrowDirection()
         }
-        
-        let cell = tableView.cellForRow(at: indexPath)
-        cell?.selectionStyle = .none
     }
 }
