@@ -11,17 +11,12 @@ import UIKit
 var firstColorData: Data?
 var secondColorData: Data?
 
-protocol IconViewControllerDelegate: NSObjectProtocol {
-    func iconName(name: String)
-}
-
 class IconViewController: UIViewController {
     
     @IBOutlet weak var iconView: IconView!
     @IBOutlet weak var selectColorView: UIView!
     @IBOutlet weak var selectGlyphView: UIView!
     
-    weak var delegate: IconViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +45,13 @@ class IconViewController: UIViewController {
     }
     
     @IBAction func doneButton(_ sender: Any) {
-        delegate?.iconName(name: "testing")
+        let renderer = UIGraphicsImageRenderer(size: iconView.bounds.size)
+        let image = renderer.image { ctx in
+            iconView.drawHierarchy(in: iconView.bounds, afterScreenUpdates: true)
+        }
+        let finalIconDict: [String: UIImage] = ["finalIcon": image]
+        NotificationCenter.default.post(name: NSNotification.Name("finalIcon"), object: nil, userInfo: finalIconDict)
+        
         isModalInPresentation = false
         dismiss(animated: true, completion: nil)
     }
@@ -70,11 +71,21 @@ class IconViewController: UIViewController {
         iconView.bottomColor = colors[1]
     }
     
+    @objc private func handleChangeIcon(notification: Notification) {
+        guard let iconDict = notification.userInfo else { return }
+        guard let image = iconDict["iconDict"] as? UIImage else { return }
+        iconView.backgroundImage.image = nil
+        iconView.image.image = image
+        iconView.image.image = iconView.image.image?.withRenderingMode(.alwaysTemplate)
+        iconView.image.tintColor = .white
+        iconView.contentMode = .scaleAspectFit
+    }
+    
     func setupIconView() {
         iconView.roundCorners(.allCorners, radius: 32)
         NotificationCenter.default.addObserver(self, selector: #selector(handleChangeColor), name: NSNotification.Name(rawValue: "colorRefersh"), object: nil)
         
-        //        NotificationCenter.default.addObserver(self, selector: #selector(handleChangeIcon), name: Notification.Name(rawValue: "iconRefresh"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleChangeIcon), name: Notification.Name(rawValue: "iconRefresh"), object: nil)
     }
     
 }

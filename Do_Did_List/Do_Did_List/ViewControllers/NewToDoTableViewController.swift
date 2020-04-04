@@ -10,25 +10,17 @@ import UIKit
 import Cosmos
 import RealmSwift
 
-class NewToDoTableViewController: UITableViewController, IconViewControllerDelegate {
+class NewToDoTableViewController: UITableViewController {
     
     let modelManager = ModelManager()
     
     @IBOutlet weak var categoryName: UITextField!
-    
     @IBOutlet weak var categoryIcon: UIButton!
-    
     @IBOutlet weak var timePicker: UIDatePicker!
-    
     @IBOutlet weak var timeLabel: UILabel!
-    
     @IBOutlet weak var arrowImage: UIImageView!
-    
     @IBOutlet weak var starRating: CosmosView!
-    
     @IBOutlet weak var contentTextView: UITextView!
-    
-    var iconName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,15 +35,10 @@ class NewToDoTableViewController: UITableViewController, IconViewControllerDeleg
         print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "NewVCToIconVC" {
-            let iconView = segue.destination as! IconViewController
-            iconView.delegate = self
-        }
-    }
-    
-    func iconName(name: String) {
-        iconName = name
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setObserver()
     }
     
     func arrowDirection() {
@@ -62,7 +49,7 @@ class NewToDoTableViewController: UITableViewController, IconViewControllerDeleg
     @IBAction func passToManager(_ sender: Any) {
         
         let item = ToDoItem(title: categoryName.text!,
-                            imageTag: iconName ?? "",
+                            imageTag: "",
                             timestamp: timePicker.date,
                             importance: starRating.rating,
                             content: contentTextView.text!,
@@ -80,12 +67,22 @@ class NewToDoTableViewController: UITableViewController, IconViewControllerDeleg
         
         timeLabel.text = selectDate
     }
+    
+    @objc private func handleIcon(notification: Notification) {
+        guard let iconDict = notification.userInfo else { return }
+        guard let icon = iconDict["finalIcon"] as? UIImage else { return }
+        categoryIcon.setBackgroundImage(icon, for: .normal)
+    }
+    
+    func setObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleIcon), name: NSNotification.Name(rawValue: "finalIcon"), object: nil)
+    }
 }
 
 
- // MARK: - UITableViewDelegate
+// MARK: - UITableViewDelegate
 extension NewToDoTableViewController {
-   
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 1 && indexPath.row == 1 {
             let height: CGFloat = timePicker.isHidden ? 0.0 : 216.0
