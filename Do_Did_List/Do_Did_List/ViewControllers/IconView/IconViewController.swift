@@ -10,6 +10,7 @@ import UIKit
 
 var firstColorData: Data?
 var secondColorData: Data?
+var imageData: Data?
 
 class IconViewController: UIViewController {
     
@@ -64,8 +65,8 @@ class IconViewController: UIViewController {
     @objc func handleChangeColor(notification:  Notification) {
         guard let colorDict = notification.userInfo else { return }
         guard let colors = colorDict["colorDict"] as? [UIColor] else { return }
-        //        firstColorData = colors[0].encode()
-        //        secondColorData = colors[1].encode()
+        firstColorData = colors[0].encodeToData()
+        secondColorData = colors[1].encodeToData()
         iconView.backgroundImage.image = nil
         iconView.topColor = colors[0]
         iconView.bottomColor = colors[1]
@@ -79,6 +80,8 @@ class IconViewController: UIViewController {
         iconView.image.image = iconView.image.image?.withRenderingMode(.alwaysTemplate)
         iconView.image.tintColor = .white
         iconView.contentMode = .scaleAspectFit
+        
+        imageData = image.jpegData(compressionQuality: 0.8)
     }
     
     func setupIconView() {

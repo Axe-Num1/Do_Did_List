@@ -467,7 +467,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9U-OI-Jlr" customClass="CosmosView" customModule="Cosmos">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9U-OI-Jlr" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="277" y="135" width="85" height="27"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <userDefinedRuntimeAttributes>
@@ -576,12 +576,6 @@
                         <viewLayoutGuide key="safeArea" id="fGn-wy-oc8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add: To Do" id="Etk-dy-RCY">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="60N-P1-nL7">
-                            <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <connections>
-                                <action selector="cancelItem:" destination="Kim-sF-VHc" id="xb1-sF-Jw1"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="wCI-hR-aVo">
                             <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
@@ -606,7 +600,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="Category" id="k8X-fi-70b">
+                            <tableViewSection headerTitle="Title" id="k8X-fi-70b">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="66" id="KF8-aM-bFJ">
                                         <rect key="frame" x="20" y="55.5" width="374" height="66"/>
@@ -615,10 +609,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Category Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hGf-Ds-0Aj">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hGf-Ds-0Aj">
                                                     <rect key="frame" x="63" y="16" width="296" height="34"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hri-Mc-P7a">
                                                     <rect key="frame" x="9" y="10" width="46" height="46"/>
@@ -785,7 +779,7 @@
                                                     <rect key="frame" x="5" y="5" width="364" height="140"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -808,22 +802,25 @@
                     <navigationItem key="navigationItem" title="New To Do" largeTitleDisplayMode="never" id="Svy-eR-CEn">
                         <barButtonItem key="leftBarButtonItem" systemItem="trash" id="iZf-Ld-8ri">
                             <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="cancelButton:" destination="rN7-4P-YwI" id="MCu-2m-mj9"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="L1L-07-3mZ">
                             <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
-                                <action selector="passToManager:" destination="rN7-4P-YwI" id="MxS-uD-UW6"/>
+                                <action selector="addButton:" destination="rN7-4P-YwI" id="ENl-DJ-cav"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="arrowImage" destination="vBL-1b-NtX" id="cZY-Xa-o1h"/>
-                        <outlet property="categoryIcon" destination="hri-Mc-P7a" id="XYP-y8-vxn"/>
-                        <outlet property="categoryName" destination="hGf-Ds-0Aj" id="9cs-eP-JqV"/>
+                        <outlet property="arrowImageView" destination="vBL-1b-NtX" id="PI5-J6-ex4"/>
                         <outlet property="contentTextView" destination="jDy-cg-kAf" id="trQ-uv-GvO"/>
-                        <outlet property="starRating" destination="V0s-Vb-lpe" id="3YL-lm-ZLg"/>
+                        <outlet property="iconButton" destination="hri-Mc-P7a" id="SBg-WI-aAX"/>
+                        <outlet property="starRatingView" destination="V0s-Vb-lpe" id="Yzv-aB-bIb"/>
                         <outlet property="timeLabel" destination="9lp-MN-O3a" id="Q8y-Yl-TEx"/>
                         <outlet property="timePicker" destination="JQs-9n-WBn" id="50y-sT-QrY"/>
+                        <outlet property="titleField" destination="hGf-Ds-0Aj" id="mCj-Fe-r7e"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0a-h7-jc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
