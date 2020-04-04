@@ -14,23 +14,26 @@ class NewToDoTableViewController: UITableViewController {
     
     let modelManager = ModelManager()
     
-    @IBOutlet weak var categoryName: UITextField!
-    @IBOutlet weak var categoryIcon: UIButton!
+    @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var iconButton: UIButton!
     @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var arrowImage: UIImageView!
-    @IBOutlet weak var starRating: CosmosView!
+    @IBOutlet weak var arrowImageView: UIImageView!
+    @IBOutlet weak var starRatingView: CosmosView!
     @IBOutlet weak var contentTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleField.delegate = self
+        self.contentTextView.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
         
         onDidChangeDate(timePicker)
         
         timePicker.isHidden = true
         arrowDirection()
         
-        starRating.settings.fillMode = .half
+        starRatingView.settings.fillMode = .half
         
         print(Realm.Configuration.defaultConfiguration.fileURL!)
     }
@@ -41,21 +44,24 @@ class NewToDoTableViewController: UITableViewController {
         setObserver()
     }
     
-    func arrowDirection() {
-        let imageName = timePicker.isHidden ? "Popover Arrow Down" : "Popover Arrow Up"
-        arrowImage.image = UIImage(named: imageName)
+    @IBAction func cancelButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func passToManager(_ sender: Any) {
+    @IBAction func addButton(_ sender: Any) {
         
-        let item = ToDoItem(title: categoryName.text!,
-                            imageTag: "",
+        let item = ToDoItem(title: titleField.text!,
+                            firstColor: firstColorData!,
+                            secondColor: secondColorData!,
+                            imageData: imageData!,
                             timestamp: timePicker.date,
-                            importance: starRating.rating,
-                            content: contentTextView.text!,
-                            isDone: false) // 기본값 (생성시 false)
+                            importance: starRatingView.rating,
+                            content: contentTextView.text,
+                            isDone: false)
         
         modelManager.add(item)
+        
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func onDidChangeDate(_ sender: UIDatePicker) {
@@ -68,10 +74,19 @@ class NewToDoTableViewController: UITableViewController {
         timeLabel.text = selectDate
     }
     
+    @objc func tapDone(sender: Any) {
+        self.view.endEditing(true)
+    }
+    
     @objc private func handleIcon(notification: Notification) {
         guard let iconDict = notification.userInfo else { return }
         guard let icon = iconDict["finalIcon"] as? UIImage else { return }
-        categoryIcon.setBackgroundImage(icon, for: .normal)
+        iconButton.setBackgroundImage(icon, for: .normal)
+    }
+    
+    func arrowDirection() {
+        let imageName = timePicker.isHidden ? "Popover Arrow Down" : "Popover Arrow Up"
+        arrowImageView.image = UIImage(named: imageName)
     }
     
     func setObserver() {
@@ -110,5 +125,16 @@ extension NewToDoTableViewController {
             
             arrowDirection()
         }
+    }
+}
+
+// MARK: - UITextFieldDelegate
+
+extension NewToDoTableViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField.isEqual(self.titleField){
+            self.titleField.resignFirstResponder()
+        }
+        return true
     }
 }
