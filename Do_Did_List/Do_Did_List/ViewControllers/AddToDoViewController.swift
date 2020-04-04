@@ -35,10 +35,6 @@ class AddToDoViewController: UIViewController {
         navigationBarSet()
     }
     
-    @IBAction func cancelItem(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     func navigationBarSet() {
         navigationController?.navigationBar.barTintColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
         
