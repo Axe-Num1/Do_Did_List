@@ -14,26 +14,35 @@ class ToDoItem: Object {
     @objc dynamic var id: String = UUID().uuidString // 고유 아이디
     
     @objc dynamic var title: String = "" // 매인 타이틀
-    @objc dynamic var imageTag: String = "" // 이미지 태그
+    
+    // icon 관련 데이터
+    @objc dynamic var firstColor: Data = Data()
+    @objc dynamic var secondColor: Data = Data()
+    @objc dynamic var imageData: Data = Data()
     
     @objc dynamic var timestamp: Date = Date() // 날짜, 시간
     @objc dynamic var importance: Double = 0.0 // 0.0 ~ 3.0
     @objc dynamic var content: String = "" // 내용
     
-    @objc dynamic var isDone: Bool = false
+    @objc dynamic var isDone: Bool = false // 완료 여부
     
     override static func primaryKey() -> String? {
         return "id"
     }
     
-    convenience init(title: String, imageTag: String, timestamp: Date, importance: Double, content: String, isDone: Bool) {
+    convenience init(title: String, firstColor: Data, secondColor: Data, imageData: Data, timestamp: Date, importance: Double, content: String, isDone: Bool) {
         self.init()
         
         self.title = title
-        self.imageTag = imageTag
+        
+        self.firstColor = firstColor
+        self.secondColor = secondColor
+        self.imageData = imageData
+        
         self.timestamp = timestamp
         self.importance = importance
         self.content = content
+        
         self.isDone = isDone
     }
 }
