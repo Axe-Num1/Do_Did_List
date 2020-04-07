@@ -12,18 +12,6 @@ class AddToDoViewController: UIViewController {
     
     @IBOutlet weak var addToDoTableView: UITableView!
     
-    var bottomPadding: CGFloat {
-        let bottomSafeArea: CGFloat
-
-        if #available(iOS 11.0, *) {
-            bottomSafeArea = view.safeAreaInsets.bottom
-        } else {
-            bottomSafeArea = bottomLayoutGuide.length
-        }
-        
-        return bottomSafeArea
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,6 +23,10 @@ class AddToDoViewController: UIViewController {
         navigationBarSet()
     }
     
+    @IBAction func doneButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func navigationBarSet() {
         navigationController?.navigationBar.barTintColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
         
@@ -43,8 +35,8 @@ class AddToDoViewController: UIViewController {
     
 }
 
-// MARK: - TableView
-extension AddToDoViewController : UITableViewDelegate, UITableViewDataSource {
+// MARK: - UITableViewDataSource
+extension AddToDoViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -58,4 +50,11 @@ extension AddToDoViewController : UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    
+}
+
+// MARK: - UITableViewDelegate
+extension AddToDoViewController: UITableViewDelegate {
+    
 }
