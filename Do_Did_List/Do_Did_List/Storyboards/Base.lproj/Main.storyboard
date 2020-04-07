@@ -425,7 +425,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="1in-OW-dmN">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="addToDoCell" rowHeight="170" id="dn4-8Z-ba2" customClass="AddToDoTableViewCell" customModule="Do_Did_List" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.5" width="374" height="170"/>
@@ -565,13 +565,37 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GiI-Te-bqK">
+                                <rect key="frame" x="0.0" y="796" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="at0-6w-BTG">
+                                        <rect key="frame" x="182" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="UjT-nB-9J3"/>
+                                            <constraint firstAttribute="height" constant="50" id="fua-KY-xFv"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Add Button"/>
+                                        <connections>
+                                            <segue destination="rN7-4P-YwI" kind="show" id="sam-iw-HCy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OCZ-PF-JgX"/>
+                                    <constraint firstItem="at0-6w-BTG" firstAttribute="centerX" secondItem="GiI-Te-bqK" secondAttribute="centerX" id="e0J-Tx-l4o"/>
+                                    <constraint firstAttribute="bottom" secondItem="at0-6w-BTG" secondAttribute="bottom" constant="50" id="j7F-Do-xkO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GiI-Te-bqK" secondAttribute="bottom" id="Kc6-FW-qsN"/>
                             <constraint firstItem="1in-OW-dmN" firstAttribute="leading" secondItem="fGn-wy-oc8" secondAttribute="leading" constant="0.01" id="Nf6-Fy-rWo"/>
+                            <constraint firstItem="GiI-Te-bqK" firstAttribute="leading" secondItem="fGn-wy-oc8" secondAttribute="leading" id="UdG-ec-4wl"/>
                             <constraint firstItem="1in-OW-dmN" firstAttribute="trailing" secondItem="fGn-wy-oc8" secondAttribute="trailing" constant="0.01" id="cpi-8M-j9e"/>
+                            <constraint firstItem="fGn-wy-oc8" firstAttribute="trailing" secondItem="GiI-Te-bqK" secondAttribute="trailing" id="glY-1r-2Je"/>
                             <constraint firstItem="1in-OW-dmN" firstAttribute="top" secondItem="fGn-wy-oc8" secondAttribute="top" constant="0.01" id="pZQ-oT-tgY"/>
-                            <constraint firstItem="1in-OW-dmN" firstAttribute="bottom" secondItem="fGn-wy-oc8" secondAttribute="bottom" constant="0.01" id="ter-QY-uTp"/>
+                            <constraint firstItem="1in-OW-dmN" firstAttribute="bottom" secondItem="CTx-6j-2cs" secondAttribute="bottom" id="ter-QY-uTp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fGn-wy-oc8"/>
                     </view>
@@ -579,7 +603,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="wCI-hR-aVo">
                             <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
-                                <segue destination="rN7-4P-YwI" kind="show" id="EG8-ln-ab3"/>
+                                <action selector="doneButton:" destination="Kim-sF-VHc" id="ydy-ea-cir"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1080,6 +1104,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Add Button" width="38" height="38"/>
         <image name="BT_Add-To Do" width="398" height="100"/>
         <image name="BT_Bookmark" width="398" height="100"/>
         <image name="BT_Calendar" width="398" height="100"/>
