@@ -11,21 +11,14 @@ import Cosmos
 
 class AddToDoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var categoryImage: UIImageView!
-    
-    @IBOutlet weak var categoryTitle: UILabel!
-    
+    @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
-    
     @IBOutlet weak var timeLabel: UILabel!
-    
     @IBOutlet weak var starRating: CosmosView!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        setCategoryIcon()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -34,11 +27,33 @@ class AddToDoTableViewCell: UITableViewCell {
         self.selectionStyle = .none
     }
     
-    func setCategoryIcon() {
-        let image = UIImage(named: "Category")?.withRenderingMode(.alwaysTemplate)
+    func setTime(date: Date) {
         
-        categoryImage.tintColor = UIColor(red:0.30, green:0.85, blue:0.39, alpha:1.0)
-        categoryImage.image = image
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm a"
+        
+        let selectDate = dateFormatter.string(from: date)
+        
+        timeLabel.text = selectDate
+    }
+    
+    func setIcon(imageData: Data, firstColor: Data, secondColor: Data) {
+        
+        iconImage.image = UIImage(data: imageData)
+        
+        
+        
+//        iconView.backgroundImage.image = nil
+//        iconView.image.image = UIImage(data: imageData)
+//        
+//        iconView.image.image = iconView.image.image?.withRenderingMode(.alwaysTemplate)
+////        iconView.image.tintColor = .white
+//        
+//        iconView.topColor = UIColor.decodeToColor(data: firstColor)!
+//        iconView.bottomColor = UIColor.decodeToColor(data: secondColor)!
+//        
+//        
+//        iconView.contentMode = .scaleAspectFit
     }
     
 }
