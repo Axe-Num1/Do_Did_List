@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AddToDoViewController: UIViewController {
     
     @IBOutlet weak var addToDoTableView: UITableView!
+    
+    let modelManager = ModelManager()
+    var searchResult: Results<ToDoItem>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +25,13 @@ class AddToDoViewController: UIViewController {
         addToDoTableView.backgroundColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:0.0)
         
         navigationBarSet()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        searchResult = modelManager.searchDate(dateType: .today, date: Date())
+
+        UIView.transition(with: addToDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.addToDoTableView.reloadData() })
     }
     
     @IBAction func doneButton(_ sender: Any) {
@@ -38,7 +49,7 @@ class AddToDoViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension AddToDoViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return searchResult?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,6 +58,13 @@ extension AddToDoViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "addToDoCell", for: indexPath) as! AddToDoTableViewCell
+        
+        let item = searchResult?[indexPath.section]
+        cell.setIcon(imageData: item!.imageData, firstColor: item!.firstColor, secondColor: item!.secondColor)
+        cell.setTime(date: item!.timestamp)
+        cell.titleLabel.text = item?.title
+        cell.contentLabel.text = item?.content
+        cell.starRating.rating = item!.importance
         
         return cell
     }
