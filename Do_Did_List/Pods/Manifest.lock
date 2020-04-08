@@ -1,12 +1,12 @@
 PODS:
   - Cosmos (21.0.0)
   - M13Checkbox (3.4.0)
-  - Realm (4.3.2):
-    - Realm/Headers (= 4.3.2)
-  - Realm/Headers (4.3.2)
-  - RealmSwift (4.3.2):
-    - Realm (= 4.3.2)
-  - SideMenu (6.4.7)
+  - Realm (4.4.0):
+    - Realm/Headers (= 4.4.0)
+  - Realm/Headers (4.4.0)
+  - RealmSwift (4.4.0):
+    - Realm (= 4.4.0)
+  - SideMenu (6.4.8)
   - SOPullUpView (1.1.0)
 
 DEPENDENCIES:
@@ -28,9 +28,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Cosmos: 3dfb6e4ba48bd48b8c9aa2a77048ae11ed114f96
   M13Checkbox: 6f59404540ac98ba83a3d1afac335895a40c6a5d
-  Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
-  RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
-  SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
+  Realm: e125f464884cda953ebefe70c671b75b03b81b9b
+  RealmSwift: 33656a42bd300959a081fc13347376bc478071af
+  SideMenu: 4a891be552d30bb6fa87ad404d62e485f8450c34
   SOPullUpView: a18cab4bdce7cc07c227e705cc4270e0a36ca2fa
 
 PODFILE CHECKSUM: 1c8bb20f0d22765f6d5e678f4bc1dd86073316d6
