@@ -9,6 +9,13 @@
 import Foundation
 import RealmSwift
 
+enum dateType {
+    case today
+    case thisMonth
+    case allDate
+    case customDate
+}
+
 class ModelManager {
     
     var realm: Realm!
@@ -23,7 +30,7 @@ class ModelManager {
                 realm.add(item)
             }
         } catch {
-            print("Faild to add")
+            print("Faild to add!")
         }
     }
     
@@ -37,8 +44,55 @@ class ModelManager {
         }
     }
     
+    
+    /**
+     realm의 db item 검색기능을 사용하여, 매개변수 date와 일치하는 날짜를 찾아서 결과를 반환합니다
+     - Parameter date: 검색할 날짜
+     */
+    func searchDate(dateType: dateType, date: Date) -> Results<ToDoItem> {
+        let result: Results<ToDoItem>
+        
+        switch dateType {
+        case .today:
+            result = realm.objects(ToDoItem.self).filter(NSPredicate(format: "timestamp >= %@ && timestamp <= %@", date.startOfDay as NSDate, date.endOfDay as NSDate))
+        case .thisMonth:
+            result = realm.objects(ToDoItem.self).filter(NSPredicate(format: "timestamp >= %@ && timestamp <= %@", date.startOfMonth as NSDate, date.endOfMonth as NSDate))
+        case .allDate:
+            result = realm.objects(ToDoItem.self)
+        case .customDate:
+            result = realm.objects(ToDoItem.self).filter(NSPredicate(format: "timestamp >= %@ && timestamp <= %@", date.startOfDay as NSDate, date.endOfDay as NSDate))
+        }
+        
+        return result
+    }
+    
     func sync() {
         
     }
     
+}
+
+extension Date {
+    var startOfDay: Date {
+        return Calendar.current.startOfDay(for: self)
+    }
+
+    var endOfDay: Date {
+        var components = DateComponents()
+        components.day = 1
+        components.second = -1
+        return Calendar.current.date(byAdding: components, to: startOfDay)!
+    }
+
+    var startOfMonth: Date {
+        let components = Calendar.current.dateComponents([.year, .month], from: startOfDay)
+        return Calendar.current.date(from: components)!
+    }
+
+    var endOfMonth: Date {
+        var components = DateComponents()
+        components.month = 1
+        components.second = -1
+        return Calendar.current.date(byAdding: components, to: startOfMonth)!
+    }
 }
