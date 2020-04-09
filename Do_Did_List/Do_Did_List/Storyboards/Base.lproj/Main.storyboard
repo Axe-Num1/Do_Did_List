@@ -441,6 +441,9 @@
                                                         <constraint firstAttribute="height" constant="20" id="xKh-45-sHQ"/>
                                                     </constraints>
                                                     <state key="normal" backgroundImage="DeleteIcon"/>
+                                                    <connections>
+                                                        <action selector="deleteButton:" destination="dn4-8Z-ba2" eventType="touchUpInside" id="GnD-KY-jy3"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxN-c9-FKr">
                                                     <rect key="frame" x="53" y="13" width="286" height="24"/>
@@ -462,7 +465,6 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9U-OI-Jlr" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="277" y="135" width="85" height="27"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
                                                             <integer key="value" value="3"/>

@@ -53,6 +53,8 @@ class IconViewController: UIViewController {
         let finalIconDict: [String: UIImage] = ["finalIcon": image]
         NotificationCenter.default.post(name: NSNotification.Name("finalIcon"), object: nil, userInfo: finalIconDict)
         
+        imageData = image.pngData()
+        
         isModalInPresentation = false
         dismiss(animated: true, completion: nil)
     }
@@ -80,8 +82,6 @@ class IconViewController: UIViewController {
         iconView.image.image = iconView.image.image?.withRenderingMode(.alwaysTemplate)
         iconView.image.tintColor = .white
         iconView.contentMode = .scaleAspectFit
-        
-        imageData = image.jpegData(compressionQuality: 0.8)
     }
     
     func setupIconView() {
