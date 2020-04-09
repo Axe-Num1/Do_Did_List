@@ -27,6 +27,10 @@ class AddToDoTableViewCell: UITableViewCell {
         self.selectionStyle = .none
     }
     
+    @IBAction func deleteButton(_ sender: UIButton) {
+        NotificationCenter.default.post(<#T##notification: Notification##Notification#>)
+    }
+    
     func setTime(date: Date) {
         
         let dateFormatter = DateFormatter()
@@ -39,21 +43,9 @@ class AddToDoTableViewCell: UITableViewCell {
     
     func setIcon(imageData: Data, firstColor: Data, secondColor: Data) {
         
-        iconImage.image = UIImage(data: imageData)
+        let image = UIImage(data: imageData)
         
-        
-        
-//        iconView.backgroundImage.image = nil
-//        iconView.image.image = UIImage(data: imageData)
-//        
-//        iconView.image.image = iconView.image.image?.withRenderingMode(.alwaysTemplate)
-////        iconView.image.tintColor = .white
-//        
-//        iconView.topColor = UIColor.decodeToColor(data: firstColor)!
-//        iconView.bottomColor = UIColor.decodeToColor(data: secondColor)!
-//        
-//        
-//        iconView.contentMode = .scaleAspectFit
+        iconImage.image = image
     }
     
 }

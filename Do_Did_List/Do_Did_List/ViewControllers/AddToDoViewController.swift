@@ -30,7 +30,7 @@ class AddToDoViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         searchResult = modelManager.searchDate(dateType: .today, date: Date())
-
+        
         UIView.transition(with: addToDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.addToDoTableView.reloadData() })
     }
     
@@ -38,10 +38,19 @@ class AddToDoViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @objc func deleteCell() {
+//        modelManager.remove()
+        addToDoTableView.reloadData()
+    }
+    
     func navigationBarSet() {
         navigationController?.navigationBar.barTintColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
         
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+    }
+    
+    func setNotification() {
+        NotificationCenter.default.addObserver(<#T##observer: Any##Any#>, selector: #selector(deleteCell), name: <#T##NSNotification.Name?#>, object: <#T##Any?#>)
     }
     
 }
