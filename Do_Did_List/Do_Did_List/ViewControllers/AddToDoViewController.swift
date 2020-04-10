@@ -38,19 +38,10 @@ class AddToDoViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    @objc func deleteCell() {
-//        modelManager.remove()
-        addToDoTableView.reloadData()
-    }
-    
     func navigationBarSet() {
         navigationController?.navigationBar.barTintColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
         
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-    }
-    
-    func setNotification() {
-        NotificationCenter.default.addObserver(<#T##observer: Any##Any#>, selector: #selector(deleteCell), name: <#T##NSNotification.Name?#>, object: <#T##Any?#>)
     }
     
 }
@@ -78,7 +69,14 @@ extension AddToDoViewController: UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else { return }
+        
+        if let item = searchResult?[indexPath.section] {
+            modelManager.remove(item)
+            tableView.deleteSections(IndexSet(arrayLiteral: indexPath.section), with: .fade)
+        }
+    }
 }
 
 // MARK: - UITableViewDelegate

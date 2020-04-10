@@ -27,10 +27,6 @@ class AddToDoTableViewCell: UITableViewCell {
         self.selectionStyle = .none
     }
     
-    @IBAction func deleteButton(_ sender: UIButton) {
-        NotificationCenter.default.post(<#T##notification: Notification##Notification#>)
-    }
-    
     func setTime(date: Date) {
         
         let dateFormatter = DateFormatter()

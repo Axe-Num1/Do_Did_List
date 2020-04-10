@@ -434,19 +434,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAq-1F-qWN">
-                                                    <rect key="frame" x="344" y="10" width="20" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="20" id="lrD-GT-EGx"/>
-                                                        <constraint firstAttribute="height" constant="20" id="xKh-45-sHQ"/>
-                                                    </constraints>
-                                                    <state key="normal" backgroundImage="DeleteIcon"/>
-                                                    <connections>
-                                                        <action selector="deleteButton:" destination="dn4-8Z-ba2" eventType="touchUpInside" id="GnD-KY-jy3"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxN-c9-FKr">
-                                                    <rect key="frame" x="53" y="13" width="286" height="24"/>
+                                                    <rect key="frame" x="53" y="13" width="309" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -534,7 +523,6 @@
                                                 <constraint firstItem="4Q4-gS-3aC" firstAttribute="top" secondItem="BxN-c9-FKr" secondAttribute="bottom" constant="11" id="DXr-ce-iUa"/>
                                                 <constraint firstItem="KPY-8F-RFa" firstAttribute="top" secondItem="Tgy-Ur-BSw" secondAttribute="bottom" constant="11" id="GZc-Uo-oAr"/>
                                                 <constraint firstItem="BxN-c9-FKr" firstAttribute="top" secondItem="Z4k-jx-qKE" secondAttribute="top" constant="13" id="Ho4-p0-QlX"/>
-                                                <constraint firstItem="AAq-1F-qWN" firstAttribute="leading" secondItem="BxN-c9-FKr" secondAttribute="trailing" constant="5" id="IML-1p-aJL"/>
                                                 <constraint firstItem="GYb-34-W3V" firstAttribute="top" secondItem="Z4k-jx-qKE" secondAttribute="top" constant="8" id="JJC-O0-c1C"/>
                                                 <constraint firstItem="yUT-4Y-CxI" firstAttribute="top" secondItem="4Q4-gS-3aC" secondAttribute="bottom" constant="10" id="Ja5-qj-7rL"/>
                                                 <constraint firstItem="GYb-34-W3V" firstAttribute="leading" secondItem="Z4k-jx-qKE" secondAttribute="leading" constant="8" id="Jnr-xI-oHI"/>
@@ -548,9 +536,8 @@
                                                 <constraint firstItem="Tgy-Ur-BSw" firstAttribute="top" secondItem="yUT-4Y-CxI" secondAttribute="bottom" constant="10" id="htd-rY-Usy"/>
                                                 <constraint firstAttribute="trailing" secondItem="yUT-4Y-CxI" secondAttribute="trailing" id="kXR-hy-zYh"/>
                                                 <constraint firstAttribute="trailing" secondItem="d9U-OI-Jlr" secondAttribute="trailing" constant="12" id="lLU-hn-JZ1"/>
-                                                <constraint firstAttribute="trailing" secondItem="AAq-1F-qWN" secondAttribute="trailing" constant="10" id="lmE-qo-jvB"/>
                                                 <constraint firstItem="Tgy-Ur-BSw" firstAttribute="leading" relation="lessThanOrEqual" secondItem="rhp-Oa-z8q" secondAttribute="trailing" constant="261.5" id="nMK-5T-oW1"/>
-                                                <constraint firstItem="AAq-1F-qWN" firstAttribute="top" secondItem="Z4k-jx-qKE" secondAttribute="top" constant="10" id="oUn-nY-UgS"/>
+                                                <constraint firstAttribute="trailing" secondItem="BxN-c9-FKr" secondAttribute="trailing" constant="12" id="uT9-uu-joG"/>
                                                 <constraint firstItem="BxN-c9-FKr" firstAttribute="leading" secondItem="GYb-34-W3V" secondAttribute="trailing" constant="10" id="wE4-qd-6MG"/>
                                                 <constraint firstItem="Kaj-xb-UWg" firstAttribute="leading" secondItem="Z4k-jx-qKE" secondAttribute="leading" constant="12" id="yct-td-HU8"/>
                                                 <constraint firstAttribute="trailing" secondItem="KPY-8F-RFa" secondAttribute="trailing" constant="0.01" id="zXe-19-8eL"/>
@@ -1117,7 +1104,6 @@
         <image name="Checkmark" width="256" height="256"/>
         <image name="Current Box" width="630" height="304"/>
         <image name="DateRectangle" width="544" height="544"/>
-        <image name="DeleteIcon" width="40" height="40"/>
         <image name="List Line" width="710" height="24"/>
         <image name="ProfileImage" width="142" height="142"/>
         <image name="Score" width="178" height="96"/>
