@@ -49,6 +49,12 @@ class AddToDoViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension AddToDoViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
+        if searchResult?.count == 0 {
+            tableView.setEmptyView(title: "Today ToDo is Empty", message: "Add ToDo", subImage: UIImage(named: "Arrow"))
+        } else {
+            tableView.restore()
+        }
+        
         return searchResult?.count ?? 0
     }
     
