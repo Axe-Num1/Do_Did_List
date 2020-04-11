@@ -10,6 +10,8 @@
 		F203622924357A5000AAF69F /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203622824357A5000AAF69F /* IconView.swift */; };
 		F203622B2435F0F800AAF69F /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203622A2435F0F800AAF69F /* ColorModel.swift */; };
 		F22E3209242BA6530089E58E /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E3208242BA6530089E58E /* IconViewController.swift */; };
+		F2464E93244039F40023DCD9 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2464E92244039F40023DCD9 /* UserInfo.swift */; };
+		F2464E95244082520023DCD9 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2464E94244082520023DCD9 /* UITableViewExtension.swift */; };
 		F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */; };
 		F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */; };
 		F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */; };
@@ -81,7 +83,6 @@
 		F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */; };
 		F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */; };
 		F2CAB8832403EFF500ECCEBF /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */; };
-		F2CAB8842403EFF500ECCEBF /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */; };
 		F2E702CD2400E68200A0289E /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CB2400E68200A0289E /* SideMenuViewController.swift */; };
 		F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CF2400E6C300A0289E /* MainViewController.swift */; };
 		F2E702D424013C0300A0289E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702D324013C0300A0289E /* UIViewExtension.swift */; };
@@ -108,6 +109,8 @@
 		F2394827242AE76A00A23AE0 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2394828242AE76A00A23AE0 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2394829242AE76A00A23AE0 /* SOPullUpView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SOPullUpView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2464E92244039F40023DCD9 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		F2464E94244082520023DCD9 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		F24AB1BD23EFC3AE00ECBE1E /* Do_Did_List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Do_Did_List.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,7 +189,6 @@
 		F2B8019123FFE4AF0014D4B6 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
-		F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
 		F2E702CB2400E68200A0289E /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		F2E702CF2400E6C300A0289E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F2E702D324013C0300A0289E /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 				F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */,
 				F26B3BE82421CEFC00052ABF /* ModelManager.swift */,
 				F203622A2435F0F800AAF69F /* ColorModel.swift */,
+				F2464E92244039F40023DCD9 /* UserInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				F2E702D324013C0300A0289E /* UIViewExtension.swift */,
 				F28B50832438919300335783 /* UIColorExtension.swift */,
 				F28B50852438A24300335783 /* UITextViewExtension.swift */,
+				F2464E94244082520023DCD9 /* UITableViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -428,7 +432,6 @@
 			children = (
 				F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */,
 				F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */,
-				F2CAB8822403EFF500ECCEBF /* ToDoTableViewCell.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -515,7 +518,6 @@
 				F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */,
 				F28B507C24370D6C00335783 /* envelope.png in Resources */,
 				F28B505324370D6B00335783 /* heart.png in Resources */,
-				F2CAB8842403EFF500ECCEBF /* ToDoTableViewCell.xib in Resources */,
 				F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */,
 				F28B506824370D6C00335783 /* musical-note.png in Resources */,
 				F28B507D24370D6C00335783 /* edit 6.16.26 AM.png in Resources */,
@@ -605,6 +607,7 @@
 				F28B50862438A24300335783 /* UITextViewExtension.swift in Sources */,
 				F25C378C240D494700E0EF0C /* AddToDoPullUpViewController.swift in Sources */,
 				F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */,
+				F2464E95244082520023DCD9 /* UITableViewExtension.swift in Sources */,
 				F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */,
 				F26B3BE92421CEFC00052ABF /* ModelManager.swift in Sources */,
 				F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */,
@@ -622,6 +625,7 @@
 				F289733C242E41A90079B0BD /* IconGlyphViewController.swift in Sources */,
 				F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */,
 				F203622B2435F0F800AAF69F /* ColorModel.swift in Sources */,
+				F2464E93244039F40023DCD9 /* UserInfo.swift in Sources */,
 				F2897339242E416A0079B0BD /* IconColorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

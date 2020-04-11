@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import SideMenu
+import RealmSwift
 
 class MainViewController: UIViewController {
     
@@ -25,6 +26,8 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var toDoTableView: UITableView!
     
+    var modelManger: ModelManager?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,12 +35,17 @@ class MainViewController: UIViewController {
         
         toDoTableView.delegate = self
         toDoTableView.dataSource = self
+        toDoTableView.showsVerticalScrollIndicator = false
         
         toDoTableView.backgroundColor = UIColor(red:0.23, green:0.42, blue:0.92, alpha:0) // hex: 3B6CEB
-        
-        registerXib()
 
         setDate()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
     }
     
     // Status Bar 색상 설정
@@ -55,11 +63,6 @@ class MainViewController: UIViewController {
         let dayNumber = calendar.component(.day, from: date)
         
         dateLabel.text = "\(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
-    }
-    
-    func registerXib() {
-        let cellNib = UINib(nibName: "ToDoTableViewCell", bundle: nil)
-        toDoTableView.register(cellNib, forCellReuseIdentifier: "toDoCell")
     }
 }
 
