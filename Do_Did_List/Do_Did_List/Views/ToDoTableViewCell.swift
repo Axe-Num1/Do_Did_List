@@ -13,12 +13,11 @@ import M13Checkbox
 class ToDoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var contentLabel: UILabel!
-    
     @IBOutlet weak var importance: CosmosView!
-    
     @IBOutlet weak var timeLabel: UILabel!
-    
     @IBOutlet weak var checkbox: M13Checkbox!
+    
+    var id: Int?
     
     override func awakeFromNib() {
         super.awakeFromNib()

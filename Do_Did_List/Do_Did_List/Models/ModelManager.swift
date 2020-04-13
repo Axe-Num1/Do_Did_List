@@ -24,6 +24,12 @@ class ModelManager {
         realm = try! Realm()
     }
     
+    /**
+     realm 로컬 DB로 Item 추가(쓰기) 기능을 수행합니다.
+     
+     - Parameters:
+        - item: DB에 추가할 아이템
+     */
     func add(_ item: ToDoItem) {
         do {
             try realm.write {

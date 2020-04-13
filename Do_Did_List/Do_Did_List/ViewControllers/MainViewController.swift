@@ -68,7 +68,7 @@ class MainViewController: UIViewController {
 
 
 // MARK: - UITableViewDataSource
-extension MainViewController : UITableViewDelegate, UITableViewDataSource {
+extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -78,6 +78,11 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+}
+
+// MARK: - UITableViewDelegate
+extension MainViewController: UITableViewDelegate {
+    
 }
 
 
