@@ -14,7 +14,7 @@ class AddToDoViewController: UIViewController {
     @IBOutlet weak var addToDoTableView: UITableView!
     
     let modelManager = ModelManager()
-    var searchResult: Results<ToDoItem>?
+    var items: Results<ToDoItem>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,8 @@ class AddToDoViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        searchResult = modelManager.searchDate(dateType: .today, date: Date())
+        items = modelManager.searchDate(dateType: .today, date: Date())
+        items = items?.sorted(byKeyPath: "timestamp", ascending: true)
         
         UIView.transition(with: addToDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.addToDoTableView.reloadData() })
     }
@@ -49,13 +50,13 @@ class AddToDoViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension AddToDoViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        if searchResult?.count == 0 {
+        if items?.count == 0 {
             tableView.setEmptyView(title: "Today ToDo is Empty", message: "Add ToDo", subImage: UIImage(named: "Arrow"))
         } else {
             tableView.restore()
         }
         
-        return searchResult?.count ?? 0
+        return items?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -65,7 +66,7 @@ extension AddToDoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "addToDoCell", for: indexPath) as! AddToDoTableViewCell
         
-        let item = searchResult?[indexPath.section]
+        let item = items?[indexPath.section]
         cell.setIcon(imageData: item!.imageData, firstColor: item!.firstColor, secondColor: item!.secondColor)
         cell.setTime(date: item!.timestamp)
         cell.titleLabel.text = item?.title
@@ -78,7 +79,7 @@ extension AddToDoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         guard editingStyle == .delete else { return }
         
-        if let item = searchResult?[indexPath.section] {
+        if let item = items?[indexPath.section] {
             modelManager.remove(item)
             tableView.deleteSections(IndexSet(arrayLiteral: indexPath.section), with: .fade)
         }

@@ -50,7 +50,18 @@ class NewToDoTableViewController: UITableViewController {
     
     @IBAction func addButton(_ sender: Any) {
         
-        let item = ToDoItem(title: titleField.text!,
+        guard let titleText = titleField.text.nilIfEmpty else {
+            let alert = UIAlertController(title: "Empty Title Name", message: "Please Set Title Name", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            alert.addAction(okButton)
+            
+            present(alert, animated: true)
+            
+            return
+        }
+        
+        let item = ToDoItem(title: titleText,
                             firstColor: firstColorData!,
                             secondColor: secondColorData!,
                             imageData: imageData!,
@@ -136,5 +147,14 @@ extension NewToDoTableViewController: UITextFieldDelegate {
             self.titleField.resignFirstResponder()
         }
         return true
+    }
+}
+
+extension Optional where Wrapped == String {
+    var nilIfEmpty: String? {
+        guard let strongSelf = self else {
+            return nil
+        }
+        return strongSelf.isEmpty ? nil : strongSelf
     }
 }

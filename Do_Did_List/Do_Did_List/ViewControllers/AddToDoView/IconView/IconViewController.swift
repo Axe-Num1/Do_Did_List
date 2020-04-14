@@ -18,7 +18,6 @@ class IconViewController: UIViewController {
     @IBOutlet weak var selectColorView: UIView!
     @IBOutlet weak var selectGlyphView: UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +26,6 @@ class IconViewController: UIViewController {
         switchViews(firstView: 1.0, secondView: 0.0)
         
         setupIconView()
-        
     }
     
     @IBAction func handleSelectView(_ sender: UISegmentedControl) {
