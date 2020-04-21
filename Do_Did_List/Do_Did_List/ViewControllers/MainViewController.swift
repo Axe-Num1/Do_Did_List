@@ -8,7 +8,6 @@
 
 import UIKit
 import Foundation
-import SideMenu
 import RealmSwift
 
 class MainViewController: UIViewController {
@@ -27,11 +26,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak var toDoTableView: UITableView!
     
     var modelManger: ModelManager?
+    var items: Results<ToDoItem>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupSideMenu()
         
         toDoTableView.delegate = self
         toDoTableView.dataSource = self
@@ -45,6 +43,12 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        print("viewwillappear")
+        
+        items = modelManger?.searchDate(dateType: .today, date: Date())
+        items = items?.sorted(byKeyPath: "timestamp", ascending: true)
+        
+        UIView.transition(with: toDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.toDoTableView.reloadData() })
         
     }
     
@@ -70,11 +74,17 @@ class MainViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return items?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "toDoCell", for: indexPath) as! ToDoTableViewCell
+        
+        let item = items?[indexPath.row]
+        cell.contentLabel.text = item?.content
+//        cell.importance.rating = item!.importance
+//        cell.item
+        
         
         return cell
     }
@@ -83,51 +93,4 @@ extension MainViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension MainViewController: UITableViewDelegate {
     
-}
-
-
-// MARK: - SideMenu Implementation
-extension MainViewController {
-    
-    func makeSettings() -> SideMenuSettings {
-        var settings = SideMenuSettings()
-        settings.presentationStyle = .menuSlideIn
-        settings.presentationStyle.menuStartAlpha = 0.8
-        settings.presentationStyle.presentingEndAlpha = 0.6
-        settings.presentationStyle.onTopShadowOpacity = 0.5
-        settings.usingSpringWithDamping = 0.8
-        settings.statusBarEndAlpha = 0
-        
-        return settings
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let sideMenuNavigationController = segue.destination as? SideMenuNavigationController else { return }
-        sideMenuNavigationController.settings = makeSettings()
-    }
-    
-    func setupSideMenu() {
-        SideMenuManager.default.leftMenuNavigationController = storyboard?.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? SideMenuNavigationController
-    }
-}
-
-
-// MARK: - UISideMenuNavigationControllerDelegate
-extension MainViewController: SideMenuNavigationControllerDelegate {
-
-    func sideMenuWillAppear(menu: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appearing! (animated: \(animated))")
-    }
-
-    func sideMenuDidAppear(menu: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appeared! (animated: \(animated))")
-    }
-
-    func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappearing! (animated: \(animated))")
-    }
-
-    func sideMenuDidDisappear(menu: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappeared! (animated: \(animated))")
-    }
 }

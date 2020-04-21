@@ -29,15 +29,17 @@ class AddToDoViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         items = modelManager.searchDate(dateType: .today, date: Date())
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
-        
+    
         UIView.transition(with: addToDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.addToDoTableView.reloadData() })
     }
     
-    @IBAction func doneButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+//    @IBAction func doneButton(_ sender: Any) {
+////        dismiss(animated: true, completion: nil)
+//        self.navigationController?.dismiss(animated: true, completion: nil)
+//    }
     
     func navigationBarSet() {
         navigationController?.navigationBar.barTintColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
