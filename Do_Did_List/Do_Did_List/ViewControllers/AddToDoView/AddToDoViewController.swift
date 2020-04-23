@@ -22,8 +22,6 @@ class AddToDoViewController: UIViewController {
         addToDoTableView.delegate = self
         addToDoTableView.dataSource = self
         
-//        addToDoTableView.backgroundColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:0.0)
-        
         navigationBarSet()
     }
     
@@ -41,23 +39,22 @@ class AddToDoViewController: UIViewController {
     }
     
     func navigationBarSet() {
-        let appearace = UINavigationBarAppearance()
-        appearace.configureWithTransparentBackground()
-//        if #available(iOS 13.0, *) {
-//            let appearance = UINavigationBarAppearance()
-//            appearance.backgroundColor = .systemGroupedBackground
-//            appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-//            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
-//
-//            UINavigationBar.appearance().tintColor = .white
-//            UINavigationBar.appearance().standardAppearance = appearance
-//            UINavigationBar.appearance().compactAppearance = appearance
-//            UINavigationBar.appearance().scrollEdgeAppearance = appearance
-//        } else {
-//            UINavigationBar.appearance().tintColor = .white
-//            UINavigationBar.appearance().barTintColor = .clear
-//            UINavigationBar.appearance().isTranslucent = false
-//        }
+
+        if #available(iOS 13.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithTransparentBackground()
+            appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
+
+            UINavigationBar.appearance().tintColor = .white
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().compactAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        } else {
+            UINavigationBar.appearance().tintColor = .white
+            UINavigationBar.appearance().barTintColor = .clear
+            UINavigationBar.appearance().isTranslucent = false
+        }
     }
     
 }
