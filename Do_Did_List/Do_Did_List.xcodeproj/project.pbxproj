@@ -81,6 +81,7 @@
 		F28B50842438919300335783 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B50832438919300335783 /* UIColorExtension.swift */; };
 		F28B50862438A24300335783 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B50852438A24300335783 /* UITextViewExtension.swift */; };
 		F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */; };
+		F2B8E7FA244F4AF200985719 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */; };
 		F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */; };
 		F2CAB8832403EFF500ECCEBF /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */; };
 		F2CDACD42444A67D00CD9D39 /* BookmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDACD32444A67D00CD9D39 /* BookmarkModel.swift */; };
@@ -187,6 +188,7 @@
 		F2A3A0AA2403E343004E81E0 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoTableViewController.swift; sourceTree = "<group>"; };
 		F2B8019123FFE4AF0014D4B6 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		F2CDACD32444A67D00CD9D39 /* BookmarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkModel.swift; sourceTree = "<group>"; };
@@ -417,6 +419,7 @@
 		F2E702C62400DE1400A0289E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */,
 				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
 				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
 				F2E438DC2444232500CC001F /* AddToDoView */,
@@ -614,6 +617,7 @@
 			files = (
 				F28B50862438A24300335783 /* UITextViewExtension.swift in Sources */,
 				F25C378C240D494700E0EF0C /* AddToDoPullUpViewController.swift in Sources */,
+				F2B8E7FA244F4AF200985719 /* CustomTabBarController.swift in Sources */,
 				F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */,
 				F2464E95244082520023DCD9 /* UITableViewExtension.swift in Sources */,
 				F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */,

@@ -22,7 +22,7 @@ class AddToDoViewController: UIViewController {
         addToDoTableView.delegate = self
         addToDoTableView.dataSource = self
         
-        addToDoTableView.backgroundColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:0.0)
+//        addToDoTableView.backgroundColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:0.0)
         
         navigationBarSet()
     }
@@ -36,15 +36,28 @@ class AddToDoViewController: UIViewController {
         UIView.transition(with: addToDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.addToDoTableView.reloadData() })
     }
     
-//    @IBAction func doneButton(_ sender: Any) {
-////        dismiss(animated: true, completion: nil)
-//        self.navigationController?.dismiss(animated: true, completion: nil)
-//    }
+    @IBAction func doneButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     func navigationBarSet() {
-        navigationController?.navigationBar.barTintColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0)
-        
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        let appearace = UINavigationBarAppearance()
+        appearace.configureWithTransparentBackground()
+//        if #available(iOS 13.0, *) {
+//            let appearance = UINavigationBarAppearance()
+//            appearance.backgroundColor = .systemGroupedBackground
+//            appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+//            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
+//
+//            UINavigationBar.appearance().tintColor = .white
+//            UINavigationBar.appearance().standardAppearance = appearance
+//            UINavigationBar.appearance().compactAppearance = appearance
+//            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+//        } else {
+//            UINavigationBar.appearance().tintColor = .white
+//            UINavigationBar.appearance().barTintColor = .clear
+//            UINavigationBar.appearance().isTranslucent = false
+//        }
     }
     
 }

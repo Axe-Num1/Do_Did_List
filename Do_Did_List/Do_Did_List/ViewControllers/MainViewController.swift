@@ -37,6 +37,7 @@ class MainViewController: UIViewController {
         
         toDoTableView.backgroundColor = UIColor(red:0.23, green:0.42, blue:0.92, alpha:0) // hex: 3B6CEB
 
+        setNavBar()
         setDate()
     }
     
@@ -55,6 +56,11 @@ class MainViewController: UIViewController {
     // Status Bar 색상 설정
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent // white
+    }
+    
+    func setNavBar() {
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        
     }
     
     func setDate() {
