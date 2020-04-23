@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var toDoTableView: UITableView!
     
-    var modelManger: ModelManager?
+    let modelManger = ModelManager()
     var items: Results<ToDoItem>?
     
     override func viewDidLoad() {
@@ -37,18 +37,14 @@ class MainViewController: UIViewController {
         
         toDoTableView.backgroundColor = UIColor(red:0.23, green:0.42, blue:0.92, alpha:0) // hex: 3B6CEB
 
-        setNavBar()
         setDate()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        print("viewwillappear")
-        
-        items = modelManger?.searchDate(dateType: .today, date: Date())
+        items = modelManger.searchDate(dateType: .today, date: Date())
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
-        
         UIView.transition(with: toDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.toDoTableView.reloadData() })
         
     }
@@ -58,11 +54,7 @@ class MainViewController: UIViewController {
         return .lightContent // white
     }
     
-    func setNavBar() {
-        self.navigationController?.navigationBar.barTintColor = UIColor.white
-        
-    }
-    
+
     func setDate() {
         let date = Date()
         let calendar = Calendar.current
@@ -87,10 +79,10 @@ extension MainViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "toDoCell", for: indexPath) as! ToDoTableViewCell
         
         let item = items?[indexPath.row]
-        cell.contentLabel.text = item?.content
-//        cell.importance.rating = item!.importance
-//        cell.item
+        cell.contentLabel.text = item?.title
         
+        cell.importance.rating = item!.importance
+//        cell.item
         
         return cell
     }
