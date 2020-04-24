@@ -7,12 +7,14 @@ PODS:
   - RealmSwift (4.4.1):
     - Realm (= 4.4.1)
   - SOPullUpView (1.1.0)
+  - VerticalCardSwiper (2.2.0)
 
 DEPENDENCIES:
   - Cosmos (~> 21.0)
   - M13Checkbox
   - RealmSwift
   - SOPullUpView
+  - VerticalCardSwiper
 
 SPEC REPOS:
   trunk:
@@ -21,6 +23,7 @@ SPEC REPOS:
     - Realm
     - RealmSwift
     - SOPullUpView
+    - VerticalCardSwiper
 
 SPEC CHECKSUMS:
   Cosmos: 3dfb6e4ba48bd48b8c9aa2a77048ae11ed114f96
@@ -28,7 +31,8 @@ SPEC CHECKSUMS:
   Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
   RealmSwift: 3eb8924ff7100df5928c7602f71d0fec51e7c9c5
   SOPullUpView: a18cab4bdce7cc07c227e705cc4270e0a36ca2fa
+  VerticalCardSwiper: 41c8c0d8d87511ec269347f5671386acf66cd31a
 
-PODFILE CHECKSUM: a212f67036df5fa204b1a21fba92bf9caa0014d0
+PODFILE CHECKSUM: cb7b428d85a27bb4508af89356c89e90baeee00e
 
 COCOAPODS: 1.9.1
