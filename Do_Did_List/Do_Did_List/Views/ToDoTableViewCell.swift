@@ -9,25 +9,15 @@
 import UIKit
 import Cosmos
 import M13Checkbox
+import VerticalCardSwiper
 
-class ToDoTableViewCell: UITableViewCell {
+class ToDoCardCell: CardCell {
     
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var importance: CosmosView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var checkbox: M13Checkbox!
     
-    var id: Int?
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        self.selectionStyle = .none
-    }
     
 }

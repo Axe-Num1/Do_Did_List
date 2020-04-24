@@ -80,6 +80,7 @@
 		F28B508224370D6C00335783 /* phone-call.png in Resources */ = {isa = PBXBuildFile; fileRef = F28B505024370D6B00335783 /* phone-call.png */; };
 		F28B50842438919300335783 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B50832438919300335783 /* UIColorExtension.swift */; };
 		F28B50862438A24300335783 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B50852438A24300335783 /* UITextViewExtension.swift */; };
+		F2AE0D57245332190065325A /* ToDoCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2AE0D56245332190065325A /* ToDoCardCell.xib */; };
 		F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */; };
 		F2B8E7FA244F4AF200985719 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */; };
 		F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */; };
@@ -186,6 +187,7 @@
 		F2A3A0A82403E343004E81E0 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A3A0A92403E343004E81E0 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A3A0AA2403E343004E81E0 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2AE0D56245332190065325A /* ToDoCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCardCell.xib; sourceTree = "<group>"; };
 		F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoTableViewController.swift; sourceTree = "<group>"; };
 		F2B8019123FFE4AF0014D4B6 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 				F2CAB8812403EFF500ECCEBF /* ToDoTableViewCell.swift */,
 				F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */,
 				F203622824357A5000AAF69F /* IconView.swift */,
+				F2AE0D56245332190065325A /* ToDoCardCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				F28B508024370D6C00335783 /* speaker 6.16.26 AM.png in Resources */,
 				F28B505724370D6B00335783 /* shopping-cart.png in Resources */,
 				F28B507B24370D6C00335783 /* next-1.png in Resources */,
+				F2AE0D57245332190065325A /* ToDoCardCell.xib in Resources */,
 				F28B505424370D6B00335783 /* upload-1.png in Resources */,
 				F28B507024370D6C00335783 /* share 6.16.26 AM.png in Resources */,
 				F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */,

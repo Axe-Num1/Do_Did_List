@@ -9,21 +9,11 @@
 import UIKit
 import Foundation
 import RealmSwift
+import VerticalCardSwiper
 
 class MainViewController: UIViewController {
     
-    @IBOutlet weak var userNameLabel: UILabel!
-    
-    @IBOutlet weak var category: UIImageView!
-    @IBOutlet weak var checkmark: UIImageView!
-    
-    @IBOutlet weak var categoryTitle: UILabel!
-    @IBOutlet weak var content: UITextView!
-    @IBOutlet weak var timeLabel: UILabel!
-    
-    @IBOutlet weak var dateLabel: UILabel!
-    
-    @IBOutlet weak var toDoTableView: UITableView!
+    @IBOutlet weak var cardSwiper: VerticalCardSwiper!
     
     let modelManger = ModelManager()
     var items: Results<ToDoItem>?
@@ -31,13 +21,12 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        toDoTableView.delegate = self
-        toDoTableView.dataSource = self
-        toDoTableView.showsVerticalScrollIndicator = false
+        cardSwiper.delegate = self
+        cardSwiper.datasource = self
         
-        toDoTableView.backgroundColor = UIColor(red:0.23, green:0.42, blue:0.92, alpha:0) // hex: 3B6CEB
-
         setDate()
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,7 +34,7 @@ class MainViewController: UIViewController {
         
         items = modelManger.searchDate(dateType: .today, date: Date())
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
-        UIView.transition(with: toDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.toDoTableView.reloadData() })
+        //        UIView.transition(with: toDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.toDoTableView.reloadData() })
         
     }
     
@@ -54,7 +43,7 @@ class MainViewController: UIViewController {
         return .lightContent // white
     }
     
-
+    
     func setDate() {
         let date = Date()
         let calendar = Calendar.current
@@ -64,31 +53,27 @@ class MainViewController: UIViewController {
         
         let dayNumber = calendar.component(.day, from: date)
         
-        dateLabel.text = "\(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
+        //        dateLabel.text = "\(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
     }
 }
 
-
-// MARK: - UITableViewDataSource
-extension MainViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items?.count ?? 0
+extension MainViewController: VerticalCardSwiperDelegate, VerticalCardSwiperDatasource {
+    func numberOfCards(verticalCardSwiperView: VerticalCardSwiperView) -> Int {
+        return 10
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "toDoCell", for: indexPath) as! ToDoTableViewCell
+    func cardForItemAt(verticalCardSwiperView: VerticalCardSwiperView, cardForItemAt index: Int) -> CardCell {
+        if let cardCell = verticalCardSwiperView.dequeueReusableCell(withReuseIdentifier: "ExampleCell", for: index) as? ExampleCardCell {
+            
+//            let contact = contactsDemoData[index]
+//            cardCell.setRandomBackgroundColor()
+//            cardCell.nameLbl.text = "Name: " + contact.name
+//            cardCell.ageLbl.text = "Age: \(contact.age ?? 0)"
+            return cardCell
+        }
         
-        let item = items?[indexPath.row]
-        cell.contentLabel.text = item?.title
-        
-        cell.importance.rating = item!.importance
-//        cell.item
-        
-        return cell
+        return CardCell()
     }
-}
-
-// MARK: - UITableViewDelegate
-extension MainViewController: UITableViewDelegate {
+    
     
 }
