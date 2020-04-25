@@ -24,9 +24,7 @@ class MainViewController: UIViewController {
         cardSwiper.delegate = self
         cardSwiper.datasource = self
         
-        setDate()
-        
-        
+        cardSwiper.register(nib: UINib(nibName: "ToDoCardCell", bundle: nil), forCellWithReuseIdentifier: "ToDoCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,7 +32,7 @@ class MainViewController: UIViewController {
         
         items = modelManger.searchDate(dateType: .today, date: Date())
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
-        //        UIView.transition(with: toDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.toDoTableView.reloadData() })
+        UIView.transition(with: cardSwiper.self, duration: 0.5, options: .transitionCrossDissolve, animations: { self.cardSwiper.reloadData() })
         
     }
     
@@ -57,18 +55,23 @@ class MainViewController: UIViewController {
     }
 }
 
-extension MainViewController: VerticalCardSwiperDelegate, VerticalCardSwiperDatasource {
+extension MainViewController: VerticalCardSwiperDatasource {
     func numberOfCards(verticalCardSwiperView: VerticalCardSwiperView) -> Int {
-        return 10
+        return items?.count ?? 0
     }
     
     func cardForItemAt(verticalCardSwiperView: VerticalCardSwiperView, cardForItemAt index: Int) -> CardCell {
-        if let cardCell = verticalCardSwiperView.dequeueReusableCell(withReuseIdentifier: "ExampleCell", for: index) as? ExampleCardCell {
+        if let cardCell = verticalCardSwiperView.dequeueReusableCell(withReuseIdentifier: "ToDoCell", for: index) as? ToDoCardCell {
+            let item = items?[index]
             
-//            let contact = contactsDemoData[index]
-//            cardCell.setRandomBackgroundColor()
-//            cardCell.nameLbl.text = "Name: " + contact.name
-//            cardCell.ageLbl.text = "Age: \(contact.age ?? 0)"
+            
+            cardCell.setBackgroundColor(item?.firstColor, item?.secondColor)
+            cardCell.setImportance(ratingCount: item!.importance)
+            //            cardCell.setNavigationBar(timestamp: item?.timestamp)
+            cardCell.setDescriptionTextView(text: item?.content ?? description)
+            cardCell.setTitleLabel(title: item?.title ?? "title")
+            
+            //            cardCell.setIconImage(image: <#T##UIImage#>)
             return cardCell
         }
         
@@ -76,4 +79,22 @@ extension MainViewController: VerticalCardSwiperDelegate, VerticalCardSwiperData
     }
     
     
+}
+
+extension MainViewController: VerticalCardSwiperDelegate {
+    func willSwipeCardAway(card: CardCell, index: Int, swipeDirection: SwipeDirection) {
+        let item = items?[index]
+        
+        switch swipeDirection {
+        case .Left:
+            print("Left Direction")
+            
+        case .Right:
+            item?.isDone = true
+            
+        case .None:
+            break
+        }
+        
+    }
 }
