@@ -19,6 +19,8 @@ class AddToDoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        starRating.settings.fillMode = .half
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -37,8 +39,7 @@ class AddToDoTableViewCell: UITableViewCell {
         timeLabel.text = selectDate
     }
     
-    func setIcon(imageData: Data, firstColor: Data, secondColor: Data) {
-        
+    func setIcon(imageData: Data) {
         let image = UIImage(data: imageData)
         
         iconImage.image = image

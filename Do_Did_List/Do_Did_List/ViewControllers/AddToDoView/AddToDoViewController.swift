@@ -79,7 +79,7 @@ extension AddToDoViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "addToDoCell", for: indexPath) as! AddToDoTableViewCell
         
         let item = items?[indexPath.section]
-        cell.setIcon(imageData: item!.imageData, firstColor: item!.firstColor, secondColor: item!.secondColor)
+        cell.setIcon(imageData: item!.imageData)
         cell.setTime(date: item!.timestamp)
         cell.titleLabel.text = item?.title
         cell.contentLabel.text = item?.content
