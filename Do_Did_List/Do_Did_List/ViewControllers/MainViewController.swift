@@ -31,9 +31,10 @@ class MainViewController: UIViewController {
         super.viewWillAppear(animated)
         
         items = modelManger.searchDate(dateType: .today, date: Date())
+        items = modelManger.filterDone(original: items!, isDone: false)
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
-        UIView.transition(with: cardSwiper.self, duration: 0.5, options: .transitionCrossDissolve, animations: { self.cardSwiper.reloadData() })
         
+        UIView.transition(with: cardSwiper.self, duration: 0.5, options: .transitionCrossDissolve, animations: { self.cardSwiper.reloadData() })
     }
     
     // Status Bar 색상 설정
@@ -42,17 +43,17 @@ class MainViewController: UIViewController {
     }
     
     
-    func setDate() {
-        let date = Date()
-        let calendar = Calendar.current
-        
-        let monthNumber = calendar.component(.month, from: date)
-        let monthName = DateFormatter().monthSymbols[monthNumber - 1]
-        
-        let dayNumber = calendar.component(.day, from: date)
-        
-        //        dateLabel.text = "\(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
-    }
+//    func setDate() {
+//        let date = Date()
+//        let calendar = Calendar.current
+//
+//        let monthNumber = calendar.component(.month, from: date)
+//        let monthName = DateFormatter().monthSymbols[monthNumber - 1]
+//
+//        let dayNumber = calendar.component(.day, from: date)
+//
+//        dateLabel.text = "\(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
+//    }
 }
 
 extension MainViewController: VerticalCardSwiperDatasource {
@@ -67,11 +68,11 @@ extension MainViewController: VerticalCardSwiperDatasource {
             
             cardCell.setBackgroundColor(item?.firstColor, item?.secondColor)
             cardCell.setImportance(ratingCount: item!.importance)
-            //            cardCell.setNavigationBar(timestamp: item?.timestamp)
+            cardCell.setDate(date: item!.timestamp)
             cardCell.setDescriptionTextView(text: item?.content ?? description)
             cardCell.setTitleLabel(title: item?.title ?? "title")
+            cardCell.setIconImage(item!.imageData)
             
-            //            cardCell.setIconImage(image: <#T##UIImage#>)
             return cardCell
         }
         
@@ -88,10 +89,9 @@ extension MainViewController: VerticalCardSwiperDelegate {
         switch swipeDirection {
         case .Left:
             print("Left Direction")
-            
+            break
         case .Right:
-            item?.isDone = true
-            
+            modelManger.changeDoneCondition(item: item!, condition: true)
         case .None:
             break
         }
