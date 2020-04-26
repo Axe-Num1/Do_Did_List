@@ -28,7 +28,7 @@ class ModelManager {
      realm 로컬 DB로 Item 추가(쓰기) 기능을 수행합니다.
      
      - Parameters:
-        - item: DB에 추가할 아이템
+     - item: DB에 추가할 아이템
      */
     func add(_ item: ToDoItem) {
         do {
@@ -72,9 +72,29 @@ class ModelManager {
         return result
     }
     
-    func sync() {
+    func filterDone(original: Results<ToDoItem>, isDone: Bool) -> Results<ToDoItem> {
+        let result: Results<ToDoItem>
         
+        switch isDone {
+        case true:
+            result = original.filter(NSPredicate(format: "isDone == true"))
+        case false:
+            result = original.filter(NSPredicate(format: "isDone == false"))
+        }
+        
+        return result
     }
+    
+    func changeDoneCondition(item: ToDoItem, condition: Bool) {
+        do {
+            try realm.write {
+                item.isDone = condition
+            }
+        } catch {
+            print("Faild to change condition")
+        }
+    }
+    
     
 }
 
@@ -82,19 +102,19 @@ extension Date {
     var startOfDay: Date {
         return Calendar.current.startOfDay(for: self)
     }
-
+    
     var endOfDay: Date {
         var components = DateComponents()
         components.day = 1
         components.second = -1
         return Calendar.current.date(byAdding: components, to: startOfDay)!
     }
-
+    
     var startOfMonth: Date {
         let components = Calendar.current.dateComponents([.year, .month], from: startOfDay)
         return Calendar.current.date(from: components)!
     }
-
+    
     var endOfMonth: Date {
         var components = DateComponents()
         components.month = 1
