@@ -82,6 +82,7 @@
 		F28B50862438A24300335783 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B50852438A24300335783 /* UITextViewExtension.swift */; };
 		F2AE0D57245332190065325A /* ToDoCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2AE0D56245332190065325A /* ToDoCardCell.xib */; };
 		F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */; };
+		F2B490F32455AA8A0073AA21 /* DidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B490F22455AA8A0073AA21 /* DidViewController.swift */; };
 		F2B8E7FA244F4AF200985719 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */; };
 		F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */; };
 		F2CAB8832403EFF500ECCEBF /* ToDoCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAB8812403EFF500ECCEBF /* ToDoCardCell.swift */; };
@@ -189,6 +190,7 @@
 		F2A3A0AA2403E343004E81E0 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AE0D56245332190065325A /* ToDoCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCardCell.xib; sourceTree = "<group>"; };
 		F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoTableViewController.swift; sourceTree = "<group>"; };
+		F2B490F22455AA8A0073AA21 /* DidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidViewController.swift; sourceTree = "<group>"; };
 		F2B8019123FFE4AF0014D4B6 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 				F203622824357A5000AAF69F /* IconView.swift */,
 				F2AE0D56245332190065325A /* ToDoCardCell.xib */,
 				F2CAB8812403EFF500ECCEBF /* ToDoCardCell.swift */,
+				F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -422,9 +425,9 @@
 		F2E702C62400DE1400A0289E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */,
 				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
 				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
+				F2B490F22455AA8A0073AA21 /* DidViewController.swift */,
 				F2E438DC2444232500CC001F /* AddToDoView */,
 			);
 			path = ViewControllers;
@@ -624,6 +627,7 @@
 				F2B8E7FA244F4AF200985719 /* CustomTabBarController.swift in Sources */,
 				F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */,
 				F2464E95244082520023DCD9 /* UITableViewExtension.swift in Sources */,
+				F2B490F32455AA8A0073AA21 /* DidViewController.swift in Sources */,
 				F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */,
 				F26B3BE92421CEFC00052ABF /* ModelManager.swift in Sources */,
 				F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */,

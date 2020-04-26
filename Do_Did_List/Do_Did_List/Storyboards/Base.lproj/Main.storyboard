@@ -127,18 +127,39 @@
             </objects>
             <point key="canvasLocation" x="510" y="1788"/>
         </scene>
-        <!--View Controller-->
+        <!--Did View Controller-->
         <scene sceneID="8hU-N3-Elz">
             <objects>
-                <viewController id="nNL-Gt-xBD" sceneMemberID="viewController">
+                <viewController id="nNL-Gt-xBD" customClass="DidViewController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DcA-yF-NhO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardRect" translatesAutoresizingMaskIntoConstraints="NO" id="mbC-0a-Hh9">
+                                <rect key="frame" x="10" y="103" width="394" height="645"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBV-SO-HXf" customClass="VerticalCardSwiper" customModule="VerticalCardSwiper">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="acf-BG-Rrq" firstAttribute="trailing" secondItem="mbC-0a-Hh9" secondAttribute="trailing" constant="10" id="0UR-Vh-cw8"/>
+                            <constraint firstItem="acf-BG-Rrq" firstAttribute="bottom" secondItem="PBV-SO-HXf" secondAttribute="bottom" id="CC0-ak-vO7"/>
+                            <constraint firstItem="mbC-0a-Hh9" firstAttribute="leading" secondItem="acf-BG-Rrq" secondAttribute="leading" constant="10" id="FIT-5i-NPs"/>
+                            <constraint firstItem="PBV-SO-HXf" firstAttribute="top" secondItem="acf-BG-Rrq" secondAttribute="top" id="NPu-t1-8V8"/>
+                            <constraint firstItem="mbC-0a-Hh9" firstAttribute="top" secondItem="acf-BG-Rrq" secondAttribute="top" constant="15" id="OPD-ZG-MUp"/>
+                            <constraint firstItem="acf-BG-Rrq" firstAttribute="trailing" secondItem="PBV-SO-HXf" secondAttribute="trailing" id="Tkl-g1-1pV"/>
+                            <constraint firstItem="PBV-SO-HXf" firstAttribute="leading" secondItem="acf-BG-Rrq" secondAttribute="leading" id="ujh-PA-gUS"/>
+                            <constraint firstItem="acf-BG-Rrq" firstAttribute="bottom" secondItem="mbC-0a-Hh9" secondAttribute="bottom" constant="65" id="yrt-BR-yJE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="acf-BG-Rrq"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qbt-MV-IKX"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cardSwiper" destination="PBV-SO-HXf" id="1ke-iW-8g1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jh1-Nj-ycP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,7 +168,6 @@
         <!--Calendar-->
         <scene sceneID="uAD-zY-TEj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jfc-b7-nii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="mFX-iO-nca" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WFY-8p-Bjr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -158,6 +178,7 @@
                     <tabBarItem key="tabBarItem" title="Calendar" id="kHX-6z-zye"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jfc-b7-nii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4162" y="1062"/>
         </scene>
@@ -662,7 +683,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gum-b1-hWC" customClass="CosmosView" customModule="Cosmos">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gum-b1-hWC" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="277" y="135" width="85" height="27"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
