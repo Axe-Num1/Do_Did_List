@@ -13,14 +13,31 @@ import VerticalCardSwiper
 
 class ToDoCardCell: CardCell {
     
-    @IBOutlet weak var navBar: UINavigationBar!
-    @IBOutlet weak var importance: CosmosView!
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    @IBOutlet weak var starRatingView: CosmosView!
+    @IBOutlet weak var navigationItem: UINavigationItem!
+    
+    @IBOutlet weak var colorView: UIView!
+    
+    
     override func awakeFromNib() {
-        navBar.tintColor = UIColor.lightGray
+        super.awakeFromNib()
+        
+        starRatingView.settings.fillMode = .half
+        
+        let appearance = UINavigationBarAppearance()
+//        appearance.configureWithTransparentBackground()
+//        appearance.configureWithOpaqueBackground()
+        appearance.configureWithDefaultBackground()
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
+        
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
     
     override func layoutSubviews() {
@@ -29,19 +46,33 @@ class ToDoCardCell: CardCell {
     }
     
     func setBackgroundColor(_ firstColor: Data?, _ secondColor: Data?) {
-        
         guard let colorOne = UIColor.decodeToColor(data: firstColor!) else { return }
-        guard let colorTwo = UIColor.decodeToColor(data: secondColor!) else { return }
         
-        self.setGradientBackgroundColor(colorOne: colorOne, colorTow: colorTwo)
+        colorView.backgroundColor = colorOne
     }
     
-    func setIconImage(image: UIImage) {
+    func setIconImage(_ iconImageData: Data) {
+        guard let iconImage = UIImage(data: iconImageData) else { return }
         
+        let button = UIButton(type: .custom)
+        button.setImage(iconImage, for: .normal)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.widthAnchor.constraint(equalToConstant: 35).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        
+        let barButton = UIBarButtonItem(customView: button)
+        
+        self.navigationItem.rightBarButtonItem = barButton
     }
     
-    func setNavigationBar(timestamp: Date) {
+    func setDate(date: Date) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm a"
         
+        let selectDate = dateFormatter.string(from: date)
+        
+        navigationItem.title = selectDate
     }
     
     func setTitleLabel(title: String) {
@@ -49,7 +80,7 @@ class ToDoCardCell: CardCell {
     }
     
     func setImportance(ratingCount: Double) {
-        importance.rating = ratingCount
+        starRatingView.rating = ratingCount
     }
     
     func setDescriptionTextView(text: String) {

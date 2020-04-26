@@ -49,41 +49,52 @@
                             </navigationItem>
                         </items>
                     </navigationBar>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udC-o6-hnz">
-                        <rect key="frame" x="25" y="69" width="300" height="30"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwv-3o-Jfm">
-                        <rect key="frame" x="25" y="129" width="300" height="291"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7K-x5-qOV">
+                        <rect key="frame" x="0.0" y="44" width="350" height="406"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxT-2w-Z5N">
+                                <rect key="frame" x="10" y="15" width="330" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeW-nZ-A7e">
+                                <rect key="frame" x="10" y="60" width="330" height="326"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="xeW-nZ-A7e" firstAttribute="leading" secondItem="X7K-x5-qOV" secondAttribute="leading" constant="10" id="0jX-mC-79I"/>
+                            <constraint firstAttribute="trailing" secondItem="xeW-nZ-A7e" secondAttribute="trailing" constant="10" id="EPp-jL-ToH"/>
+                            <constraint firstItem="yxT-2w-Z5N" firstAttribute="top" secondItem="X7K-x5-qOV" secondAttribute="top" constant="15" id="RQ5-aE-ymv"/>
+                            <constraint firstItem="yxT-2w-Z5N" firstAttribute="leading" secondItem="X7K-x5-qOV" secondAttribute="leading" constant="10" id="ckO-Sh-Nyf"/>
+                            <constraint firstItem="xeW-nZ-A7e" firstAttribute="top" secondItem="yxT-2w-Z5N" secondAttribute="bottom" constant="15" id="g2P-8H-Yam"/>
+                            <constraint firstAttribute="bottom" secondItem="xeW-nZ-A7e" secondAttribute="bottom" constant="20" id="zHh-xV-S2W"/>
+                            <constraint firstAttribute="trailing" secondItem="yxT-2w-Z5N" secondAttribute="trailing" constant="10" id="zLh-s7-fDb"/>
+                        </constraints>
+                    </view>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="X7K-x5-qOV" secondAttribute="trailing" id="4Rg-OH-OUO"/>
+                    <constraint firstItem="X7K-x5-qOV" firstAttribute="leading" secondItem="lWc-1W-Egh" secondAttribute="leading" id="9xJ-zw-xGu"/>
                     <constraint firstItem="Bo3-ge-2Dy" firstAttribute="top" secondItem="lWc-1W-Egh" secondAttribute="top" id="BT3-7H-zl8"/>
-                    <constraint firstItem="udC-o6-hnz" firstAttribute="top" secondItem="Bo3-ge-2Dy" secondAttribute="bottom" constant="25" id="DfI-Z3-K4z"/>
-                    <constraint firstItem="Hwv-3o-Jfm" firstAttribute="top" secondItem="udC-o6-hnz" secondAttribute="bottom" constant="30" id="Dzg-8z-DbZ"/>
-                    <constraint firstItem="Hwv-3o-Jfm" firstAttribute="leading" secondItem="lWc-1W-Egh" secondAttribute="leading" constant="25" id="Joz-hR-0c4"/>
                     <constraint firstItem="Bo3-ge-2Dy" firstAttribute="leading" secondItem="lWc-1W-Egh" secondAttribute="leading" id="Nji-eE-ubd"/>
-                    <constraint firstAttribute="trailing" secondItem="Hwv-3o-Jfm" secondAttribute="trailing" constant="25" id="SRg-c4-WJa"/>
-                    <constraint firstItem="udC-o6-hnz" firstAttribute="leading" secondItem="lWc-1W-Egh" secondAttribute="leading" constant="25" id="Wci-mL-rP1"/>
-                    <constraint firstAttribute="trailing" secondItem="udC-o6-hnz" secondAttribute="trailing" constant="25" id="Z7E-I8-hYN"/>
                     <constraint firstAttribute="trailing" secondItem="Bo3-ge-2Dy" secondAttribute="trailing" id="Zh8-3j-DQz"/>
-                    <constraint firstAttribute="bottom" secondItem="Hwv-3o-Jfm" secondAttribute="bottom" constant="30" id="kIF-V6-0yx"/>
+                    <constraint firstAttribute="bottom" secondItem="X7K-x5-qOV" secondAttribute="bottom" id="pLi-Po-aOM"/>
+                    <constraint firstItem="X7K-x5-qOV" firstAttribute="top" secondItem="Bo3-ge-2Dy" secondAttribute="bottom" id="t1l-iA-Ujj"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="352" height="447"/>
             <connections>
-                <outlet property="descriptionTextView" destination="Hwv-3o-Jfm" id="I1j-B1-JOg"/>
-                <outlet property="importance" destination="MpD-Ea-mgW" id="axg-CG-JvJ"/>
-                <outlet property="navBar" destination="Bo3-ge-2Dy" id="jrm-uy-gOH"/>
-                <outlet property="titleLabel" destination="udC-o6-hnz" id="d7i-TG-wxY"/>
+                <outlet property="colorView" destination="X7K-x5-qOV" id="Pdh-an-cGH"/>
+                <outlet property="descriptionTextView" destination="xeW-nZ-A7e" id="2ec-8V-Mlr"/>
+                <outlet property="navigationItem" destination="B6H-Kp-HmI" id="hUO-in-AHP"/>
+                <outlet property="starRatingView" destination="MpD-Ea-mgW" id="u1A-pA-dcX"/>
+                <outlet property="titleLabel" destination="yxT-2w-Z5N" id="S23-5c-Wnc"/>
             </connections>
             <point key="canvasLocation" x="134.78260869565219" y="161.71875"/>
         </collectionViewCell>
