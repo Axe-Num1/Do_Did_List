@@ -175,7 +175,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="j9p-jH-1kO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" id="kHX-6z-zye"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar.circle" catalog="system" id="kHX-6z-zye"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jfc-b7-nii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -683,7 +683,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gum-b1-hWC" customClass="CosmosView" customModule="Cosmos">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gum-b1-hWC" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="277" y="135" width="85" height="27"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
@@ -785,7 +785,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tli-an-xf7">
-                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="713" width="414" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-iH-LFe">
                                         <rect key="frame" x="182" y="0.0" width="50" height="50"/>
@@ -882,7 +882,7 @@
         <scene sceneID="cKR-Ud-AKF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="atY-X6-zOM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="tGG-qq-vRv"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" id="tGG-qq-vRv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UxJ-qK-wGu">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -901,7 +901,7 @@
         <scene sceneID="Rd4-Xz-afY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NFf-ng-P1x" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Do" id="4Du-nj-6b2"/>
+                    <tabBarItem key="tabBarItem" title="Do" image="play" catalog="system" id="4Du-nj-6b2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="8ZZ-a4-Vid">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -920,7 +920,7 @@
         <scene sceneID="ROa-eI-fd6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uSp-Qq-vum" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Did" id="wd8-r4-RVu"/>
+                    <tabBarItem key="tabBarItem" title="Did" image="checkmark.square" catalog="system" id="wd8-r4-RVu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="p4G-Hc-2lI">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -937,12 +937,16 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="v9b-16-Rsh"/>
+        <segue reference="Gcf-PR-6sS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Add Button" width="38" height="38"/>
         <image name="CardRect" width="346" height="536"/>
         <image name="CategoryIcon" width="92" height="92"/>
         <image name="DateRectangle" width="544" height="544"/>
+        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="play" catalog="system" width="120" height="128"/>
     </resources>
 </document>
