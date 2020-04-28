@@ -25,6 +25,8 @@ class MainViewController: UIViewController {
         cardSwiper.datasource = self
         
         cardSwiper.register(nib: UINib(nibName: "ToDoCardCell", bundle: nil), forCellWithReuseIdentifier: "ToDoCell")
+        
+        setNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,25 +37,63 @@ class MainViewController: UIViewController {
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
         
         UIView.transition(with: cardSwiper.self, duration: 0.5, options: .transitionCrossDissolve, animations: { self.cardSwiper.reloadData() })
+        
+        self.title = items?.first?.title
     }
     
     // Status Bar 색상 설정
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent // white
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent // white
+//    }
+    
+    
+    @objc func moveToCalendarView() {
+        print("move to calendar view")
+    }
+    
+    func setNavigationBar() {
+        let textColor = UIColor(red: 0.23, green: 0.42, blue: 0.92, alpha: 1.00)
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            title: setDate(),
+            style: .plain,
+            target: self,
+            action: #selector(moveToCalendarView)
+        )
+        
+        let leftBarButtonTextAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: textColor,
+            .font: UIFont(name: "Fivo Sans", size: 18)!
+        ]
+        
+        let leftButton = self.navigationItem.leftBarButtonItem
+        leftButton?.setTitleTextAttributes(leftBarButtonTextAttributes, for: .normal)
+        
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            .foregroundColor: textColor,
+            .font: UIFont(name: "Fivo Sans", size: 35)!
+        ]
+        
+        
     }
     
     
-//    func setDate() {
-//        let date = Date()
-//        let calendar = Calendar.current
-//
-//        let monthNumber = calendar.component(.month, from: date)
-//        let monthName = DateFormatter().monthSymbols[monthNumber - 1]
-//
-//        let dayNumber = calendar.component(.day, from: date)
-//
-//        dateLabel.text = "\(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
-//    }
+    func setDate() -> String {
+        let date = Date()
+        let calendar = Calendar.current
+        
+        let monthNumber = calendar.component(.month, from: date)
+        let monthName = DateFormatter().monthSymbols[monthNumber - 1]
+        
+        let dayNumber = calendar.component(.day, from: date)
+        
+        let weekNumber = calendar.component(.weekday, from: date)
+        let weekName = DateFormatter().weekdaySymbols[weekNumber - 1]
+        
+        return "\(weekName) \(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
+    }
 }
 
 extension MainViewController: VerticalCardSwiperDatasource {
@@ -92,6 +132,7 @@ extension MainViewController: VerticalCardSwiperDelegate {
             break
         case .Right:
             modelManger.changeDoneCondition(item: item!, condition: true)
+            
         case .None:
             break
         }
