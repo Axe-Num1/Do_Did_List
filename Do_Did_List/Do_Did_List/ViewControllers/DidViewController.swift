@@ -24,6 +24,8 @@ class DidViewController: UIViewController {
         cardSwiper.datasource = self
         
         cardSwiper.register(nib: UINib(nibName: "ToDoCardCell", bundle: nil), forCellWithReuseIdentifier: "ToDoCell")
+        
+        setNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,7 +36,63 @@ class DidViewController: UIViewController {
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
         
         UIView.transition(with: cardSwiper.self, duration: 0.5, options: .transitionCrossDissolve, animations: { self.cardSwiper.reloadData() })
+        
+        setNavigationTitle()
     }
+    
+    func setNavigationTitle() {
+        self.title = items?.first?.title
+    }
+    
+    func setNavigationBar() {
+        let textColor = UIColor(red: 0.23, green: 0.42, blue: 0.92, alpha: 1.00)
+        
+        let leftButton = UIBarButtonItem(
+            title: setDate(),
+            style: .plain,
+            target: self,
+            action: nil
+        )
+
+        navigationItem.setLeftBarButton(leftButton, animated: true)
+        
+        let appearance = UINavigationBarAppearance()
+        
+        appearance.configureWithTransparentBackground()
+        
+        appearance.largeTitleTextAttributes = [
+            .foregroundColor: textColor,
+            .font: UIFont(name: "Fivo Sans", size: 35)!
+        ]
+        
+        appearance.buttonAppearance.normal.titleTextAttributes = [
+            .foregroundColor: textColor,
+            .font: UIFont(name: "Fivo Sans", size: 18)!
+        ]
+        
+        self.navigationItem.standardAppearance = appearance
+        self.navigationItem.compactAppearance = appearance
+        self.navigationItem.scrollEdgeAppearance = appearance
+            
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+   
+    
+    func setDate() -> String {
+        let date = Date()
+        let calendar = Calendar.current
+        
+        let monthNumber = calendar.component(.month, from: date)
+        let monthName = DateFormatter().monthSymbols[monthNumber - 1]
+        
+        let dayNumber = calendar.component(.day, from: date)
+        
+        let weekNumber = calendar.component(.weekday, from: date)
+        let weekName = DateFormatter().weekdaySymbols[weekNumber - 1]
+        
+        return "\(weekName) \(monthName) \(String(dayNumber))" // "WeekName + MonthName + DayNumber"
+    }
+    
 }
 
 extension DidViewController: VerticalCardSwiperDatasource {
@@ -66,6 +124,7 @@ extension DidViewController: VerticalCardSwiperDelegate {
         switch swipeDirection {
         case .Left:
             modelManger.changeDoneCondition(item: item!, condition: false)
+            setNavigationTitle()
         case .Right:
             print("Right Direction")
             break

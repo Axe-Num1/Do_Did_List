@@ -26,23 +26,24 @@ class ToDoCardCell: CardCell {
         super.awakeFromNib()
         
         starRatingView.settings.fillMode = .half
-        
-        let appearance = UINavigationBarAppearance()
-//        appearance.configureWithTransparentBackground()
-//        appearance.configureWithOpaqueBackground()
-        appearance.configureWithDefaultBackground()
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
-        
-        UINavigationBar.appearance().tintColor = .white
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().compactAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        setNavigationBar()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         self.layer.cornerRadius = 15
+    }
+    
+    func setNavigationBar() {
+        let appearance = UINavigationBarAppearance()
+        
+        appearance.configureWithDefaultBackground()
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+                        
+        UINavigationBar.appearance().tintColor = .white
+        self.navigationItem.standardAppearance = appearance
+        self.navigationItem.compactAppearance = appearance
+        self.navigationItem.scrollEdgeAppearance = appearance
     }
     
     func setBackgroundColor(_ firstColor: Data?, _ secondColor: Data?) {

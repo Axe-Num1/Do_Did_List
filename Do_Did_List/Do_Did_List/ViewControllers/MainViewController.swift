@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var cardSwiper: VerticalCardSwiper!
     
-    let modelManger = ModelManager()
+    let modelManager = ModelManager()
     var items: Results<ToDoItem>?
     
     override func viewDidLoad() {
@@ -32,20 +32,19 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        items = modelManger.searchDate(dateType: .today, date: Date())
-        items = modelManger.filterDone(original: items!, isDone: false)
+        items = modelManager.searchDate(dateType: .today, date: Date())
+        items = modelManager.filterDone(original: items!, isDone: false)
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
         
         UIView.transition(with: cardSwiper.self, duration: 0.5, options: .transitionCrossDissolve, animations: { self.cardSwiper.reloadData() })
         
-        self.title = items?.first?.title
+        setNavigationTitle()
     }
     
-    // Status Bar 색상 설정
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        return .lightContent // white
-//    }
-    
+    //     Status Bar 색상 설정
+    //    override var preferredStatusBarStyle: UIStatusBarStyle {
+    //        return .darkContent // white
+    //    }
     
     @objc func moveToCalendarView() {
         print("move to calendar view")
@@ -54,45 +53,57 @@ class MainViewController: UIViewController {
     func setNavigationBar() {
         let textColor = UIColor(red: 0.23, green: 0.42, blue: 0.92, alpha: 1.00)
         
+        let appearance = UINavigationBarAppearance()
+        
+        appearance.configureWithTransparentBackground()
+        
+        appearance.largeTitleTextAttributes = [
+            .foregroundColor: textColor,
+            .font: UIFont(name: "Fivo Sans", size: 35)!
+        ]
+        
+        appearance.buttonAppearance.normal.titleTextAttributes = [
+            .foregroundColor: textColor,
+            .font: UIFont(name: "Fivo Sans", size: 18)!
+        ]
+        
+        self.navigationItem.standardAppearance = appearance
+        self.navigationItem.compactAppearance = appearance
+        self.navigationItem.scrollEdgeAppearance = appearance
+        
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(
+        let leftButton = UIBarButtonItem(
             title: setDate(),
             style: .plain,
             target: self,
             action: #selector(moveToCalendarView)
         )
         
-        let leftBarButtonTextAttributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: textColor,
-            .font: UIFont(name: "Fivo Sans", size: 18)!
-        ]
-        
-        let leftButton = self.navigationItem.leftBarButtonItem
-        leftButton?.setTitleTextAttributes(leftBarButtonTextAttributes, for: .normal)
-        
-        navigationController?.navigationBar.largeTitleTextAttributes = [
-            .foregroundColor: textColor,
-            .font: UIFont(name: "Fivo Sans", size: 35)!
-        ]
-        
-        
+        navigationItem.setLeftBarButton(leftButton, animated: true)
     }
     
+    func setNavigationTitle() {
+        if ((items?.first) != nil) {
+            self.title = items?.first?.title
+        } else {
+            self.title = "ToDo is Empty..."
+        }
+    }
     
     func setDate() -> String {
         let date = Date()
         let calendar = Calendar.current
+        
+        let weekNumber = calendar.component(.weekday, from: date)
+        let weekName = DateFormatter().weekdaySymbols[weekNumber - 1]
         
         let monthNumber = calendar.component(.month, from: date)
         let monthName = DateFormatter().monthSymbols[monthNumber - 1]
         
         let dayNumber = calendar.component(.day, from: date)
         
-        let weekNumber = calendar.component(.weekday, from: date)
-        let weekName = DateFormatter().weekdaySymbols[weekNumber - 1]
-        
-        return "\(weekName) \(monthName) \(String(dayNumber))" // "MonthName + DayNumber"
+        return "\(weekName) \(monthName) \(String(dayNumber))" // "WeekName + MonthName + DayNumber"
     }
 }
 
@@ -105,21 +116,17 @@ extension MainViewController: VerticalCardSwiperDatasource {
         if let cardCell = verticalCardSwiperView.dequeueReusableCell(withReuseIdentifier: "ToDoCell", for: index) as? ToDoCardCell {
             let item = items?[index]
             
-            
             cardCell.setBackgroundColor(item?.firstColor, item?.secondColor)
-            cardCell.setImportance(ratingCount: item!.importance)
-            cardCell.setDate(date: item!.timestamp)
-            cardCell.setDescriptionTextView(text: item?.content ?? description)
-            cardCell.setTitleLabel(title: item?.title ?? "title")
+            cardCell.setImportance(ratingCount: item?.importance ?? 0)
+            cardCell.setDate(date: item?.timestamp ?? Date())
+            cardCell.setDescriptionTextView(text: item?.content ?? "")
+            cardCell.setTitleLabel(title: item?.title ?? "")
             cardCell.setIconImage(item!.imageData)
             
             return cardCell
         }
-        
         return CardCell()
     }
-    
-    
 }
 
 extension MainViewController: VerticalCardSwiperDelegate {
@@ -131,11 +138,13 @@ extension MainViewController: VerticalCardSwiperDelegate {
             print("Left Direction")
             break
         case .Right:
-            modelManger.changeDoneCondition(item: item!, condition: true)
-            
+            modelManager.changeDoneCondition(item: item!, condition: true)
         case .None:
             break
         }
-        
+    }
+    
+    func didSwipeCardAway(card: CardCell, index: Int, swipeDirection: SwipeDirection) {
+        setNavigationTitle()
     }
 }
