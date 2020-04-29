@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,39 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evN-iy-xu3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Screen" translatesAutoresizingMaskIntoConstraints="NO" id="f33-wi-bmU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="bbr-QW-HMQ">
-                                        <rect key="frame" x="60" y="149.66666666666666" width="255" height="71.333333333333343"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="71.5" id="ejA-Y8-aBR"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="DateRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-f5-RY1">
-                                        <rect key="frame" x="52.666666666666657" y="271" width="270" height="270"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="270" id="Asf-Is-4mG"/>
-                                            <constraint firstAttribute="width" constant="270" id="eui-fZ-Je2"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.23137254901960785" green="0.42352941176470588" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="eXZ-f5-RY1" firstAttribute="centerX" secondItem="evN-iy-xu3" secondAttribute="centerX" id="IEM-Zc-NUG"/>
-                                    <constraint firstItem="eXZ-f5-RY1" firstAttribute="top" secondItem="bbr-QW-HMQ" secondAttribute="bottom" constant="50" id="cmf-lW-dLG"/>
-                                    <constraint firstAttribute="trailing" secondItem="bbr-QW-HMQ" secondAttribute="trailing" constant="60" id="etM-nw-uHH"/>
-                                    <constraint firstItem="bbr-QW-HMQ" firstAttribute="leading" secondItem="evN-iy-xu3" secondAttribute="leading" constant="60" id="jEf-OY-Iyp"/>
-                                    <constraint firstItem="eXZ-f5-RY1" firstAttribute="centerY" secondItem="evN-iy-xu3" secondAttribute="centerY" id="oDd-Lg-MIz"/>
-                                </constraints>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="evN-iy-xu3" secondAttribute="bottom" id="0Ys-Pl-PQM"/>
-                            <constraint firstItem="evN-iy-xu3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="JqF-vh-pjm"/>
-                            <constraint firstItem="evN-iy-xu3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="dwZ-KQ-tbv"/>
-                            <constraint firstAttribute="trailing" secondItem="evN-iy-xu3" secondAttribute="trailing" id="iGE-Ba-dOm"/>
+                            <constraint firstItem="f33-wi-bmU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2fX-J5-TWT"/>
+                            <constraint firstAttribute="trailing" secondItem="f33-wi-bmU" secondAttribute="trailing" id="Ajp-fB-UNy"/>
+                            <constraint firstItem="f33-wi-bmU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ZEu-vk-LbL"/>
+                            <constraint firstAttribute="bottom" secondItem="f33-wi-bmU" secondAttribute="bottom" id="riu-v6-1XS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -58,7 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DateRectangle" width="544" height="544"/>
-        <image name="Title" width="548" height="138"/>
+        <image name="Launch Screen" width="375" height="812"/>
     </resources>
 </document>
