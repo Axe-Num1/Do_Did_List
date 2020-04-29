@@ -35,7 +35,8 @@ class NewToDoTableViewController: UITableViewController {
         
         starRatingView.settings.fillMode = .half
         
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
+//        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        setNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,6 +94,17 @@ class NewToDoTableViewController: UITableViewController {
         guard let iconDict = notification.userInfo else { return }
         guard let icon = iconDict["finalIcon"] as? UIImage else { return }
         iconButton.setBackgroundImage(icon, for: .normal)
+    }
+    
+    func setNavigationBar() {
+        let appearance = UINavigationBarAppearance()
+        
+        appearance.configureWithDefaultBackground()
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+        
+        self.navigationItem.standardAppearance = appearance
+        self.navigationItem.compactAppearance = appearance
+        self.navigationItem.scrollEdgeAppearance = appearance
     }
     
     func arrowDirection() {

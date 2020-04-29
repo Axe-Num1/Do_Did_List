@@ -30,8 +30,9 @@ class AddToDoViewController: UIViewController {
         
         items = modelManager.searchDate(dateType: .today, date: Date())
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
-    
+        
         UIView.transition(with: addToDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.addToDoTableView.reloadData() })
+        
     }
     
     @IBAction func doneButton(_ sender: Any) {
@@ -39,24 +40,17 @@ class AddToDoViewController: UIViewController {
     }
     
     func navigationBarSet() {
-
-        if #available(iOS 13.0, *) {
-            let appearance = UINavigationBarAppearance()
-            appearance.configureWithTransparentBackground()
-            appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
-
-            UINavigationBar.appearance().tintColor = .white
-            UINavigationBar.appearance().standardAppearance = appearance
-            UINavigationBar.appearance().compactAppearance = appearance
-            UINavigationBar.appearance().scrollEdgeAppearance = appearance
-        } else {
-            UINavigationBar.appearance().tintColor = .white
-            UINavigationBar.appearance().barTintColor = .clear
-            UINavigationBar.appearance().isTranslucent = false
-        }
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
+        
+        //        self.navigationItem.tintColor = .white
+        self.navigationItem.standardAppearance = appearance
+        self.navigationItem.compactAppearance = appearance
+        self.navigationItem.scrollEdgeAppearance = appearance
     }
-    
 }
 
 // MARK: - UITableViewDataSource

@@ -10,13 +10,13 @@ import UIKit
 import RealmSwift
 
 class StartViewController: UIViewController {
-
+    
     @IBOutlet weak var dateButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.setNeedsStatusBarAppearanceUpdate()
+        //        self.setNeedsStatusBarAppearanceUpdate()
         
         let stringDate = getDate()
         dateButton.setTitle(stringDate, for: .normal)
@@ -29,7 +29,7 @@ class StartViewController: UIViewController {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+        return .darkContent
     }
     
 }
