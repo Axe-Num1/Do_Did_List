@@ -22,15 +22,12 @@ extension CustomTabBarController: UITabBarControllerDelegate {
     
     // MARK: ModalPresent
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        if viewController.isKind(of: AddToDoViewController.self) {
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            
-            guard let nav = storyboard.instantiateViewController(withIdentifier: "AddNav") as? UINavigationController else { return false }
-            
-            nav.modalPresentationStyle = .fullScreen
-            self.present(nav, animated: true, completion: nil)
-            return false
+        if viewController is AddToDoViewController {
+            if let newVC = tabBarController.storyboard?.instantiateViewController(withIdentifier: "AddNav") {
+                newVC.modalPresentationStyle = .fullScreen
+                tabBarController.present(newVC, animated: true)
+                return false
+            }
         }
         return true
     }
