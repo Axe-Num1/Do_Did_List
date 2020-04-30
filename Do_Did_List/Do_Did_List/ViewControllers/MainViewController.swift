@@ -50,8 +50,7 @@ class MainViewController: UIViewController {
         let textColor = UIColor(red: 0.23, green: 0.42, blue: 0.92, alpha: 1.00)
         
         let appearance = UINavigationBarAppearance()
-        
-        appearance.configureWithTransparentBackground()
+        appearance.configureWithDefaultBackground()
         
         appearance.largeTitleTextAttributes = [
             .foregroundColor: textColor,
@@ -81,9 +80,9 @@ class MainViewController: UIViewController {
     
     func setNavigationTitle() {
         if ((items?.first) != nil) {
-            self.navigationItem.title = items?.first?.title
+            self.navigationItem.title = "응원 문구를 넣을 예정"
         } else {
-            self.navigationItem.title = "ToDo is Empty..."
+            self.navigationItem.title = "ToDo isEmpty"
         }
     }
     
