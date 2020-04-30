@@ -11,10 +11,10 @@ import RealmSwift
 import VerticalCardSwiper
 
 class DidViewController: UIViewController {
-
+    
     @IBOutlet weak var cardSwiper: VerticalCardSwiper!
     
-    let modelManger = ModelManager()
+    let modelManager = ModelManager()
     var items: Results<ToDoItem>?
     
     override func viewDidLoad() {
@@ -31,8 +31,8 @@ class DidViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        items = modelManger.searchDate(dateType: .today, date: Date())
-        items = modelManger.filterDone(original: items!, isDone: true)
+        items = modelManager.searchDate(dateType: .today, date: Date())
+        items = modelManager.filterDone(original: items!, isDone: true)
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
         
         UIView.transition(with: cardSwiper.self, duration: 0.5, options: .transitionCrossDissolve, animations: { self.cardSwiper.reloadData() })
@@ -40,25 +40,17 @@ class DidViewController: UIViewController {
         setNavigationTitle()
     }
     
-    func setNavigationTitle() {
-        self.title = items?.first?.title
+    @objc func moveToCalendarView() {
+        print("move to calendar view")
+        self.tabBarController?.selectedIndex = 3
     }
     
     func setNavigationBar() {
         let textColor = UIColor(red: 0.23, green: 0.42, blue: 0.92, alpha: 1.00)
         
-        let leftButton = UIBarButtonItem(
-            title: setDate(),
-            style: .plain,
-            target: self,
-            action: nil
-        )
-
-        navigationItem.setLeftBarButton(leftButton, animated: true)
-        
         let appearance = UINavigationBarAppearance()
         
-        appearance.configureWithTransparentBackground()
+        appearance.configureWithDefaultBackground()
         
         appearance.largeTitleTextAttributes = [
             .foregroundColor: textColor,
@@ -73,26 +65,43 @@ class DidViewController: UIViewController {
         self.navigationItem.standardAppearance = appearance
         self.navigationItem.compactAppearance = appearance
         self.navigationItem.scrollEdgeAppearance = appearance
-            
+        
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        self.navigationItem.largeTitleDisplayMode = .always
+        
+        let leftButton = UIBarButtonItem(
+            title: setDate(),
+            style: .plain,
+            target: self,
+            action: #selector(moveToCalendarView)
+        )
+        
+        navigationItem.setLeftBarButton(leftButton, animated: true)
     }
-   
+    
+    func setNavigationTitle() {
+        if ((items?.first) != nil) {
+            self.navigationItem.title = "위로 문구 넣을 예정"
+        } else {
+            self.navigationItem.title = "Did is Empty"
+        }
+    }
     
     func setDate() -> String {
         let date = Date()
         let calendar = Calendar.current
+        
+        let weekNumber = calendar.component(.weekday, from: date)
+        let weekName = DateFormatter().weekdaySymbols[weekNumber - 1]
         
         let monthNumber = calendar.component(.month, from: date)
         let monthName = DateFormatter().monthSymbols[monthNumber - 1]
         
         let dayNumber = calendar.component(.day, from: date)
         
-        let weekNumber = calendar.component(.weekday, from: date)
-        let weekName = DateFormatter().weekdaySymbols[weekNumber - 1]
-        
         return "\(weekName) \(monthName) \(String(dayNumber))" // "WeekName + MonthName + DayNumber"
     }
-    
 }
 
 extension DidViewController: VerticalCardSwiperDatasource {
@@ -105,10 +114,10 @@ extension DidViewController: VerticalCardSwiperDatasource {
             let item = items?[index]
             
             cardCell.setBackgroundColor(item?.firstColor, item?.secondColor)
-            cardCell.setImportance(ratingCount: item!.importance)
-            cardCell.setDate(date: item!.timestamp)
-            cardCell.setDescriptionTextView(text: item?.content ?? description)
-            cardCell.setTitleLabel(title: item?.title ?? "title")
+            cardCell.setImportance(ratingCount: item?.importance ?? 0)
+            cardCell.setDate(date: item?.timestamp ?? Date())
+            cardCell.setDescriptionTextView(text: item?.content ?? "")
+            cardCell.setTitleLabel(title: item?.title ?? "")
             cardCell.setIconImage(item!.imageData)
             
             return cardCell
@@ -123,14 +132,19 @@ extension DidViewController: VerticalCardSwiperDelegate {
         
         switch swipeDirection {
         case .Left:
-            modelManger.changeDoneCondition(item: item!, condition: false)
-            setNavigationTitle()
+            modelManager.changeDoneCondition(item: item!, condition: true)
         case .Right:
-            print("Right Direction")
-            break
+            modelManager.remove(item!)
         case .None:
             break
         }
-        
+    }
+    
+    func didSwipeCardAway(card: CardCell, index: Int, swipeDirection: SwipeDirection) {
+        setNavigationTitle()
+    }
+    
+    func didTapCard(verticalCardSwiperView: VerticalCardSwiperView, index: Int) {
+        print("Tapped")
     }
 }

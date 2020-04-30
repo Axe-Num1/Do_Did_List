@@ -97,23 +97,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardRect" translatesAutoresizingMaskIntoConstraints="NO" id="Nbm-lP-JGg">
-                                <rect key="frame" x="10" y="103" width="394" height="645"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUk-7l-z8P">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8D-K0-RSW" customClass="VerticalCardSwiper" customModule="VerticalCardSwiper">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="N8D-K0-RSW" firstAttribute="leading" secondItem="nil-sM-DZO" secondAttribute="leading" id="80D-ks-N4j"/>
-                            <constraint firstItem="nil-sM-DZO" firstAttribute="trailing" secondItem="N8D-K0-RSW" secondAttribute="trailing" id="Kbj-sL-RRb"/>
-                            <constraint firstItem="nil-sM-DZO" firstAttribute="bottom" secondItem="N8D-K0-RSW" secondAttribute="bottom" id="Nft-dA-0yA"/>
-                            <constraint firstItem="nil-sM-DZO" firstAttribute="trailing" secondItem="Nbm-lP-JGg" secondAttribute="trailing" constant="10" id="TCt-be-QBu"/>
-                            <constraint firstItem="Nbm-lP-JGg" firstAttribute="top" secondItem="nil-sM-DZO" secondAttribute="top" constant="15" id="agX-pU-wET"/>
-                            <constraint firstItem="nil-sM-DZO" firstAttribute="bottom" secondItem="Nbm-lP-JGg" secondAttribute="bottom" constant="65" id="kwU-yq-wIT"/>
-                            <constraint firstItem="Nbm-lP-JGg" firstAttribute="leading" secondItem="nil-sM-DZO" secondAttribute="leading" constant="10" id="llQ-Xa-4o1"/>
-                            <constraint firstItem="N8D-K0-RSW" firstAttribute="top" secondItem="nil-sM-DZO" secondAttribute="top" id="rCi-wb-mBy"/>
+                            <constraint firstItem="nil-sM-DZO" firstAttribute="bottom" secondItem="N8D-K0-RSW" secondAttribute="bottom" id="04X-LT-BYc"/>
+                            <constraint firstItem="nil-sM-DZO" firstAttribute="trailing" secondItem="wUk-7l-z8P" secondAttribute="trailing" id="66U-sV-H1S"/>
+                            <constraint firstItem="N8D-K0-RSW" firstAttribute="leading" secondItem="nil-sM-DZO" secondAttribute="leading" id="dro-I9-KuZ"/>
+                            <constraint firstItem="wUk-7l-z8P" firstAttribute="leading" secondItem="nil-sM-DZO" secondAttribute="leading" id="j1O-Qj-bLl"/>
+                            <constraint firstItem="nil-sM-DZO" firstAttribute="trailing" secondItem="N8D-K0-RSW" secondAttribute="trailing" id="otn-az-jth"/>
+                            <constraint firstItem="wUk-7l-z8P" firstAttribute="top" secondItem="nil-sM-DZO" secondAttribute="top" id="pAw-8F-PIs"/>
+                            <constraint firstItem="nil-sM-DZO" firstAttribute="bottom" secondItem="wUk-7l-z8P" secondAttribute="bottom" id="s0H-gi-oBa"/>
+                            <constraint firstItem="N8D-K0-RSW" firstAttribute="top" secondItem="nil-sM-DZO" secondAttribute="top" id="shN-LQ-hOb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nil-sM-DZO"/>
                     </view>
@@ -125,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HD9-2P-9ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664" y="1787"/>
+            <point key="canvasLocation" x="663.768115942029" y="1786.6071428571427"/>
         </scene>
         <!--Did View Controller-->
         <scene sceneID="8hU-N3-Elz">
@@ -135,23 +135,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardRect" translatesAutoresizingMaskIntoConstraints="NO" id="mbC-0a-Hh9">
-                                <rect key="frame" x="10" y="103" width="394" height="645"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-5t-DN4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBV-SO-HXf" customClass="VerticalCardSwiper" customModule="VerticalCardSwiper">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="acf-BG-Rrq" firstAttribute="trailing" secondItem="mbC-0a-Hh9" secondAttribute="trailing" constant="10" id="0UR-Vh-cw8"/>
                             <constraint firstItem="acf-BG-Rrq" firstAttribute="bottom" secondItem="PBV-SO-HXf" secondAttribute="bottom" id="CC0-ak-vO7"/>
-                            <constraint firstItem="mbC-0a-Hh9" firstAttribute="leading" secondItem="acf-BG-Rrq" secondAttribute="leading" constant="10" id="FIT-5i-NPs"/>
+                            <constraint firstItem="abQ-5t-DN4" firstAttribute="top" secondItem="acf-BG-Rrq" secondAttribute="top" id="Kiw-go-D9i"/>
                             <constraint firstItem="PBV-SO-HXf" firstAttribute="top" secondItem="acf-BG-Rrq" secondAttribute="top" id="NPu-t1-8V8"/>
-                            <constraint firstItem="mbC-0a-Hh9" firstAttribute="top" secondItem="acf-BG-Rrq" secondAttribute="top" constant="15" id="OPD-ZG-MUp"/>
+                            <constraint firstItem="abQ-5t-DN4" firstAttribute="leading" secondItem="acf-BG-Rrq" secondAttribute="leading" id="P2l-jy-rqM"/>
+                            <constraint firstItem="acf-BG-Rrq" firstAttribute="trailing" secondItem="abQ-5t-DN4" secondAttribute="trailing" id="Pz6-kB-SY1"/>
+                            <constraint firstItem="acf-BG-Rrq" firstAttribute="bottom" secondItem="abQ-5t-DN4" secondAttribute="bottom" id="RVH-rG-D2B"/>
                             <constraint firstItem="acf-BG-Rrq" firstAttribute="trailing" secondItem="PBV-SO-HXf" secondAttribute="trailing" id="Tkl-g1-1pV"/>
                             <constraint firstItem="PBV-SO-HXf" firstAttribute="leading" secondItem="acf-BG-Rrq" secondAttribute="leading" id="ujh-PA-gUS"/>
-                            <constraint firstItem="acf-BG-Rrq" firstAttribute="bottom" secondItem="mbC-0a-Hh9" secondAttribute="bottom" constant="65" id="yrt-BR-yJE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="acf-BG-Rrq"/>
                     </view>
@@ -172,7 +172,7 @@
                     <view key="view" contentMode="scaleToFill" id="WFY-8p-Bjr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="j9p-jH-1kO"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="calendar.circle" catalog="system" id="kHX-6z-zye"/>
@@ -683,7 +683,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gum-b1-hWC" customClass="CosmosView" customModule="Cosmos">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gum-b1-hWC" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="277" y="135" width="85" height="27"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
@@ -941,7 +941,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Add Button" width="38" height="38"/>
-        <image name="CardRect" width="346" height="536"/>
         <image name="CategoryIcon" width="92" height="92"/>
         <image name="DateRectangle" width="544" height="544"/>
         <image name="calendar.circle" catalog="system" width="128" height="121"/>
