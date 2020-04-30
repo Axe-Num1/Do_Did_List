@@ -26,6 +26,7 @@ class IconViewController: UIViewController {
         switchViews(firstView: 1.0, secondView: 0.0)
         
         setupIconView()
+        setDefaultIcon()
     }
     
     @IBAction func handleSelectView(_ sender: UISegmentedControl) {
@@ -55,6 +56,17 @@ class IconViewController: UIViewController {
         
         isModalInPresentation = false
         dismiss(animated: true, completion: nil)
+    }
+    
+    func setDefaultIcon() {
+        iconView.backgroundImage.image = nil
+        iconView.topColor = #colorLiteral(red: 0.9654200673, green: 0.1590853035, blue: 0.2688751221, alpha: 1)
+        iconView.bottomColor = #colorLiteral(red: 0.7559037805, green: 0.1139892414, blue: 0.1577021778, alpha: 1)
+        
+        iconView.image.image = UIImage(named: "avatar-1")
+        iconView.image.image = iconView.image.image?.withRenderingMode(.alwaysTemplate)
+        iconView.image.tintColor = .white
+        iconView.contentMode = .scaleAspectFit
     }
     
     private func switchViews(firstView: CGFloat, secondView: CGFloat) {

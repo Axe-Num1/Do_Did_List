@@ -52,7 +52,18 @@ class NewToDoTableViewController: UITableViewController {
     @IBAction func addButton(_ sender: Any) {
         
         guard let titleText = titleField.text.nilIfEmpty else {
-            let alert = UIAlertController(title: "Empty Title Name", message: "Please Set Title Name", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Empty Title", message: "Please Set Title Name", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            alert.addAction(okButton)
+            
+            present(alert, animated: true)
+            
+            return
+        }
+        
+        guard let colorOne = firstColorData, let colorTwo = secondColorData, let image = imageData else {
+            let alert = UIAlertController(title: "Please Set Icon", message: "", preferredStyle: .alert)
             let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
             
             alert.addAction(okButton)
@@ -63,9 +74,9 @@ class NewToDoTableViewController: UITableViewController {
         }
         
         let item = ToDoItem(title: titleText,
-                            firstColor: firstColorData!,
-                            secondColor: secondColorData!,
-                            imageData: imageData!,
+                            firstColor: colorOne,
+                            secondColor: colorTwo,
+                            imageData: image,
                             timestamp: timePicker.date,
                             importance: starRatingView.rating,
                             content: contentTextView.text,
