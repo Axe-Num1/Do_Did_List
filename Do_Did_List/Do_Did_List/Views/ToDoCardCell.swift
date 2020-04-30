@@ -17,10 +17,11 @@ class ToDoCardCell: CardCell {
     @IBOutlet weak var descriptionTextView: UITextView!
     
     @IBOutlet weak var starRatingView: CosmosView!
+    
+    @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var navigationItem: UINavigationItem!
     
     @IBOutlet weak var colorView: UIView!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,40 +32,40 @@ class ToDoCardCell: CardCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.layer.cornerRadius = 15
+        self.layer.cornerRadius = 30
     }
     
     func setNavigationBar() {
         let appearance = UINavigationBarAppearance()
-        
         appearance.configureWithDefaultBackground()
         appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-                        
-        UINavigationBar.appearance().tintColor = .white
+        
+        self.navigationBar.prefersLargeTitles = true
         self.navigationItem.standardAppearance = appearance
         self.navigationItem.compactAppearance = appearance
         self.navigationItem.scrollEdgeAppearance = appearance
+        self.navigationItem.largeTitleDisplayMode = .always
     }
     
     func setBackgroundColor(_ firstColor: Data?, _ secondColor: Data?) {
         guard let colorOne = UIColor.decodeToColor(data: firstColor!) else { return }
-        
         colorView.backgroundColor = colorOne
     }
     
     func setIconImage(_ iconImageData: Data) {
         guard let iconImage = UIImage(data: iconImageData) else { return }
+        let imageView = UIImageView(image: iconImage)
         
-        let button = UIButton(type: .custom)
-        button.setImage(iconImage, for: .normal)
-        
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.widthAnchor.constraint(equalToConstant: 35).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        
-        let barButton = UIBarButtonItem(customView: button)
-        
-        self.navigationItem.rightBarButtonItem = barButton
+        navigationBar.addSubview(imageView)
+        imageView.layer.cornerRadius = Const.ImageSizeForLargeState / 2
+        imageView.clipsToBounds = true
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            imageView.rightAnchor.constraint(equalTo: navigationBar.rightAnchor, constant: -Const.ImageRightMargin),
+            imageView.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: -Const.ImageBottomMarginForLargeState),
+            imageView.heightAnchor.constraint(equalToConstant: Const.ImageSizeForLargeState),
+            imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor)
+        ])
     }
     
     func setDate(date: Date) {
@@ -88,4 +89,13 @@ class ToDoCardCell: CardCell {
         descriptionTextView.text = text
     }
     
+}
+
+private struct Const {
+    /// Image height/width for Large NavBar state
+    static let ImageSizeForLargeState: CGFloat = 40
+    /// Margin from right anchor of safe area to right anchor of Image
+    static let ImageRightMargin: CGFloat = 16
+    /// Margin from bottom anchor of NavBar to bottom anchor of Image for Large NavBar state
+    static let ImageBottomMarginForLargeState: CGFloat = 12
 }
