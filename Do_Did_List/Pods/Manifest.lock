@@ -1,5 +1,6 @@
 PODS:
   - Cosmos (21.0.0)
+  - FSCalendar (2.8.1)
   - M13Checkbox (3.4.0)
   - Realm (4.4.1):
     - Realm/Headers (= 4.4.1)
@@ -11,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Cosmos (~> 21.0)
+  - FSCalendar
   - M13Checkbox
   - RealmSwift
   - SOPullUpView
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Cosmos
+    - FSCalendar
     - M13Checkbox
     - Realm
     - RealmSwift
@@ -27,12 +30,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Cosmos: 3dfb6e4ba48bd48b8c9aa2a77048ae11ed114f96
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
   M13Checkbox: 6f59404540ac98ba83a3d1afac335895a40c6a5d
   Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
   RealmSwift: 3eb8924ff7100df5928c7602f71d0fec51e7c9c5
   SOPullUpView: a18cab4bdce7cc07c227e705cc4270e0a36ca2fa
   VerticalCardSwiper: 41c8c0d8d87511ec269347f5671386acf66cd31a
 
-PODFILE CHECKSUM: cb7b428d85a27bb4508af89356c89e90baeee00e
+PODFILE CHECKSUM: 968d04964c19074ba2f551d2fec0c45d747b2e4a
 
 COCOAPODS: 1.9.1
