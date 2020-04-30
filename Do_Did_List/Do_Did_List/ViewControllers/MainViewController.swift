@@ -41,13 +41,9 @@ class MainViewController: UIViewController {
         setNavigationTitle()
     }
     
-    //     Status Bar 색상 설정
-    //    override var preferredStatusBarStyle: UIStatusBarStyle {
-    //        return .darkContent // white
-    //    }
-    
     @objc func moveToCalendarView() {
         print("move to calendar view")
+        self.tabBarController?.selectedIndex = 3
     }
     
     func setNavigationBar() {
@@ -85,9 +81,9 @@ class MainViewController: UIViewController {
     
     func setNavigationTitle() {
         if ((items?.first) != nil) {
-            self.title = items?.first?.title
+            self.navigationItem.title = items?.first?.title
         } else {
-            self.title = "ToDo is Empty..."
+            self.navigationItem.title = "ToDo is Empty..."
         }
     }
     
@@ -135,8 +131,7 @@ extension MainViewController: VerticalCardSwiperDelegate {
         
         switch swipeDirection {
         case .Left:
-            print("Left Direction")
-            break
+            modelManager.remove(item!)
         case .Right:
             modelManager.changeDoneCondition(item: item!, condition: true)
         case .None:
@@ -146,5 +141,9 @@ extension MainViewController: VerticalCardSwiperDelegate {
     
     func didSwipeCardAway(card: CardCell, index: Int, swipeDirection: SwipeDirection) {
         setNavigationTitle()
+    }
+    
+    func didTapCard(verticalCardSwiperView: VerticalCardSwiperView, index: Int) {
+        print("Tapped")
     }
 }
