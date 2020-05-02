@@ -27,11 +27,27 @@ class CalendarViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        calendarView.select(Date())
+        itemUpdate(dateType: .today, customDate: nil, reloadTableViewDuration: 0.6)
+    }
 
+    func itemUpdate(dateType: DateType, customDate: Date?, reloadTableViewDuration duration: TimeInterval) {
+        
+        items = modelManager.searchDate(dateType: dateType, customDate: customDate)
+        items = items?.sorted(byKeyPath: "timestamp", ascending: true)
+        
+        UIView.transition(with: tableView.self, duration: duration, options: .transitionCrossDissolve, animations: { self.tableView.reloadData() })
+    }
 }
 
 extension CalendarViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
 }
 
 extension CalendarViewController: UITableViewDataSource {
@@ -40,23 +56,25 @@ extension CalendarViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell") as! CalendarTableViewCell
         
+        let item = items?[indexPath.row]
         
-        
+        cell.titleLabel.text = item?.title
+        cell.setTime(timestamp: item!.timestamp)
+        cell.starRatingView.rating = item?.importance ?? 0
+        cell.setIcon(imageData: item!.imageData)
+        cell.setCheckbox(isDone: item!.isDone)
         
         return cell
     }
-    
     
 }
 
 extension CalendarViewController: FSCalendarDelegate {
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         
-        items = modelManager.searchDate(dateType: .customDate, date: <#T##Date#>)
-        
-        
+        itemUpdate(dateType: .customDate, customDate: date, reloadTableViewDuration: 0.3)
     }
 }
 
