@@ -28,7 +28,7 @@ class AddToDoViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        items = modelManager.searchDate(dateType: .today, date: Date())
+        items = modelManager.searchDate(dateType: .today, customDate: nil)
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
         
         UIView.transition(with: addToDoTableView.self, duration: 0.4, options: .transitionCrossDissolve, animations: { self.addToDoTableView.reloadData() })

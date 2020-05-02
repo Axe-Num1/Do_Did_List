@@ -32,7 +32,7 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        items = modelManager.searchDate(dateType: .today, date: Date())
+        items = modelManager.searchDate(dateType: .today, customDate: nil)
         items = modelManager.filterDone(original: items!, isDone: false)
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
         

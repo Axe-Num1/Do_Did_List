@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-enum dateType {
+enum DateType {
     case today
     case thisMonth
     case allDate
@@ -55,8 +55,9 @@ class ModelManager {
      realm의 db item 검색기능을 사용하여, 매개변수 date와 일치하는 날짜를 찾아서 결과를 반환합니다
      - Parameter date: 검색할 날짜
      */
-    func searchDate(dateType: dateType, date: Date) -> Results<ToDoItem> {
+    func searchDate(dateType: DateType, customDate: Date?) -> Results<ToDoItem> {
         let result: Results<ToDoItem>
+        let date = Date()
         
         switch dateType {
         case .today:
@@ -66,6 +67,7 @@ class ModelManager {
         case .allDate:
             result = realm.objects(ToDoItem.self)
         case .customDate:
+            guard let date = customDate else { fatalError() }
             result = realm.objects(ToDoItem.self).filter(NSPredicate(format: "timestamp >= %@ && timestamp <= %@", date.startOfDay as NSDate, date.endOfDay as NSDate))
         }
         

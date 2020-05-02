@@ -396,11 +396,11 @@
 		F2C0A5342407E2DB0047B0A4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */,
 				F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */,
 				F203622824357A5000AAF69F /* IconView.swift */,
 				F2AE0D56245332190065325A /* ToDoCardCell.xib */,
 				F2CAB8812403EFF500ECCEBF /* ToDoCardCell.swift */,
-				F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */,
 				F2BB29E5245C612200C23AD8 /* CalendarTableViewCell.swift */,
 			);
 			path = Views;

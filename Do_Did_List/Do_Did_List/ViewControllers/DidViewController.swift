@@ -31,7 +31,7 @@ class DidViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        items = modelManager.searchDate(dateType: .today, date: Date())
+        items = modelManager.searchDate(dateType: .today, customDate: nil)
         items = modelManager.filterDone(original: items!, isDone: true)
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
         
@@ -132,7 +132,7 @@ extension DidViewController: VerticalCardSwiperDelegate {
         
         switch swipeDirection {
         case .Left:
-            modelManager.changeDoneCondition(item: item!, condition: true)
+            modelManager.changeDoneCondition(item: item!, condition: false)
         case .Right:
             modelManager.remove(item!)
         case .None:
