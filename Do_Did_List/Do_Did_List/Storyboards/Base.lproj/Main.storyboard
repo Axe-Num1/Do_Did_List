@@ -191,7 +191,7 @@
                                                         <constraint firstAttribute="height" constant="50" id="GUg-8e-dk2"/>
                                                     </constraints>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTH-gl-pt8" customClass="CosmosView" customModule="Cosmos">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DTH-gl-pt8" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="16" y="66" width="58" height="16"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
@@ -310,6 +310,7 @@
         <!--New To Do-->
         <scene sceneID="kVP-eQ-mgj">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N0a-h7-jc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="rN7-4P-YwI" customClass="NewToDoTableViewController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZPI-Wd-V2g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -516,12 +517,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="New To Do" largeTitleDisplayMode="never" id="Svy-eR-CEn">
-                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="iZf-Ld-8ri">
-                            <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <connections>
-                                <action selector="cancelButton:" destination="rN7-4P-YwI" id="MCu-2m-mj9"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="L1L-07-3mZ">
                             <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
@@ -539,7 +534,6 @@
                         <outlet property="titleField" destination="hGf-Ds-0Aj" id="mCj-Fe-r7e"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N0a-h7-jc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2436" y="1788"/>
         </scene>
@@ -758,6 +752,7 @@
         <!--Add: To Do-->
         <scene sceneID="JPX-d3-Nl3">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pvx-56-NCU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="C1c-rD-j3E" customClass="AddToDoViewController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e8J-ut-gkg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -940,7 +935,6 @@
                         <outlet property="addToDoTableView" destination="rzC-qy-akg" id="UXd-ND-irU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pvx-56-NCU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3178" y="1062"/>
         </scene>
@@ -970,6 +964,7 @@
         <!--Navigation Controller-->
         <scene sceneID="nag-Sv-bPD">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdr-6p-Atm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="AddNav" automaticallyAdjustsScrollViewInsets="NO" id="mR0-md-ECT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Add Button" id="KkJ-jw-H2K"/>
                     <toolbarItems/>
@@ -982,7 +977,6 @@
                         <segue destination="C1c-rD-j3E" kind="relationship" relationship="rootViewController" id="v9b-16-Rsh"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gdr-6p-Atm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2436" y="1062"/>
         </scene>
@@ -1045,7 +1039,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Gcf-PR-6sS"/>
+        <segue reference="v9b-16-Rsh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Add Button" width="38" height="38"/>

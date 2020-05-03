@@ -45,10 +45,6 @@ class NewToDoTableViewController: UITableViewController {
         setObserver()
     }
     
-    @IBAction func cancelButton(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
     @IBAction func addButton(_ sender: Any) {
         
         guard let titleText = titleField.text.nilIfEmpty else {

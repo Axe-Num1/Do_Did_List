@@ -19,8 +19,6 @@
 		F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */; };
 		F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */; };
 		F25C3787240D0F5F00E0EF0C /* AddToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */; };
-		F25C378A240D487200E0EF0C /* AddToDoPullUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25C3789240D487200E0EF0C /* AddToDoPullUp.storyboard */; };
-		F25C378C240D494700E0EF0C /* AddToDoPullUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C378B240D494700E0EF0C /* AddToDoPullUpViewController.swift */; };
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
 		F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73323EFF39500282434 /* FivoSans-Black.otf */; };
 		F26B3BE92421CEFC00052ABF /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B3BE82421CEFC00052ABF /* ModelManager.swift */; };
@@ -125,8 +123,6 @@
 		F24AB1CF23EFC3B100ECBE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F24AB1D123EFC3B100ECBE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoTableViewCell.swift; sourceTree = "<group>"; };
-		F25C3789240D487200E0EF0C /* AddToDoPullUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddToDoPullUp.storyboard; sourceTree = "<group>"; };
-		F25C378B240D494700E0EF0C /* AddToDoPullUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoPullUpViewController.swift; sourceTree = "<group>"; };
 		F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FivoSans-Black-Oblique.otf"; sourceTree = "<group>"; };
 		F25FB73323EFF39500282434 /* FivoSans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FivoSans-Black.otf"; sourceTree = "<group>"; };
 		F25FB73523EFF86200282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -283,7 +279,6 @@
 				F2E702C62400DE1400A0289E /* ViewControllers */,
 				F2E702D624013C7000A0289E /* Storyboards */,
 				F2C0A5352407E3370047B0A4 /* MISC */,
-				F2BF3EDF242A50EB000E52F4 /* Trash */,
 			);
 			path = Do_Did_List;
 			sourceTree = "<group>";
@@ -370,15 +365,6 @@
 				16F537CFBF1802084E4F37B6 /* Pods_Do_Did_List.framework */,
 			);
 			name = "Recovered References";
-			sourceTree = "<group>";
-		};
-		F2BF3EDF242A50EB000E52F4 /* Trash */ = {
-			isa = PBXGroup;
-			children = (
-				F25C3789240D487200E0EF0C /* AddToDoPullUp.storyboard */,
-				F25C378B240D494700E0EF0C /* AddToDoPullUpViewController.swift */,
-			);
-			path = Trash;
 			sourceTree = "<group>";
 		};
 		F2C0A5302407CA070047B0A4 /* Models */ = {
@@ -531,7 +517,6 @@
 				F28B506F24370D6C00335783 /* shuffle 6.16.26 AM.png in Resources */,
 				F28B507124370D6C00335783 /* hand.png in Resources */,
 				F28B507624370D6C00335783 /* dislike 6.16.26 AM.png in Resources */,
-				F25C378A240D487200E0EF0C /* AddToDoPullUp.storyboard in Resources */,
 				F28B506C24370D6C00335783 /* link 6.16.26 AM.png in Resources */,
 				F28B508024370D6C00335783 /* speaker 6.16.26 AM.png in Resources */,
 				F28B505724370D6B00335783 /* shopping-cart.png in Resources */,
@@ -629,7 +614,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28B50862438A24300335783 /* UITextViewExtension.swift in Sources */,
-				F25C378C240D494700E0EF0C /* AddToDoPullUpViewController.swift in Sources */,
 				F2B8E7FA244F4AF200985719 /* CustomTabBarController.swift in Sources */,
 				F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */,
 				F2464E95244082520023DCD9 /* UITableViewExtension.swift in Sources */,
