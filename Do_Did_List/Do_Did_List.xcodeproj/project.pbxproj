@@ -86,7 +86,6 @@
 		F2BB29E6245C612200C23AD8 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BB29E5245C612200C23AD8 /* CalendarTableViewCell.swift */; };
 		F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */; };
 		F2CAB8832403EFF500ECCEBF /* ToDoCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAB8812403EFF500ECCEBF /* ToDoCardCell.swift */; };
-		F2CDACD42444A67D00CD9D39 /* BookmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CDACD32444A67D00CD9D39 /* BookmarkModel.swift */; };
 		F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702CF2400E6C300A0289E /* MainViewController.swift */; };
 		F2E702D424013C0300A0289E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702D324013C0300A0289E /* UIViewExtension.swift */; };
 		F2FE47A1240BEDC300EAD268 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE47A0240BEDC300EAD268 /* AddToDoViewController.swift */; };
@@ -195,7 +194,6 @@
 		F2BB29E5245C612200C23AD8 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
 		F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		F2CAB8812403EFF500ECCEBF /* ToDoCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCardCell.swift; sourceTree = "<group>"; };
-		F2CDACD32444A67D00CD9D39 /* BookmarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkModel.swift; sourceTree = "<group>"; };
 		F2E702CF2400E6C300A0289E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F2E702D324013C0300A0289E /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		F2FE47A0240BEDC300EAD268 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
@@ -246,6 +244,15 @@
 				341C208A4A67D749A0AB5457 /* Pods-Do_Did_List.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F2142C0D2464CF5C00F10CD1 /* Do+Did List */ = {
+			isa = PBXGroup;
+			children = (
+				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
+				F2B490F22455AA8A0073AA21 /* DidViewController.swift */,
+			);
+			path = "Do+Did List";
 			sourceTree = "<group>";
 		};
 		F24AB1B423EFC3AE00ECBE1E = {
@@ -374,7 +381,6 @@
 				F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */,
 				F203622A2435F0F800AAF69F /* ColorModel.swift */,
 				F2464E92244039F40023DCD9 /* UserModel.swift */,
-				F2CDACD32444A67D00CD9D39 /* BookmarkModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -417,8 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
-				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
-				F2B490F22455AA8A0073AA21 /* DidViewController.swift */,
+				F2142C0D2464CF5C00F10CD1 /* Do+Did List */,
 				F2BB29E3245C536C00C23AD8 /* CalendarViewController.swift */,
 				F2E438DC2444232500CC001F /* AddToDoView */,
 			);
@@ -637,7 +642,6 @@
 				F203622B2435F0F800AAF69F /* ColorModel.swift in Sources */,
 				F2464E93244039F40023DCD9 /* UserModel.swift in Sources */,
 				F2897339242E416A0079B0BD /* IconColorViewController.swift in Sources */,
-				F2CDACD42444A67D00CD9D39 /* BookmarkModel.swift in Sources */,
 				F2BB29E6245C612200C23AD8 /* CalendarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
