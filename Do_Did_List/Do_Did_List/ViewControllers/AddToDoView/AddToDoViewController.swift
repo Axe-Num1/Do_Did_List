@@ -46,7 +46,6 @@ class AddToDoViewController: UIViewController {
         appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
         
-        //        self.navigationItem.tintColor = .white
         self.navigationItem.standardAppearance = appearance
         self.navigationItem.compactAppearance = appearance
         self.navigationItem.scrollEdgeAppearance = appearance
