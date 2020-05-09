@@ -18,6 +18,8 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var calendarView: FSCalendar!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var calendarHeightConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +36,15 @@ class CalendarViewController: UIViewController {
         calendarView.select(Date())
         itemUpdate(dateType: .today, customDate: nil, reloadTableViewDuration: 0.6)
     }
-
+    
+    @IBAction func toggleButton(_ sender: Any) {
+        if self.calendarView.scope == .month {
+            self.calendarView.setScope(.week, animated: true)
+        } else {
+            self.calendarView.setScope(.month, animated: true)
+        }
+    }
+    
     func itemUpdate(dateType: DateType, customDate: Date?, reloadTableViewDuration duration: TimeInterval) {
         
         items = modelManager.searchDate(dateType: dateType, customDate: customDate)
@@ -75,6 +85,11 @@ extension CalendarViewController: FSCalendarDelegate {
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         
         itemUpdate(dateType: .customDate, customDate: date, reloadTableViewDuration: 0.3)
+    }
+    
+    func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
+        self.calendarHeightConstraint.constant = bounds.height
+        self.view.layoutIfNeeded()
     }
 }
 

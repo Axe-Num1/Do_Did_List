@@ -21,9 +21,9 @@
 		F25C3787240D0F5F00E0EF0C /* AddToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */; };
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
 		F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73323EFF39500282434 /* FivoSans-Black.otf */; };
+		F26ACB902466584200CAA0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26ACB8F2466584200CAA0EA /* Assets.xcassets */; };
 		F26B3BE92421CEFC00052ABF /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B3BE82421CEFC00052ABF /* ModelManager.swift */; };
 		F26F187E242AFFE500030938 /* Pods_Do_Did_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977E1452DED3D85498DC6191 /* Pods_Do_Did_List.framework */; };
-		F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F283C1E323FFBA0A00392DC5 /* Assets.xcassets */; };
 		F2897339242E416A0079B0BD /* IconColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2897338242E416A0079B0BD /* IconColorViewController.swift */; };
 		F289733C242E41A90079B0BD /* IconGlyphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289733B242E41A90079B0BD /* IconGlyphViewController.swift */; };
 		F28B505124370D6B00335783 /* avatar-1.png in Resources */ = {isa = PBXBuildFile; fileRef = F28B501F24370D6800335783 /* avatar-1.png */; };
@@ -126,8 +126,8 @@
 		F25FB73323EFF39500282434 /* FivoSans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FivoSans-Black.otf"; sourceTree = "<group>"; };
 		F25FB73523EFF86200282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25FB73B23EFFA0500282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26ACB8F2466584200CAA0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F26B3BE82421CEFC00052ABF /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
-		F283C1E323FFBA0A00392DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2897338242E416A0079B0BD /* IconColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconColorViewController.swift; sourceTree = "<group>"; };
 		F289733B242E41A90079B0BD /* IconGlyphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconGlyphViewController.swift; sourceTree = "<group>"; };
 		F28B501F24370D6800335783 /* avatar-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-1.png"; sourceTree = "<group>"; };
@@ -401,8 +401,8 @@
 		F2C0A5352407E3370047B0A4 /* MISC */ = {
 			isa = PBXGroup;
 			children = (
+				F26ACB8F2466584200CAA0EA /* Assets.xcassets */,
 				F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */,
-				F283C1E323FFBA0A00392DC5 /* Assets.xcassets */,
 				F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */,
 				F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */,
 			);
@@ -556,6 +556,7 @@
 				F28B506A24370D6C00335783 /* tag.png in Resources */,
 				F24AB1C823EFC3AE00ECBE1E /* Main.storyboard in Resources */,
 				F28B505624370D6B00335783 /* magnifying-glass.png in Resources */,
+				F26ACB902466584200CAA0EA /* Assets.xcassets in Resources */,
 				F28B505924370D6B00335783 /* padlock.png in Resources */,
 				F28B507424370D6C00335783 /* download-1.png in Resources */,
 				F28B506B24370D6C00335783 /* back 6.16.26 AM.png in Resources */,
@@ -564,7 +565,6 @@
 				F28B505824370D6B00335783 /* upload 6.16.26 AM.png in Resources */,
 				F28B506724370D6C00335783 /* headphones.png in Resources */,
 				F28B505524370D6B00335783 /* settings-1 6.16.26 AM.png in Resources */,
-				F283C1E423FFBA0A00392DC5 /* Assets.xcassets in Resources */,
 				F28B505F24370D6B00335783 /* photo-camera 6.16.26 AM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
