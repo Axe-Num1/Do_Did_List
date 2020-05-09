@@ -15,16 +15,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Screen" translatesAutoresizingMaskIntoConstraints="NO" id="f33-wi-bmU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchDateRect" translatesAutoresizingMaskIntoConstraints="NO" id="hQE-WY-qte">
+                                <rect key="frame" x="12" y="231" width="350" height="350"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="RIX-cz-I6y">
+                                <rect key="frame" x="67" y="158" width="240" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="300-mn-DnA"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="f33-wi-bmU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2fX-J5-TWT"/>
-                            <constraint firstAttribute="trailing" secondItem="f33-wi-bmU" secondAttribute="trailing" id="Ajp-fB-UNy"/>
-                            <constraint firstItem="f33-wi-bmU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ZEu-vk-LbL"/>
-                            <constraint firstAttribute="bottom" secondItem="f33-wi-bmU" secondAttribute="bottom" id="riu-v6-1XS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RIX-cz-I6y" secondAttribute="trailing" constant="68" id="7JW-uf-I8B"/>
+                            <constraint firstItem="hQE-WY-qte" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Vhe-pa-spz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hQE-WY-qte" secondAttribute="trailing" constant="13" id="dMB-HR-b2t"/>
+                            <constraint firstItem="hQE-WY-qte" firstAttribute="top" secondItem="RIX-cz-I6y" secondAttribute="bottom" constant="4" id="kVu-a6-NJU"/>
+                            <constraint firstItem="RIX-cz-I6y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="114" id="shH-yZ-bxF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hQE-WY-qte" secondAttribute="bottom" constant="197" id="yiC-oQ-VUP"/>
+                            <constraint firstItem="RIX-cz-I6y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="zo2-lo-vpq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,6 +44,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launch Screen" width="375" height="812"/>
+        <image name="LaunchDateRect" width="676" height="676"/>
+        <image name="Title" width="274" height="69"/>
     </resources>
 </document>
