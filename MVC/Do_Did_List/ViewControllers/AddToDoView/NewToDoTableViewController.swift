@@ -9,6 +9,7 @@
 import UIKit
 import Cosmos
 import RealmSwift
+import UserNotifications
 
 class NewToDoTableViewController: UITableViewController {
     
@@ -35,7 +36,7 @@ class NewToDoTableViewController: UITableViewController {
         
         starRatingView.settings.fillMode = .half
         
-//        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        //        print(Realm.Configuration.defaultConfiguration.fileURL!)
         setNavigationBar()
     }
     
@@ -80,6 +81,8 @@ class NewToDoTableViewController: UITableViewController {
         
         modelManager.add(item)
         
+        setLocalNotification(title: titleText, body: contentTextView.text, date: timePicker.date)
+        
         navigationController?.popViewController(animated: true)
     }
     
@@ -101,6 +104,28 @@ class NewToDoTableViewController: UITableViewController {
         guard let iconDict = notification.userInfo else { return }
         guard let icon = iconDict["finalIcon"] as? UIImage else { return }
         iconButton.setBackgroundImage(icon, for: .normal)
+    }
+    
+    func setLocalNotification(title: String, body: String, date: Date) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.badge = 1
+        content.sound = UNNotificationSound.default
+        
+         let triggerDate = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "ToDo", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { (error) in
+            if let error = error {
+                print(error)
+            } else {
+                print("Add LocalNotification Success!")
+            }
+        }
     }
     
     func setNavigationBar() {

@@ -21,6 +21,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UIApplication.shared.applicationIconBadgeNumber = 0
+        
         cardSwiper.delegate = self
         cardSwiper.datasource = self
         
