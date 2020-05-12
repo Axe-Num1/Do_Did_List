@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eWY-9a-DKX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -23,6 +23,11 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DateRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Y2t-vm-98m">
                                 <rect key="frame" x="32" y="273" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="3bN-8g-qIa"/>
+                                    <constraint firstAttribute="width" secondItem="Y2t-vm-98m" secondAttribute="height" multiplier="1:1" id="oSs-fq-RSV"/>
+                                    <constraint firstAttribute="height" constant="350" id="xAA-ZI-LsL"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjq-TX-3LV">
                                 <rect key="frame" x="118.5" y="370.5" width="177" height="155"/>
@@ -30,16 +35,27 @@
                                 <state key="normal" title="27">
                                     <color key="titleColor" red="0.21219122409999999" green="0.38659185169999999" blue="0.95691376920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="eWY-9a-DKX" kind="presentation" id="NPL-w6-gAk"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchTitle" translatesAutoresizingMaskIntoConstraints="NO" id="mWQ-ha-v4t">
+                                <rect key="frame" x="87" y="204" width="240" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="aUJ-Mc-zBW"/>
+                                    <constraint firstAttribute="width" secondItem="mWQ-ha-v4t" secondAttribute="height" multiplier="80:23" id="yiH-d6-jc7"/>
+                                    <constraint firstAttribute="width" constant="240" id="ylh-XA-A0x"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Y2t-vm-98m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Zc-8O-ff9"/>
                             <constraint firstItem="xjq-TX-3LV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="677-Am-0ow"/>
+                            <constraint firstItem="mWQ-ha-v4t" firstAttribute="centerX" secondItem="Y2t-vm-98m" secondAttribute="centerX" id="B3Q-Wm-qCv"/>
                             <constraint firstItem="xjq-TX-3LV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UCc-oW-TBS"/>
-                            <constraint firstItem="Y2t-vm-98m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="WTp-5V-jgI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y2t-vm-98m" secondAttribute="trailing" constant="32" id="XI2-ke-afR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y2t-vm-98m" secondAttribute="bottom" constant="239" id="nkr-ZE-NbP"/>
-                            <constraint firstItem="Y2t-vm-98m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="229" id="oXP-kt-sgz"/>
+                            <constraint firstItem="Y2t-vm-98m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UIW-Ju-TgV"/>
+                            <constraint firstItem="Y2t-vm-98m" firstAttribute="top" secondItem="mWQ-ha-v4t" secondAttribute="bottom" id="jCL-um-9h2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -49,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1525" y="138"/>
+            <point key="canvasLocation" x="1897" y="138"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bS5-ed-kJZ">
@@ -147,11 +163,11 @@
             <objects>
                 <viewController id="mFX-iO-nca" customClass="CalendarViewController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WFY-8p-Bjr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ee8-6z-cz6">
-                                <rect key="frame" x="0.0" y="398" width="414" height="415"/>
+                                <rect key="frame" x="0.0" y="366" width="414" height="393"/>
                                 <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="calendarCell" rowHeight="90" id="5JY-KI-d3i" customClass="CalendarTableViewCell" customModule="Do_Did_List" customModuleProvider="target">
@@ -238,7 +254,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psT-0V-bsj" customClass="FSCalendar">
-                                <rect key="frame" x="10" y="98" width="394" height="300"/>
+                                <rect key="frame" x="10" y="66" width="394" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="SlG-SM-15j"/>
                                 </constraints>
@@ -279,7 +295,7 @@
             <objects>
                 <tableViewController id="rN7-4P-YwI" customClass="NewToDoTableViewController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZPI-Wd-V2g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
@@ -719,13 +735,13 @@
         <!--Today To Do-->
         <scene sceneID="JPX-d3-Nl3">
             <objects>
-                <viewController id="C1c-rD-j3E" customClass="AddToDoViewController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="C1c-rD-j3E" customClass="AddToDoViewController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e8J-ut-gkg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="rzC-qy-akg">
-                                <rect key="frame" x="0.0" y="89" width="414" height="807"/>
+                                <rect key="frame" x="0.0" y="57" width="414" height="785"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="addToDoCell" rowHeight="170" id="COG-Mv-RwC" customClass="AddToDoTableViewCell" customModule="Do_Did_List" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.5" width="374" height="170"/>
@@ -854,7 +870,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tli-an-xf7">
-                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="659" width="414" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-iH-LFe">
                                         <rect key="frame" x="182" y="0.0" width="50" height="50"/>
@@ -908,7 +924,7 @@
         <!--Custom Tab Bar Controller-->
         <scene sceneID="Jya-xQ-7da">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eWY-9a-DKX" customClass="CustomTabBarController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="eWY-9a-DKX" customClass="CustomTabBarController" customModule="Do_Did_List" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="gvg-oH-MMw"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nFJ-dg-RVL">
@@ -1119,12 +1135,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="v9b-16-Rsh"/>
+        <segue reference="Gcf-PR-6sS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Add Button" width="38" height="38"/>
         <image name="CategoryIcon" width="92" height="92"/>
         <image name="DateRectangle" width="338" height="338"/>
+        <image name="LaunchTitle" width="274" height="69"/>
         <image name="ProfileImage" width="142" height="142"/>
         <image name="calendar.circle" catalog="system" width="128" height="121"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
