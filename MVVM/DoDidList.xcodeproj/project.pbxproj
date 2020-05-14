@@ -12,6 +12,7 @@
 		F26A883C246BBA3800114FE7 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A883B246BBA3800114FE7 /* DateExtension.swift */; };
 		F26A8846246BC70800114FE7 /* ToDoCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A8844246BC70800114FE7 /* ToDoCardCell.swift */; };
 		F26A8847246BC70800114FE7 /* ToDoCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26A8845246BC70800114FE7 /* ToDoCardCell.xib */; };
+		F26A8849246C453300114FE7 /* DoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A8848246C453300114FE7 /* DoViewModel.swift */; };
 		F27A58492467AC6300AD4372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A58482467AC6300AD4372 /* AppDelegate.swift */; };
 		F27A584B2467AC6300AD4372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A584A2467AC6300AD4372 /* SceneDelegate.swift */; };
 		F27A584D2467AC6300AD4372 /* DoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A584C2467AC6300AD4372 /* DoViewController.swift */; };
@@ -30,6 +31,7 @@
 		F26A883B246BBA3800114FE7 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		F26A8844246BC70800114FE7 /* ToDoCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCardCell.swift; sourceTree = "<group>"; };
 		F26A8845246BC70800114FE7 /* ToDoCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCardCell.xib; sourceTree = "<group>"; };
+		F26A8848246C453300114FE7 /* DoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoViewModel.swift; sourceTree = "<group>"; };
 		F27A58452467AC6300AD4372 /* DoDidList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoDidList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27A58482467AC6300AD4372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F27A584A2467AC6300AD4372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				F26A883F246BC61B00114FE7 /* Xib */,
-				F26A883E246BC5D800114FE7 /* Storyboard */,
 				F2815B31246B643F0066F18D /* ViewController */,
+				F26A883E246BC5D800114FE7 /* Storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +144,7 @@
 		F2815B30246B64320066F18D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F26A8848246C453300114FE7 /* DoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				F26A8846246BC70800114FE7 /* ToDoCardCell.swift in Sources */,
 				F27A584D2467AC6300AD4372 /* DoViewController.swift in Sources */,
 				F26A883C246BBA3800114FE7 /* DateExtension.swift in Sources */,
+				F26A8849246C453300114FE7 /* DoViewModel.swift in Sources */,
 				F26A8837246BB60000114FE7 /* ModelManager.swift in Sources */,
 				F26A8839246BB82100114FE7 /* ToDoItem.swift in Sources */,
 				F27A58492467AC6300AD4372 /* AppDelegate.swift in Sources */,
@@ -360,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -414,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
