@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20CBDBA2475E70300B233C3 /* DidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBDB92475E70300B233C3 /* DidViewController.swift */; };
+		F25EF8BA24774C9E008681BD /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25EF8B824774C9E008681BD /* TaskTableViewCell.swift */; };
+		F25EF8BB24774C9E008681BD /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25EF8B924774C9E008681BD /* TaskTableViewCell.xib */; };
 		F26A8837246BB60000114FE7 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A8836246BB60000114FE7 /* ModelManager.swift */; };
 		F26A8839246BB82100114FE7 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A8838246BB82100114FE7 /* ToDoItem.swift */; };
 		F26A883C246BBA3800114FE7 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A883B246BBA3800114FE7 /* DateExtension.swift */; };
-		F26A8846246BC70800114FE7 /* ToDoCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A8844246BC70800114FE7 /* ToDoCardCell.swift */; };
-		F26A8847246BC70800114FE7 /* ToDoCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26A8845246BC70800114FE7 /* ToDoCardCell.xib */; };
-		F26A8849246C453300114FE7 /* DoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A8848246C453300114FE7 /* DoViewModel.swift */; };
+		F26A8849246C453300114FE7 /* DoDidViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A8848246C453300114FE7 /* DoDidViewModel.swift */; };
 		F27A58492467AC6300AD4372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A58482467AC6300AD4372 /* AppDelegate.swift */; };
 		F27A584B2467AC6300AD4372 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A584A2467AC6300AD4372 /* SceneDelegate.swift */; };
 		F27A584D2467AC6300AD4372 /* DoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27A584C2467AC6300AD4372 /* DoViewController.swift */; };
@@ -26,12 +27,13 @@
 		3DF69294A743D71127DA6234 /* Pods-DoDidList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoDidList.release.xcconfig"; path = "Target Support Files/Pods-DoDidList/Pods-DoDidList.release.xcconfig"; sourceTree = "<group>"; };
 		5CC989D6B6AE88BE6DF6DFCD /* Pods-DoDidList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoDidList.debug.xcconfig"; path = "Target Support Files/Pods-DoDidList/Pods-DoDidList.debug.xcconfig"; sourceTree = "<group>"; };
 		A54C05FFF3E3CC02C5959AAC /* Pods_DoDidList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoDidList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20CBDB92475E70300B233C3 /* DidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidViewController.swift; sourceTree = "<group>"; };
+		F25EF8B824774C9E008681BD /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		F25EF8B924774C9E008681BD /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		F26A8836246BB60000114FE7 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		F26A8838246BB82100114FE7 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		F26A883B246BBA3800114FE7 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
-		F26A8844246BC70800114FE7 /* ToDoCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCardCell.swift; sourceTree = "<group>"; };
-		F26A8845246BC70800114FE7 /* ToDoCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCardCell.xib; sourceTree = "<group>"; };
-		F26A8848246C453300114FE7 /* DoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoViewModel.swift; sourceTree = "<group>"; };
+		F26A8848246C453300114FE7 /* DoDidViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDidViewModel.swift; sourceTree = "<group>"; };
 		F27A58452467AC6300AD4372 /* DoDidList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoDidList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27A58482467AC6300AD4372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F27A584A2467AC6300AD4372 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,8 +95,8 @@
 		F26A883F246BC61B00114FE7 /* Xib */ = {
 			isa = PBXGroup;
 			children = (
-				F26A8844246BC70800114FE7 /* ToDoCardCell.swift */,
-				F26A8845246BC70800114FE7 /* ToDoCardCell.xib */,
+				F25EF8B824774C9E008681BD /* TaskTableViewCell.swift */,
+				F25EF8B924774C9E008681BD /* TaskTableViewCell.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -144,7 +146,7 @@
 		F2815B30246B64320066F18D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F26A8848246C453300114FE7 /* DoViewModel.swift */,
+				F26A8848246C453300114FE7 /* DoDidViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				F27A584C2467AC6300AD4372 /* DoViewController.swift */,
+				F20CBDB92475E70300B233C3 /* DidViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -226,9 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F27A58552467AC6400AD4372 /* LaunchScreen.storyboard in Resources */,
-				F26A8847246BC70800114FE7 /* ToDoCardCell.xib in Resources */,
 				F27A58522467AC6400AD4372 /* Assets.xcassets in Resources */,
 				F27A58502467AC6300AD4372 /* Main.storyboard in Resources */,
+				F25EF8BB24774C9E008681BD /* TaskTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,12 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F26A8846246BC70800114FE7 /* ToDoCardCell.swift in Sources */,
 				F27A584D2467AC6300AD4372 /* DoViewController.swift in Sources */,
+				F25EF8BA24774C9E008681BD /* TaskTableViewCell.swift in Sources */,
 				F26A883C246BBA3800114FE7 /* DateExtension.swift in Sources */,
-				F26A8849246C453300114FE7 /* DoViewModel.swift in Sources */,
+				F26A8849246C453300114FE7 /* DoDidViewModel.swift in Sources */,
 				F26A8837246BB60000114FE7 /* ModelManager.swift in Sources */,
 				F26A8839246BB82100114FE7 /* ToDoItem.swift in Sources */,
+				F20CBDBA2475E70300B233C3 /* DidViewController.swift in Sources */,
 				F27A58492467AC6300AD4372 /* AppDelegate.swift in Sources */,
 				F27A584B2467AC6300AD4372 /* SceneDelegate.swift in Sources */,
 			);
@@ -364,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double SOPullUpViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char SOPullUpViewVersionString[];
+FOUNDATION_EXPORT double RxRealmVersionNumber;
+FOUNDATION_EXPORT const unsigned char RxRealmVersionString[];
 
