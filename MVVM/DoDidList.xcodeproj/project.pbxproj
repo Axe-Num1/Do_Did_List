@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F20CBDBA2475E70300B233C3 /* DidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20CBDB92475E70300B233C3 /* DidViewController.swift */; };
+		F21C402F2477AF7A004BAA8F /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C402E2477AF7A004BAA8F /* CustomTabBarController.swift */; };
+		F21C40332477B6DD004BAA8F /* TodayTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C40322477B6DD004BAA8F /* TodayTaskViewController.swift */; };
+		F21C40352477B720004BAA8F /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C40342477B720004BAA8F /* CreateTaskViewController.swift */; };
+		F21C40372477B7D0004BAA8F /* TaskIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C40362477B7D0004BAA8F /* TaskIconViewController.swift */; };
 		F25EF8BA24774C9E008681BD /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25EF8B824774C9E008681BD /* TaskTableViewCell.swift */; };
 		F25EF8BB24774C9E008681BD /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25EF8B924774C9E008681BD /* TaskTableViewCell.xib */; };
 		F26A8837246BB60000114FE7 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A8836246BB60000114FE7 /* ModelManager.swift */; };
@@ -28,6 +32,10 @@
 		5CC989D6B6AE88BE6DF6DFCD /* Pods-DoDidList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoDidList.debug.xcconfig"; path = "Target Support Files/Pods-DoDidList/Pods-DoDidList.debug.xcconfig"; sourceTree = "<group>"; };
 		A54C05FFF3E3CC02C5959AAC /* Pods_DoDidList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoDidList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20CBDB92475E70300B233C3 /* DidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidViewController.swift; sourceTree = "<group>"; };
+		F21C402E2477AF7A004BAA8F /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		F21C40322477B6DD004BAA8F /* TodayTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTaskViewController.swift; sourceTree = "<group>"; };
+		F21C40342477B720004BAA8F /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		F21C40362477B7D0004BAA8F /* TaskIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIconViewController.swift; sourceTree = "<group>"; };
 		F25EF8B824774C9E008681BD /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		F25EF8B924774C9E008681BD /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		F26A8836246BB60000114FE7 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
@@ -154,8 +162,12 @@
 		F2815B31246B643F0066F18D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F21C402E2477AF7A004BAA8F /* CustomTabBarController.swift */,
 				F27A584C2467AC6300AD4372 /* DoViewController.swift */,
 				F20CBDB92475E70300B233C3 /* DidViewController.swift */,
+				F21C40322477B6DD004BAA8F /* TodayTaskViewController.swift */,
+				F21C40342477B720004BAA8F /* CreateTaskViewController.swift */,
+				F21C40362477B7D0004BAA8F /* TaskIconViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -286,13 +298,17 @@
 			files = (
 				F27A584D2467AC6300AD4372 /* DoViewController.swift in Sources */,
 				F25EF8BA24774C9E008681BD /* TaskTableViewCell.swift in Sources */,
+				F21C402F2477AF7A004BAA8F /* CustomTabBarController.swift in Sources */,
 				F26A883C246BBA3800114FE7 /* DateExtension.swift in Sources */,
 				F26A8849246C453300114FE7 /* DoDidViewModel.swift in Sources */,
 				F26A8837246BB60000114FE7 /* ModelManager.swift in Sources */,
 				F26A8839246BB82100114FE7 /* ToDoItem.swift in Sources */,
+				F21C40332477B6DD004BAA8F /* TodayTaskViewController.swift in Sources */,
 				F20CBDBA2475E70300B233C3 /* DidViewController.swift in Sources */,
 				F27A58492467AC6300AD4372 /* AppDelegate.swift in Sources */,
 				F27A584B2467AC6300AD4372 /* SceneDelegate.swift in Sources */,
+				F21C40352477B720004BAA8F /* CreateTaskViewController.swift in Sources */,
+				F21C40372477B7D0004BAA8F /* TaskIconViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
