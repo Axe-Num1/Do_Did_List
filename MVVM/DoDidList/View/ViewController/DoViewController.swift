@@ -17,7 +17,7 @@ class DoViewController: UIViewController {
     
     var disposeBag = DisposeBag()
     
-    let viewModel = DoDidViewModel()
+    let viewModel = DoDidViewModel(type: .Do)
     let modelManager = ModelManager()
     
     @IBOutlet weak var doTableView: UITableView!
@@ -33,7 +33,6 @@ class DoViewController: UIViewController {
     }
     
     func bindViewModel() {
-        viewModel.setItems(type: .Do)
         
         Observable.from(optional: viewModel.items)
             .bind(to: doTableView.rx.items(cellIdentifier: "TaskCell", cellType: TaskTableViewCell.self)) { row, element, cell in

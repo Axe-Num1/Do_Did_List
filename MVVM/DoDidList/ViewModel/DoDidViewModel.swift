@@ -16,6 +16,7 @@ import RxSwift
 enum TaskType {
     case Do
     case Did
+    case All
 }
 
 class DoDidViewModel {
@@ -24,7 +25,11 @@ class DoDidViewModel {
     
     let modelManager = ModelManager()
     var items: Results<ToDoItem>?
-
+    
+    init(type: TaskType) {
+        setItems(type: type)
+    }
+    
     func setItems(type: TaskType) {
         items = modelManager.searchDate(dateType: .today)
         items = items?.sorted(byKeyPath: "timestamp", ascending: true)
@@ -34,10 +39,10 @@ class DoDidViewModel {
             items = modelManager.filterDoneCondition(original: items!, isDone: false)
         case .Did:
             items = modelManager.filterDoneCondition(original: items!, isDone: true)
+        case .All:
+            break
         }
     }
-    
-    
     
     
     

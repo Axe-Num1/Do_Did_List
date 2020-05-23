@@ -17,7 +17,7 @@ class DidViewController: UIViewController {
 
     var disposeBag = DisposeBag()
     
-    let viewModel = DoDidViewModel()
+    let viewModel = DoDidViewModel(type: .Did)
     let modelManager = ModelManager()
     
     @IBOutlet weak var didTableView: UITableView!
