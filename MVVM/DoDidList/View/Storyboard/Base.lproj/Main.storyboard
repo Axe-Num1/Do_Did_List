@@ -323,7 +323,6 @@
                     <navigationItem key="navigationItem" title="Today Task" id="7cu-iL-RUQ">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="0Kq-tL-AfZ"/>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="doneButton" destination="0Kq-tL-AfZ" id="diu-4e-LYV"/>
                         <outlet property="todayTaskTableView" destination="w1X-0j-vv7" id="Ohb-As-6qo"/>
@@ -493,6 +492,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mQj-z0-YGT" kind="relationship" relationship="rootViewController" id="3YT-Am-ZPG"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63G-9r-tDb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -575,52 +577,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="216" id="KGo-RB-YZM">
-                                        <rect key="frame" x="20" y="231.5" width="374" height="216"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGo-RB-YZM" id="3W3-iM-Ews">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="216"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="68c-we-vKi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="216"/>
-                                                </datePicker>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="68c-we-vKi" secondAttribute="bottom" id="5B9-43-LEo"/>
-                                                <constraint firstItem="68c-we-vKi" firstAttribute="leading" secondItem="3W3-iM-Ews" secondAttribute="leading" id="Zxv-OY-Dsv"/>
-                                                <constraint firstAttribute="trailing" secondItem="68c-we-vKi" secondAttribute="trailing" id="bqA-W0-RB4"/>
-                                                <constraint firstItem="68c-we-vKi" firstAttribute="top" secondItem="3W3-iM-Ews" secondAttribute="top" id="mD9-bd-88V"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="20" id="yAg-M2-a3g">
-                                        <rect key="frame" x="20" y="447.5" width="374" height="20"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yAg-M2-a3g" id="7az-02-D0e">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D5e-WS-KPF">
-                                                    <rect key="frame" x="164.5" y="0.0" width="45" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="45" id="9rf-u6-9e9"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="D5e-WS-KPF" firstAttribute="top" secondItem="7az-02-D0e" secondAttribute="top" id="bbC-OA-SV8"/>
-                                                <constraint firstItem="D5e-WS-KPF" firstAttribute="centerX" secondItem="7az-02-D0e" secondAttribute="centerX" id="l0G-i0-dyV"/>
-                                                <constraint firstAttribute="bottom" secondItem="D5e-WS-KPF" secondAttribute="bottom" id="qoQ-Rb-RR7"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Importance" id="Ima-TF-aOM">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="3In-09-A1e">
-                                        <rect key="frame" x="20" y="523.5" width="374" height="75"/>
+                                        <rect key="frame" x="20" y="287.5" width="374" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3In-09-A1e" id="xlH-AI-MZ1">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="75"/>
@@ -665,7 +627,7 @@
                             <tableViewSection headerTitle="Contents" id="Axj-TS-sbh">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="kiJ-de-Irf">
-                                        <rect key="frame" x="20" y="654.5" width="374" height="150"/>
+                                        <rect key="frame" x="20" y="418.5" width="374" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kiJ-de-Irf" id="jl1-xu-nDx">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
@@ -696,14 +658,12 @@
                             <outlet property="delegate" destination="CYM-fL-0Mf" id="hb2-gg-Tm3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Create Task" id="2d2-uB-DU5">
+                    <navigationItem key="navigationItem" title="Create Task" largeTitleDisplayMode="never" id="2d2-uB-DU5">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dQI-3u-6E9"/>
                     </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="dQI-3u-6E9" id="06O-9I-Egd"/>
-                        <outlet property="arrowImage" destination="D5e-WS-KPF" id="275-jW-Jdc"/>
                         <outlet property="contentTextView" destination="zac-hq-Nf5" id="cWo-qn-KhY"/>
-                        <outlet property="datePicker" destination="68c-we-vKi" id="2zu-1u-jFm"/>
                         <outlet property="iconButton" destination="hEi-UG-8Yu" id="pgH-67-bUx"/>
                         <outlet property="starRatingView" destination="9K9-G5-4oG" id="24e-qI-6n9"/>
                         <outlet property="taskTitleLabel" destination="d6t-7n-QBe" id="S5A-mz-LaH"/>
