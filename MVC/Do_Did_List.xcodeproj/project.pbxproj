@@ -10,13 +10,11 @@
 		F203622924357A5000AAF69F /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203622824357A5000AAF69F /* IconView.swift */; };
 		F203622B2435F0F800AAF69F /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203622A2435F0F800AAF69F /* ColorModel.swift */; };
 		F22E3209242BA6530089E58E /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E3208242BA6530089E58E /* IconViewController.swift */; };
-		F2464E93244039F40023DCD9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2464E92244039F40023DCD9 /* UserModel.swift */; };
 		F2464E95244082520023DCD9 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2464E94244082520023DCD9 /* UITableViewExtension.swift */; };
 		F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */; };
 		F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */; };
 		F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */; };
 		F24AB1C823EFC3AE00ECBE1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */; };
-		F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */; };
 		F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */; };
 		F25C3787240D0F5F00E0EF0C /* AddToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */; };
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
@@ -111,14 +109,12 @@
 		F2394827242AE76A00A23AE0 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2394828242AE76A00A23AE0 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2394829242AE76A00A23AE0 /* SOPullUpView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SOPullUpView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2464E92244039F40023DCD9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F2464E94244082520023DCD9 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		F24AB1BD23EFC3AE00ECBE1E /* Do_Did_List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Do_Did_List.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		F24AB1C723EFC3AE00ECBE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F24AB1CA23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Do_Did_List.xcdatamodel; sourceTree = "<group>"; };
 		F24AB1CF23EFC3B100ECBE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F24AB1D123EFC3B100ECBE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoTableViewCell.swift; sourceTree = "<group>"; };
@@ -246,13 +242,50 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F2142C0D2464CF5C00F10CD1 /* Do+Did List */ = {
+		F232B081258CC222005ADC9D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
-				F2B490F22455AA8A0073AA21 /* DidViewController.swift */,
+				F28B501E24370CAA00335783 /* Icons */,
+				F25FB73023EFF36000282434 /* Fonts */,
+				F24AB1D123EFC3B100ECBE1E /* Info.plist */,
+				F26ACB8F2466584200CAA0EA /* Assets.xcassets */,
 			);
-			path = "Do+Did List";
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F232B08A258CCADA005ADC9D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F232B08C258CCB09005ADC9D /* ToDoCardCell */,
+				F232B08B258CCAF7005ADC9D /* AddToDoCell */,
+				F232B08D258CCB27005ADC9D /* CalendarCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F232B08B258CCAF7005ADC9D /* AddToDoCell */ = {
+			isa = PBXGroup;
+			children = (
+				F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */,
+			);
+			path = AddToDoCell;
+			sourceTree = "<group>";
+		};
+		F232B08C258CCB09005ADC9D /* ToDoCardCell */ = {
+			isa = PBXGroup;
+			children = (
+				F2AE0D56245332190065325A /* ToDoCardCell.xib */,
+				F2CAB8812403EFF500ECCEBF /* ToDoCardCell.swift */,
+			);
+			path = ToDoCardCell;
+			sourceTree = "<group>";
+		};
+		F232B08D258CCB27005ADC9D /* CalendarCell */ = {
+			isa = PBXGroup;
+			children = (
+				F2BB29E5245C612200C23AD8 /* CalendarTableViewCell.swift */,
+			);
+			path = CalendarCell;
 			sourceTree = "<group>";
 		};
 		F24AB1B423EFC3AE00ECBE1E = {
@@ -277,15 +310,13 @@
 		F24AB1BF23EFC3AE00ECBE1E /* Do_Did_List */ = {
 			isa = PBXGroup;
 			children = (
-				F24AB1D123EFC3B100ECBE1E /* Info.plist */,
-				F25FB73023EFF36000282434 /* Fonts */,
-				F28B501E24370CAA00335783 /* Icons */,
-				F2E702D524013C5500A0289E /* Extensions */,
-				F2C0A5302407CA070047B0A4 /* Models */,
-				F2C0A5342407E2DB0047B0A4 /* Views */,
-				F2E702C62400DE1400A0289E /* ViewControllers */,
-				F2E702D624013C7000A0289E /* Storyboards */,
-				F2C0A5352407E3370047B0A4 /* MISC */,
+				F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */,
+				F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */,
+				F2C0A5302407CA070047B0A4 /* Model */,
+				F2C0A5342407E2DB0047B0A4 /* View */,
+				F2E702C62400DE1400A0289E /* Controller */,
+				F2E702D524013C5500A0289E /* Extension */,
+				F232B081258CC222005ADC9D /* Resource */,
 			);
 			path = Do_Did_List;
 			sourceTree = "<group>";
@@ -374,39 +405,24 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		F2C0A5302407CA070047B0A4 /* Models */ = {
+		F2C0A5302407CA070047B0A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				F26B3BE82421CEFC00052ABF /* ModelManager.swift */,
 				F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */,
 				F203622A2435F0F800AAF69F /* ColorModel.swift */,
-				F2464E92244039F40023DCD9 /* UserModel.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		F2C0A5342407E2DB0047B0A4 /* Views */ = {
+		F2C0A5342407E2DB0047B0A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */,
-				F25C3785240D0F5F00E0EF0C /* AddToDoTableViewCell.swift */,
+				F2E702D624013C7000A0289E /* Storyboard */,
+				F232B08A258CCADA005ADC9D /* Cell */,
 				F203622824357A5000AAF69F /* IconView.swift */,
-				F2AE0D56245332190065325A /* ToDoCardCell.xib */,
-				F2CAB8812403EFF500ECCEBF /* ToDoCardCell.swift */,
-				F2BB29E5245C612200C23AD8 /* CalendarTableViewCell.swift */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F2C0A5352407E3370047B0A4 /* MISC */ = {
-			isa = PBXGroup;
-			children = (
-				F26ACB8F2466584200CAA0EA /* Assets.xcassets */,
-				F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */,
-				F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */,
-				F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */,
-			);
-			path = MISC;
+			path = View;
 			sourceTree = "<group>";
 		};
 		F2E438DC2444232500CC001F /* AddToDoView */ = {
@@ -419,18 +435,20 @@
 			path = AddToDoView;
 			sourceTree = "<group>";
 		};
-		F2E702C62400DE1400A0289E /* ViewControllers */ = {
+		F2E702C62400DE1400A0289E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */,
 				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
-				F2142C0D2464CF5C00F10CD1 /* Do+Did List */,
+				F2E702CF2400E6C300A0289E /* MainViewController.swift */,
+				F2B490F22455AA8A0073AA21 /* DidViewController.swift */,
 				F2BB29E3245C536C00C23AD8 /* CalendarViewController.swift */,
 				F2E438DC2444232500CC001F /* AddToDoView */,
 			);
-			path = ViewControllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		F2E702D524013C5500A0289E /* Extensions */ = {
+		F2E702D524013C5500A0289E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				F2E702D324013C0300A0289E /* UIViewExtension.swift */,
@@ -438,16 +456,16 @@
 				F28B50852438A24300335783 /* UITextViewExtension.swift */,
 				F2464E94244082520023DCD9 /* UITableViewExtension.swift */,
 			);
-			path = Extensions;
+			path = Extension;
 			sourceTree = "<group>";
 		};
-		F2E702D624013C7000A0289E /* Storyboards */ = {
+		F2E702D624013C7000A0289E /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
 				F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */,
 				F24AB1C623EFC3AE00ECBE1E /* Main.storyboard */,
 			);
-			path = Storyboards;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -628,7 +646,6 @@
 				F2BB29E4245C536C00C23AD8 /* CalendarViewController.swift in Sources */,
 				F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */,
 				F2FE47A1240BEDC300EAD268 /* AddToDoViewController.swift in Sources */,
-				F24AB1CB23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld in Sources */,
 				F28B50842438919300335783 /* UIColorExtension.swift in Sources */,
 				F2CAB8832403EFF500ECCEBF /* ToDoCardCell.swift in Sources */,
 				F2E702D02400E6C300A0289E /* MainViewController.swift in Sources */,
@@ -640,7 +657,6 @@
 				F289733C242E41A90079B0BD /* IconGlyphViewController.swift in Sources */,
 				F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */,
 				F203622B2435F0F800AAF69F /* ColorModel.swift in Sources */,
-				F2464E93244039F40023DCD9 /* UserModel.swift in Sources */,
 				F2897339242E416A0079B0BD /* IconColorViewController.swift in Sources */,
 				F2BB29E6245C612200C23AD8 /* CalendarTableViewCell.swift in Sources */,
 			);
@@ -789,7 +805,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75FNRKTJ9S;
-				INFOPLIST_FILE = Do_Did_List/Info.plist;
+				INFOPLIST_FILE = Do_Did_List/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -808,7 +824,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75FNRKTJ9S;
-				INFOPLIST_FILE = Do_Did_List/Info.plist;
+				INFOPLIST_FILE = Do_Did_List/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -842,19 +858,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F24AB1C923EFC3AE00ECBE1E /* Do_Did_List.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F24AB1CA23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodel */,
-			);
-			currentVersion = F24AB1CA23EFC3AE00ECBE1E /* Do_Did_List.xcdatamodel */;
-			path = Do_Did_List.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F24AB1B523EFC3AE00ECBE1E /* Project object */;
 }

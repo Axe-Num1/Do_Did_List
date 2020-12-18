@@ -9,17 +9,14 @@
 import UIKit
 
 class CustomTabBarController:  UITabBarController {
-    
     override func viewDidLoad(){
         super.viewDidLoad()
         self.delegate = self
     }
-    
 }
 
 // MARK: - UITabBarControllerDelegate
 extension CustomTabBarController: UITabBarControllerDelegate {
-    
     // MARK: ModalPresent
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController is AddToDoViewController {

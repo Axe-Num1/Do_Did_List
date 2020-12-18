@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eWY-9a-DKX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eWY-9a-DKX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -65,21 +65,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1897" y="138"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="bS5-ed-kJZ">
-            <objects>
-                <viewController id="MQR-Ro-0YJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gtm-lc-AQW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="VH4-Ke-Wy6"/>
-                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zl5-kN-zbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="663.768115942029" y="137.94642857142856"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="xNx-Tg-rrB">
@@ -183,7 +168,7 @@
                                                         <constraint firstAttribute="height" constant="50" id="GUg-8e-dk2"/>
                                                     </constraints>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTH-gl-pt8" customClass="CosmosView" customModule="Cosmos">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DTH-gl-pt8" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="16" y="66" width="58" height="16"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
@@ -767,7 +752,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gum-b1-hWC" customClass="CosmosView" customModule="Cosmos">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gum-b1-hWC" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="277" y="135" width="85" height="27"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
@@ -1133,17 +1118,6 @@
             <point key="canvasLocation" x="4160.8695652173919" y="1060.7142857142858"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="DTH-gl-pt8">
-            <size key="intrinsicContentSize" width="58" height="16"/>
-        </designable>
-        <designable name="Gum-b1-hWC">
-            <size key="intrinsicContentSize" width="85" height="25"/>
-        </designable>
-        <designable name="V0s-Vb-lpe">
-            <size key="intrinsicContentSize" width="190" height="60"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="Gcf-PR-6sS"/>
     </inferredMetricsTieBreakers>
