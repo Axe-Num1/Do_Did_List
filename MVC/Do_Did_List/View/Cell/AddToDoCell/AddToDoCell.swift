@@ -1,15 +1,15 @@
 //
-//  AddToDoTableViewCell.swift
+//  AddToDoCell.swift
 //  Do_Did_List
 //
-//  Created by 강민석 on 2020/03/02.
+//  Created by 강민석 on 2020/12/18.
 //  Copyright © 2020 MinseokKang. All rights reserved.
 //
 
 import UIKit
 import Cosmos
 
-class AddToDoTableViewCell: UITableViewCell {
+class AddToDoCell: UITableViewCell {
 
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!

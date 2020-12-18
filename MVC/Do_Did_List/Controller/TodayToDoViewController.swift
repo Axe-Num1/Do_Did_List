@@ -1,15 +1,15 @@
 //
-//  AddToDoViewController.swift
+//  TodayToDoViewController.swift
 //  Do_Did_List
 //
-//  Created by 강민석 on 2020/03/01.
+//  Created by 강민석 on 2020/12/18.
 //  Copyright © 2020 MinseokKang. All rights reserved.
 //
 
 import UIKit
 import RealmSwift
 
-class AddToDoViewController: UIViewController {
+class TodayToDoViewController: UIViewController {
     
     @IBOutlet weak var addToDoTableView: UITableView!
     
@@ -53,7 +53,7 @@ class AddToDoViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource
-extension AddToDoViewController: UITableViewDataSource {
+extension TodayToDoViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         if items?.count == 0 {
             tableView.setEmptyView(title: "Today ToDo is Empty", message: "Add ToDo", subImage: UIImage(named: "Arrow"))
@@ -92,6 +92,6 @@ extension AddToDoViewController: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension AddToDoViewController: UITableViewDelegate {
+extension TodayToDoViewController: UITableViewDelegate {
     
 }

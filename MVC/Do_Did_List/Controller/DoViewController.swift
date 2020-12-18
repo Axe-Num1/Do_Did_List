@@ -1,8 +1,8 @@
 //
-//  MainViewController.swift
+//  DoViewController.swift
 //  Do_Did_List
 //
-//  Created by 강민석 on 2020/02/22.
+//  Created by 강민석 on 2020/12/18.
 //  Copyright © 2020 MinseokKang. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ import Foundation
 import RealmSwift
 import VerticalCardSwiper
 
-class MainViewController: UIViewController {
+class DoViewController: UIViewController {
     
     @IBOutlet weak var cardSwiper: VerticalCardSwiper!
     
@@ -104,7 +104,7 @@ class MainViewController: UIViewController {
     }
 }
 
-extension MainViewController: VerticalCardSwiperDatasource {
+extension DoViewController: VerticalCardSwiperDatasource {
     func numberOfCards(verticalCardSwiperView: VerticalCardSwiperView) -> Int {
         return items?.count ?? 0
     }
@@ -126,7 +126,7 @@ extension MainViewController: VerticalCardSwiperDatasource {
     }
 }
 
-extension MainViewController: VerticalCardSwiperDelegate {
+extension DoViewController: VerticalCardSwiperDelegate {
     func willSwipeCardAway(card: CardCell, index: Int, swipeDirection: SwipeDirection) {
         let item = items?[index]
         
@@ -148,3 +148,4 @@ extension MainViewController: VerticalCardSwiperDelegate {
         print("Tapped")
     }
 }
+
