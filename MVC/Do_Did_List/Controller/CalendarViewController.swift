@@ -28,6 +28,7 @@ class CalendarViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName: "ToDoHistoryCell", bundle: nil), forCellReuseIdentifier: "ToDoHistoryCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,7 +67,7 @@ extension CalendarViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell") as! CalendarTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoHistoryCell") as! ToDoHistoryCell
         
         let item = items?[indexPath.row]
         

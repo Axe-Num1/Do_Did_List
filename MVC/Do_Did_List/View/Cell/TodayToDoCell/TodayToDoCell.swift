@@ -1,15 +1,15 @@
 //
-//  AddToDoCell.swift
+//  TodayToDoCell.swift
 //  Do_Did_List
 //
-//  Created by 강민석 on 2020/12/18.
+//  Created by 강민석 on 2020/12/19.
 //  Copyright © 2020 MinseokKang. All rights reserved.
 //
 
 import UIKit
 import Cosmos
 
-class AddToDoCell: UITableViewCell {
+class TodayToDoCell: UITableViewCell {
 
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!

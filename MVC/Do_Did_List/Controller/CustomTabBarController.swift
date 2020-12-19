@@ -19,7 +19,7 @@ class CustomTabBarController:  UITabBarController {
 extension CustomTabBarController: UITabBarControllerDelegate {
     // MARK: ModalPresent
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        if viewController is AddToDoViewController {
+        if viewController is TodayToDoViewController {
             if let newVC = tabBarController.storyboard?.instantiateViewController(withIdentifier: "AddNav") {
                 newVC.modalPresentationStyle = .fullScreen
                 tabBarController.present(newVC, animated: true)

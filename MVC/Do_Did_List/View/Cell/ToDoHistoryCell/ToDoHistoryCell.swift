@@ -1,8 +1,8 @@
 //
-//  CalendarTableViewCell.swift
+//  ToDoHistoryCell.swift
 //  Do_Did_List
 //
-//  Created by 강민석 on 2020/05/01.
+//  Created by 강민석 on 2020/12/19.
 //  Copyright © 2020 MinseokKang. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import Cosmos
 import M13Checkbox
 
-class CalendarTableViewCell: UITableViewCell {
+class ToDoHistoryCell: UITableViewCell {
 
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var starRatingView: CosmosView!

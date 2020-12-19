@@ -11,9 +11,11 @@
 		F203622B2435F0F800AAF69F /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203622A2435F0F800AAF69F /* ColorModel.swift */; };
 		F22E3209242BA6530089E58E /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E3208242BA6530089E58E /* IconViewController.swift */; };
 		F232B090258CCD99005ADC9D /* DoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232B08F258CCD99005ADC9D /* DoViewController.swift */; };
-		F232B09E258CCF37005ADC9D /* AddToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232B09C258CCF37005ADC9D /* AddToDoCell.swift */; };
-		F232B09F258CCF37005ADC9D /* AddToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F232B09D258CCF37005ADC9D /* AddToDoCell.xib */; };
 		F232B0A3258CD273005ADC9D /* TodayToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232B0A2258CD273005ADC9D /* TodayToDoViewController.swift */; };
+		F232B0AC258DA282005ADC9D /* TodayToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232B0AA258DA282005ADC9D /* TodayToDoCell.swift */; };
+		F232B0AD258DA282005ADC9D /* TodayToDoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F232B0AB258DA282005ADC9D /* TodayToDoCell.xib */; };
+		F232B0B6258DA404005ADC9D /* ToDoHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232B0B4258DA404005ADC9D /* ToDoHistoryCell.swift */; };
+		F232B0B7258DA404005ADC9D /* ToDoHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F232B0B5258DA404005ADC9D /* ToDoHistoryCell.xib */; };
 		F2464E95244082520023DCD9 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2464E94244082520023DCD9 /* UITableViewExtension.swift */; };
 		F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C023EFC3AE00ECBE1E /* AppDelegate.swift */; };
 		F24AB1C323EFC3AE00ECBE1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24AB1C223EFC3AE00ECBE1E /* SceneDelegate.swift */; };
@@ -84,7 +86,6 @@
 		F2B490F32455AA8A0073AA21 /* DidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B490F22455AA8A0073AA21 /* DidViewController.swift */; };
 		F2B8E7FA244F4AF200985719 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */; };
 		F2BB29E4245C536C00C23AD8 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BB29E3245C536C00C23AD8 /* CalendarViewController.swift */; };
-		F2BB29E6245C612200C23AD8 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BB29E5245C612200C23AD8 /* CalendarTableViewCell.swift */; };
 		F2C0A52F2407C52A0047B0A4 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */; };
 		F2CAB8832403EFF500ECCEBF /* ToDoCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CAB8812403EFF500ECCEBF /* ToDoCardCell.swift */; };
 		F2E702D424013C0300A0289E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E702D324013C0300A0289E /* UIViewExtension.swift */; };
@@ -99,9 +100,11 @@
 		F203622A2435F0F800AAF69F /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		F22E3208242BA6530089E58E /* IconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewController.swift; sourceTree = "<group>"; };
 		F232B08F258CCD99005ADC9D /* DoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoViewController.swift; sourceTree = "<group>"; };
-		F232B09C258CCF37005ADC9D /* AddToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoCell.swift; sourceTree = "<group>"; };
-		F232B09D258CCF37005ADC9D /* AddToDoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddToDoCell.xib; sourceTree = "<group>"; };
 		F232B0A2258CD273005ADC9D /* TodayToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayToDoViewController.swift; sourceTree = "<group>"; };
+		F232B0AA258DA282005ADC9D /* TodayToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayToDoCell.swift; sourceTree = "<group>"; };
+		F232B0AB258DA282005ADC9D /* TodayToDoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayToDoCell.xib; sourceTree = "<group>"; };
+		F232B0B4258DA404005ADC9D /* ToDoHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoHistoryCell.swift; sourceTree = "<group>"; };
+		F232B0B5258DA404005ADC9D /* ToDoHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoHistoryCell.xib; sourceTree = "<group>"; };
 		F239480D242AE52000A23AE0 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F239480E242AE52000A23AE0 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F239480F242AE52000A23AE0 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,7 +194,6 @@
 		F2B8019123FFE4AF0014D4B6 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		F2BB29E3245C536C00C23AD8 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		F2BB29E5245C612200C23AD8 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
 		F2C0A52E2407C52A0047B0A4 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		F2CAB8812403EFF500ECCEBF /* ToDoCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCardCell.swift; sourceTree = "<group>"; };
 		F2E702D324013C0300A0289E /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -258,20 +260,11 @@
 		F232B08A258CCADA005ADC9D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				F232B0B3258DA3D9005ADC9D /* ToDoHistoryCell */,
 				F232B08C258CCB09005ADC9D /* ToDoCardCell */,
-				F232B08B258CCAF7005ADC9D /* AddToDoCell */,
-				F232B08D258CCB27005ADC9D /* CalendarCell */,
+				F232B0A9258DA24F005ADC9D /* TodayToDoCell */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		F232B08B258CCAF7005ADC9D /* AddToDoCell */ = {
-			isa = PBXGroup;
-			children = (
-				F232B09C258CCF37005ADC9D /* AddToDoCell.swift */,
-				F232B09D258CCF37005ADC9D /* AddToDoCell.xib */,
-			);
-			path = AddToDoCell;
 			sourceTree = "<group>";
 		};
 		F232B08C258CCB09005ADC9D /* ToDoCardCell */ = {
@@ -283,12 +276,22 @@
 			path = ToDoCardCell;
 			sourceTree = "<group>";
 		};
-		F232B08D258CCB27005ADC9D /* CalendarCell */ = {
+		F232B0A9258DA24F005ADC9D /* TodayToDoCell */ = {
 			isa = PBXGroup;
 			children = (
-				F2BB29E5245C612200C23AD8 /* CalendarTableViewCell.swift */,
+				F232B0AB258DA282005ADC9D /* TodayToDoCell.xib */,
+				F232B0AA258DA282005ADC9D /* TodayToDoCell.swift */,
 			);
-			path = CalendarCell;
+			path = TodayToDoCell;
+			sourceTree = "<group>";
+		};
+		F232B0B3258DA3D9005ADC9D /* ToDoHistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				F232B0B5258DA404005ADC9D /* ToDoHistoryCell.xib */,
+				F232B0B4258DA404005ADC9D /* ToDoHistoryCell.swift */,
+			);
+			path = ToDoHistoryCell;
 			sourceTree = "<group>";
 		};
 		F24AB1B423EFC3AE00ECBE1E = {
@@ -331,16 +334,6 @@
 				F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		F289733A242E41730079B0BD /* IconView */ = {
-			isa = PBXGroup;
-			children = (
-				F22E3208242BA6530089E58E /* IconViewController.swift */,
-				F2897338242E416A0079B0BD /* IconColorViewController.swift */,
-				F289733B242E41A90079B0BD /* IconGlyphViewController.swift */,
-			);
-			path = IconView;
 			sourceTree = "<group>";
 		};
 		F28B501E24370CAA00335783 /* Icons */ = {
@@ -421,9 +414,9 @@
 		F2C0A5342407E2DB0047B0A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F203622824357A5000AAF69F /* IconView.swift */,
 				F2E702D624013C7000A0289E /* Storyboard */,
 				F232B08A258CCADA005ADC9D /* Cell */,
-				F203622824357A5000AAF69F /* IconView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,14 +424,16 @@
 		F2E702C62400DE1400A0289E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F232B08F258CCD99005ADC9D /* DoViewController.swift */,
-				F2B490F22455AA8A0073AA21 /* DidViewController.swift */,
 				F2B8E7F9244F4AF200985719 /* CustomTabBarController.swift */,
 				F24AB1C423EFC3AE00ECBE1E /* StartViewController.swift */,
-				F2BB29E3245C536C00C23AD8 /* CalendarViewController.swift */,
+				F232B08F258CCD99005ADC9D /* DoViewController.swift */,
+				F2B490F22455AA8A0073AA21 /* DidViewController.swift */,
 				F232B0A2258CD273005ADC9D /* TodayToDoViewController.swift */,
 				F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */,
-				F289733A242E41730079B0BD /* IconView */,
+				F22E3208242BA6530089E58E /* IconViewController.swift */,
+				F2897338242E416A0079B0BD /* IconColorViewController.swift */,
+				F289733B242E41A90079B0BD /* IconGlyphViewController.swift */,
+				F2BB29E3245C536C00C23AD8 /* CalendarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -531,14 +526,15 @@
 				F28B506124370D6C00335783 /* like 6.16.26 AM.png in Resources */,
 				F28B507324370D6C00335783 /* printer.png in Resources */,
 				F28B505E24370D6B00335783 /* next 6.16.26 AM.png in Resources */,
+				F232B0B7258DA404005ADC9D /* ToDoHistoryCell.xib in Resources */,
 				F28B507A24370D6C00335783 /* settings 6.16.26 AM.png in Resources */,
 				F28B506F24370D6C00335783 /* shuffle 6.16.26 AM.png in Resources */,
 				F28B507124370D6C00335783 /* hand.png in Resources */,
+				F232B0AD258DA282005ADC9D /* TodayToDoCell.xib in Resources */,
 				F28B507624370D6C00335783 /* dislike 6.16.26 AM.png in Resources */,
 				F28B506C24370D6C00335783 /* link 6.16.26 AM.png in Resources */,
 				F28B508024370D6C00335783 /* speaker 6.16.26 AM.png in Resources */,
 				F28B505724370D6B00335783 /* shopping-cart.png in Resources */,
-				F232B09F258CCF37005ADC9D /* AddToDoCell.xib in Resources */,
 				F28B507B24370D6C00335783 /* next-1.png in Resources */,
 				F2AE0D57245332190065325A /* ToDoCardCell.xib in Resources */,
 				F28B505424370D6B00335783 /* upload-1.png in Resources */,
@@ -632,11 +628,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F232B0B6258DA404005ADC9D /* ToDoHistoryCell.swift in Sources */,
 				F28B50862438A24300335783 /* UITextViewExtension.swift in Sources */,
 				F2B8E7FA244F4AF200985719 /* CustomTabBarController.swift in Sources */,
 				F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */,
-				F232B09E258CCF37005ADC9D /* AddToDoCell.swift in Sources */,
 				F2464E95244082520023DCD9 /* UITableViewExtension.swift in Sources */,
+				F232B0AC258DA282005ADC9D /* TodayToDoCell.swift in Sources */,
 				F2B490F32455AA8A0073AA21 /* DidViewController.swift in Sources */,
 				F24AB1C523EFC3AE00ECBE1E /* StartViewController.swift in Sources */,
 				F26B3BE92421CEFC00052ABF /* ModelManager.swift in Sources */,
@@ -654,7 +651,6 @@
 				F203622B2435F0F800AAF69F /* ColorModel.swift in Sources */,
 				F2897339242E416A0079B0BD /* IconColorViewController.swift in Sources */,
 				F232B0A3258CD273005ADC9D /* TodayToDoViewController.swift in Sources */,
-				F2BB29E6245C612200C23AD8 /* CalendarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

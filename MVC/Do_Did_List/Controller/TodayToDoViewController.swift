@@ -21,6 +21,7 @@ class TodayToDoViewController: UIViewController {
         
         addToDoTableView.delegate = self
         addToDoTableView.dataSource = self
+        addToDoTableView.register(UINib(nibName: "TodayToDoCell", bundle: nil), forCellReuseIdentifier: "TodayToDoCell")
         
         navigationBarSet()
     }
@@ -69,7 +70,7 @@ extension TodayToDoViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "addToDoCell", for: indexPath) as! AddToDoTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TodayToDoCell", for: indexPath) as! TodayToDoCell
         
         let item = items?[indexPath.section]
         cell.setIcon(imageData: item!.imageData)
