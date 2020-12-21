@@ -47,9 +47,9 @@ class ToDoCardCell: CardCell {
         self.navigationItem.largeTitleDisplayMode = .always
     }
     
-    func setBackgroundColor(_ firstColor: Data?, _ secondColor: Data?) {
-        guard let colorOne = UIColor.decodeToColor(data: firstColor!) else { return }
-        colorView.backgroundColor = colorOne
+    func setBackgroundColor(_ firstColor: String?, _ secondColor: String?) {
+        print(UIColor(hex: "#ffe700ff"))
+        colorView.backgroundColor = UIColor(hex: firstColor!)
     }
     
     func setIconImage(_ iconImageData: Data) {

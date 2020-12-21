@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +29,7 @@
                             <navigationItem title="00:00" id="B6H-Kp-HmI">
                                 <barButtonItem key="leftBarButtonItem" id="LeC-OI-qYu">
                                     <view key="customView" contentMode="scaleToFill" id="MpD-Ea-mgW" customClass="CosmosView" customModule="Cosmos">
-                                        <rect key="frame" x="16" y="9.5" width="85" height="25"/>
+                                        <rect key="frame" x="16" y="9.6666666666666643" width="85" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
@@ -58,13 +60,13 @@
                         <rect key="frame" x="0.0" y="44" width="350" height="406"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxT-2w-Z5N">
-                                <rect key="frame" x="10" y="15" width="330" height="29.5"/>
+                                <rect key="frame" x="10" y="15" width="330" height="24"/>
                                 <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeW-nZ-A7e">
-                                <rect key="frame" x="10" y="59.5" width="330" height="326.5"/>
+                                <rect key="frame" x="10" y="54" width="330" height="332"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="FivoSans-Black" family="Fivo Sans" pointSize="20"/>
@@ -82,7 +84,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="X7K-x5-qOV" secondAttribute="trailing" id="4Rg-OH-OUO"/>
                     <constraint firstItem="X7K-x5-qOV" firstAttribute="leading" secondItem="lWc-1W-Egh" secondAttribute="leading" id="9xJ-zw-xGu"/>
@@ -105,4 +107,14 @@
             <point key="canvasLocation" x="134.78260869565219" y="161.38392857142856"/>
         </collectionViewCell>
     </objects>
+    <designables>
+        <designable name="MpD-Ea-mgW">
+            <size key="intrinsicContentSize" width="85" height="25"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

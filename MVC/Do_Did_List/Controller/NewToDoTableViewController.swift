@@ -36,7 +36,6 @@ class NewToDoTableViewController: UITableViewController {
         
         starRatingView.settings.fillMode = .half
         
-        //        print(Realm.Configuration.defaultConfiguration.fileURL!)
         setNavigationBar()
     }
     

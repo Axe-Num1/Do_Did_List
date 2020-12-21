@@ -24,6 +24,7 @@
 		F24AB1D023EFC3B100ECBE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24AB1CE23EFC3B100ECBE1E /* LaunchScreen.storyboard */; };
 		F25FB73223EFF38900282434 /* FivoSans-Black-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73123EFF38900282434 /* FivoSans-Black-Oblique.otf */; };
 		F25FB73423EFF39500282434 /* FivoSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F25FB73323EFF39500282434 /* FivoSans-Black.otf */; };
+		F269025A25903ACC00B1D679 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269025925903ACC00B1D679 /* UIColor.swift */; };
 		F26ACB902466584200CAA0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26ACB8F2466584200CAA0EA /* Assets.xcassets */; };
 		F26B3BE92421CEFC00052ABF /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B3BE82421CEFC00052ABF /* ModelManager.swift */; };
 		F26F187E242AFFE500030938 /* Pods_Do_Did_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977E1452DED3D85498DC6191 /* Pods_Do_Did_List.framework */; };
@@ -79,7 +80,6 @@
 		F28B508024370D6C00335783 /* speaker 6.16.26 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = F28B504E24370D6B00335783 /* speaker 6.16.26 AM.png */; };
 		F28B508124370D6C00335783 /* paper-plane 6.16.26 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = F28B504F24370D6B00335783 /* paper-plane 6.16.26 AM.png */; };
 		F28B508224370D6C00335783 /* phone-call.png in Resources */ = {isa = PBXBuildFile; fileRef = F28B505024370D6B00335783 /* phone-call.png */; };
-		F28B50842438919300335783 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B50832438919300335783 /* UIColorExtension.swift */; };
 		F28B50862438A24300335783 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B50852438A24300335783 /* UITextViewExtension.swift */; };
 		F2AE0D57245332190065325A /* ToDoCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2AE0D56245332190065325A /* ToDoCardCell.xib */; };
 		F2AE5E4D241500660029A2AE /* NewToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */; };
@@ -129,6 +129,7 @@
 		F25FB73323EFF39500282434 /* FivoSans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FivoSans-Black.otf"; sourceTree = "<group>"; };
 		F25FB73523EFF86200282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25FB73B23EFFA0500282434 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F269025925903ACC00B1D679 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		F26ACB8F2466584200CAA0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F26B3BE82421CEFC00052ABF /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		F2897338242E416A0079B0BD /* IconColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconColorViewController.swift; sourceTree = "<group>"; };
@@ -183,7 +184,6 @@
 		F28B504E24370D6B00335783 /* speaker 6.16.26 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speaker 6.16.26 AM.png"; sourceTree = "<group>"; };
 		F28B504F24370D6B00335783 /* paper-plane 6.16.26 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paper-plane 6.16.26 AM.png"; sourceTree = "<group>"; };
 		F28B505024370D6B00335783 /* phone-call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-call.png"; sourceTree = "<group>"; };
-		F28B50832438919300335783 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		F28B50852438A24300335783 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		F2A3A0A82403E343004E81E0 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A3A0A92403E343004E81E0 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -429,11 +429,11 @@
 				F232B08F258CCD99005ADC9D /* DoViewController.swift */,
 				F2B490F22455AA8A0073AA21 /* DidViewController.swift */,
 				F232B0A2258CD273005ADC9D /* TodayToDoViewController.swift */,
+				F2BB29E3245C536C00C23AD8 /* CalendarViewController.swift */,
 				F2AE5E4C241500660029A2AE /* NewToDoTableViewController.swift */,
 				F22E3208242BA6530089E58E /* IconViewController.swift */,
 				F2897338242E416A0079B0BD /* IconColorViewController.swift */,
 				F289733B242E41A90079B0BD /* IconGlyphViewController.swift */,
-				F2BB29E3245C536C00C23AD8 /* CalendarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -441,8 +441,8 @@
 		F2E702D524013C5500A0289E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F269025925903ACC00B1D679 /* UIColor.swift */,
 				F2E702D324013C0300A0289E /* UIViewExtension.swift */,
-				F28B50832438919300335783 /* UIColorExtension.swift */,
 				F28B50852438A24300335783 /* UITextViewExtension.swift */,
 				F2464E94244082520023DCD9 /* UITableViewExtension.swift */,
 			);
@@ -639,8 +639,8 @@
 				F26B3BE92421CEFC00052ABF /* ModelManager.swift in Sources */,
 				F2BB29E4245C536C00C23AD8 /* CalendarViewController.swift in Sources */,
 				F24AB1C123EFC3AE00ECBE1E /* AppDelegate.swift in Sources */,
-				F28B50842438919300335783 /* UIColorExtension.swift in Sources */,
 				F232B090258CCD99005ADC9D /* DoViewController.swift in Sources */,
+				F269025A25903ACC00B1D679 /* UIColor.swift in Sources */,
 				F2CAB8832403EFF500ECCEBF /* ToDoCardCell.swift in Sources */,
 				F2E702D424013C0300A0289E /* UIViewExtension.swift in Sources */,
 				F22E3209242BA6530089E58E /* IconViewController.swift in Sources */,

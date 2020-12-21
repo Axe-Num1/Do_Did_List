@@ -9,11 +9,14 @@
 import UIKit
 import CoreData
 import UserNotifications
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (didAllow, error) in
             if didAllow {

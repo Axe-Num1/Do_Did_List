@@ -8,8 +8,8 @@
 
 import UIKit
 
-var firstColorData: Data?
-var secondColorData: Data?
+var firstColorData: String?
+var secondColorData: String?
 var imageData: Data?
 
 class IconViewController: UIViewController {
@@ -77,8 +77,8 @@ class IconViewController: UIViewController {
     @objc func handleChangeColor(notification:  Notification) {
         guard let colorDict = notification.userInfo else { return }
         guard let colors = colorDict["colorDict"] as? [UIColor] else { return }
-        firstColorData = colors[0].encodeToData()
-        secondColorData = colors[1].encodeToData()
+        firstColorData = colors[0].toHex()
+        secondColorData = colors[1].toHex()
         iconView.backgroundImage.image = nil
         iconView.topColor = colors[0]
         iconView.bottomColor = colors[1]
@@ -100,5 +100,4 @@ class IconViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleChangeIcon), name: Notification.Name(rawValue: "iconRefresh"), object: nil)
     }
-    
 }

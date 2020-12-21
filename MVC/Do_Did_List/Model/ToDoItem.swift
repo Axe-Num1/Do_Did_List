@@ -16,8 +16,8 @@ class ToDoItem: Object {
     @objc dynamic var title: String = "" // 매인 타이틀
     
     // icon 관련 데이터
-    @objc dynamic var firstColor: Data = Data()
-    @objc dynamic var secondColor: Data = Data()
+    @objc dynamic var firstColor: String = ""
+    @objc dynamic var secondColor: String = ""
     @objc dynamic var imageData: Data = Data()
     
     @objc dynamic var timestamp: Date = Date() // 날짜, 시간
@@ -30,7 +30,7 @@ class ToDoItem: Object {
         return "id"
     }
     
-    convenience init(title: String, firstColor: Data, secondColor: Data, imageData: Data, timestamp: Date, importance: Double, content: String, isDone: Bool) {
+    convenience init(title: String, firstColor: String, secondColor: String, imageData: Data, timestamp: Date, importance: Double, content: String, isDone: Bool) {
         self.init()
         
         self.title = title
