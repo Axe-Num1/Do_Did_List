@@ -35,7 +35,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bdc-af-Ywp" customClass="CosmosView" customModule="Cosmos">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdc-af-Ywp" customClass="CosmosView" customModule="Cosmos">
                         <rect key="frame" x="277" y="135" width="85" height="27"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
@@ -136,6 +136,11 @@
             <point key="canvasLocation" x="139" y="38"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="bdc-af-Ywp">
+            <size key="intrinsicContentSize" width="85" height="25"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

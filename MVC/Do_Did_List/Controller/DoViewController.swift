@@ -148,4 +148,3 @@ extension DoViewController: VerticalCardSwiperDelegate {
         print("Tapped")
     }
 }
-

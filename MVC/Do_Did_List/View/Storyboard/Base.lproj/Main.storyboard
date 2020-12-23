@@ -97,7 +97,7 @@
                     <navigationItem key="navigationItem" id="qVU-OH-GyV"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="cardSwiper" destination="N8D-K0-RSW" id="FbU-15-dMf"/>
+                        <outlet property="cardSwiper" destination="N8D-K0-RSW" id="0sS-ob-DtH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HD9-2P-9ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -645,7 +645,7 @@
                                 <rect key="frame" x="0.0" y="89" width="414" height="807"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tli-an-xf7">
-                                <rect key="frame" x="0.0" y="713" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-iH-LFe">
                                         <rect key="frame" x="182" y="0.0" width="50" height="50"/>
@@ -909,13 +909,8 @@
             <point key="canvasLocation" x="4160.8695652173919" y="1060.7142857142858"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="V0s-Vb-lpe">
-            <size key="intrinsicContentSize" width="190" height="60"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="Gcf-PR-6sS"/>
+        <segue reference="v9b-16-Rsh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Add Button" width="38" height="38"/>
